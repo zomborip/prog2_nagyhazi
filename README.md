@@ -18,8 +18,12 @@ make
 
 ## Dokumentáció:
 
-A feladato PDF dokumentációja a [docs/Docs.pdf]() helyen érhető el, a HTML dokumentáció a [html/]() mappában az [index.html]() futtatásával tekinthető meg.
+A feladato PDF dokumentációja a [docs/Docs.pdf](https://github.com/zomborip/prog2_nagyhazi/blob/main/docs/Docs.pdf) helyen érhető el, a HTML dokumentáció a [html/](https://github.com/zomborip/prog2_nagyhazi/tree/main/docs/html) mappában az [index.html](https://github.com/zomborip/prog2_nagyhazi/blob/main/docs/html/index.html) futtatásával tekinthető meg.
 
 ## Specifikáció:
 
-A feladathoz tartozó specifikáció a [spec/Spec.pdf]()-ben található.
+A feladathoz tartozó specifikáció a [spec/Spec.pdf](https://github.com/zomborip/prog2_nagyhazi/blob/main/specs/Specs.pdf)-ben található.
+
+## Állapot:
+
+Kész. A feladat a Laborvezető elbírálására vár, utólagos javítások azután valószínűek.
