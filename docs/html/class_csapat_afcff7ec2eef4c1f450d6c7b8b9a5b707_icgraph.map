@@ -1,0 +1,6 @@
+<map id="Csapat::setTipus" name="Csapat::setTipus">
+<area shape="rect" id="node1" title="A csapat típusát beállító függvény (többször átállítani nincs értelme, mert úgyis öröklődik és az örö..." alt="" coords="152,55,272,80"/>
+<area shape="rect" id="node2" href="$class_foci.html#a7d6305ed33b71ef62629b1091a2d3ef4" title="A default konstruktor, amely a Csapat default konstruktorát használja." alt="" coords="15,5,95,31"/>
+<area shape="rect" id="node3" href="$class_kezi.html#a24e31edfd258e2a01d2d2f3279d6f5d1" title="A default konstruktor, amely a Csapat default konstruktorát hívja, csak a." alt="" coords="13,55,96,80"/>
+<area shape="rect" id="node4" href="$class_kosar.html#a67158889205385aee1a9131791991a56" title="A default konstruktor, amely a Csapat default konstruktorát hívja, csak a." alt="" coords="5,104,104,129"/>
+</map>

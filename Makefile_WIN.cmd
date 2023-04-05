@@ -1,0 +1,1 @@
+g++ -std=c++11 -g -Wall -Werror -pedantic -DMEMTRACE main.cpp memtrace.cpp memtrace.h csapat.h csapat.cpp foci.h foci.cpp kosar.h kosar.cpp kezi.h kezi.cpp nyilvantartas.h nyilvantartas.cpp menu.h menu.cpp -o nagyhazi

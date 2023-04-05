@@ -1,0 +1,5 @@
+<map id="Foci::getEdzokszama" name="Foci::getEdzokszama">
+<area shape="rect" id="node1" title="Visszaadja az edzők számát." alt="" coords="200,31,349,56"/>
+<area shape="rect" id="node2" href="$class_menu.html#a3bf83959928c0a1337f5bcad454390f0" title="Egy adott listaelem sorának hosszát adja vissza. Design felhasználási céllal." alt="" coords="5,5,152,31"/>
+<area shape="rect" id="node3" href="$class_menu.html#adf3b82f2a2c92fd29669da5172779a69" title="Egy listaelemet ír ki megformázva." alt="" coords="23,55,134,80"/>
+</map>

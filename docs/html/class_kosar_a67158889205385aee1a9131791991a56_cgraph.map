@@ -1,0 +1,4 @@
+<map id="Kosar::Kosar" name="Kosar::Kosar">
+<area shape="rect" id="node1" title="A default konstruktor, amely a Csapat default konstruktorát hívja, csak a." alt="" coords="5,5,104,31"/>
+<area shape="rect" id="node2" href="$class_csapat.html#afcff7ec2eef4c1f450d6c7b8b9a5b707" title="A csapat típusát beállító függvény (többször átállítani nincs értelme, mert úgyis öröklődik és az örö..." alt="" coords="152,5,272,31"/>
+</map>

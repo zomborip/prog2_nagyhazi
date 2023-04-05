@@ -1,0 +1,8 @@
+<map id="Menu::printOne" name="Menu::printOne">
+<area shape="rect" id="node1" title="Egy listaelemet ír ki megformázva." alt="" coords="5,80,116,105"/>
+<area shape="rect" id="node2" href="$class_csapat.html#ac88ac916828fec75fc1d84286e88be03" title="Visszaadja a csapat létszámát." alt="" coords="359,5,497,31"/>
+<area shape="rect" id="node3" href="$class_csapat.html#a4a9d5a571b4fb0936b33e5d61274f7a8" title="Visszaadja a csapat nevét." alt="" coords="373,56,483,81"/>
+<area shape="rect" id="node4" href="$class_menu.html#ac183ce914dd13e202c2d0f822d2a8a02" title="Egy adott listaelem sorának hosszát adja vissza. Design felhasználási céllal." alt="" coords="164,105,311,131"/>
+<area shape="rect" id="node5" href="$class_kezi.html#a613f5e5f275485d0a4fab918e567aae0" title="Visszaadja a támogatások számát." alt="" coords="359,155,497,180"/>
+<area shape="rect" id="node6" href="$class_nyilvantartas.html#a9604b1a0d7f81045cc47b51747f8424d" title="Kiszamolja egy szám legnagyobb helyiértékét (tehát, milyen hosszú a szám). Statikus függvény." alt="" coords="361,105,495,131"/>
+</map>

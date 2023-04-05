@@ -1,0 +1,7 @@
+<map id="Menu::~Menu" name="Menu::~Menu">
+<area shape="rect" id="node1" title="Destruktor, lementi a nyilvántartás adatait fileokba." alt="" coords="5,55,108,80"/>
+<area shape="rect" id="node2" href="$class_nyilvantartas.html#a8dcbf9bb384068f31d89f3850674f0c2" title="Elmenti az összes listát (keziCS, kosarCS, fociCS) a megfelelő fileokba." alt="" coords="156,55,287,80"/>
+<area shape="rect" id="node3" href="$class_nyilvantartas.html#acf3d8ec657e4a1e0038a20c14acc6cf6" title="Elmenti a foci.txt fileba a fociCS adatait." alt="" coords="339,5,494,31"/>
+<area shape="rect" id="node4" href="$class_nyilvantartas.html#a467a1363bccc1e5a09be70b67f4900a8" title="Elmenti a kezi.txt fileba a keziCS adatait." alt="" coords="339,55,495,80"/>
+<area shape="rect" id="node5" href="$class_nyilvantartas.html#a61c60dc62b7ccfc3304e426fef3c4363" title="Elmenti a kosar.txt fileba a kosarCS adatait." alt="" coords="335,104,499,129"/>
+</map>

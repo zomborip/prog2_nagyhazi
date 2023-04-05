@@ -1,0 +1,4 @@
+<map id="Kezi" name="Kezi">
+<area shape="rect" id="node1" title="A kézilabda csapat objektumja, amely örökli a Csapat objektum tulajdonságait." alt="" coords="5,336,132,457"/>
+<area shape="rect" id="node2" href="$class_csapat.html" title="A csapatok szülőobjektuma. Ez írja je a csapatok közös viselkedését, tulajdonságait." alt="" coords="13,5,124,288"/>
+</map>

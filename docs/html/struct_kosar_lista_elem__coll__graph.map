@@ -1,0 +1,5 @@
+<map id="KosarListaElem" name="KosarListaElem">
+<area shape="rect" id="node1" title="A Kosar osztály láncolt listázásához szolgáló struktúra. Ez egy darab listaelem." alt="" coords="13,536,128,613"/>
+<area shape="rect" id="node2" href="$class_kosar.html" title="A kosárlabda csapat objektumja, amely örökli a Csapat objektum tulajdonságait." alt="" coords="5,337,136,473"/>
+<area shape="rect" id="node3" href="$class_csapat.html" title="A csapatok szülőobjektuma. Ez írja je a csapatok közös viselkedését, tulajdonságait." alt="" coords="15,5,126,288"/>
+</map>

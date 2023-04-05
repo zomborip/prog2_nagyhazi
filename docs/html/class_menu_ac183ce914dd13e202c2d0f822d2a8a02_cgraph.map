@@ -1,0 +1,7 @@
+<map id="Menu::getStdRowLen" name="Menu::getStdRowLen">
+<area shape="rect" id="node1" title="Egy adott listaelem sorának hosszát adja vissza. Design felhasználási céllal." alt="" coords="5,80,152,105"/>
+<area shape="rect" id="node2" href="$class_csapat.html#ac88ac916828fec75fc1d84286e88be03" title="Visszaadja a csapat létszámát." alt="" coords="200,5,339,31"/>
+<area shape="rect" id="node3" href="$class_csapat.html#a4a9d5a571b4fb0936b33e5d61274f7a8" title="Visszaadja a csapat nevét." alt="" coords="214,55,325,80"/>
+<area shape="rect" id="node4" href="$class_kezi.html#a613f5e5f275485d0a4fab918e567aae0" title="Visszaadja a támogatások számát." alt="" coords="200,104,339,129"/>
+<area shape="rect" id="node5" href="$class_nyilvantartas.html#a9604b1a0d7f81045cc47b51747f8424d" title="Kiszamolja egy szám legnagyobb helyiértékét (tehát, milyen hosszú a szám). Statikus függvény." alt="" coords="202,153,337,179"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Nyilvantartas::load" name="Nyilvantartas::load">
+<area shape="rect" id="node1" title="Betölti az összes fileból (kezi.txt, kosar.txt, foci.txt) az adatokat a." alt="" coords="148,5,276,31"/>
+<area shape="rect" id="node2" href="$class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Default konstruktor, betölti a nyilvántartás adatait fileból." alt="" coords="5,5,100,31"/>
+</map>

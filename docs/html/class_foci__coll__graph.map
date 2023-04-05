@@ -1,0 +1,4 @@
+<map id="Foci" name="Foci">
+<area shape="rect" id="node1" title="A focicsapat objektumja, amely örökli a Csapat objektum tulajdonságait." alt="" coords="5,336,141,472"/>
+<area shape="rect" id="node2" href="$class_csapat.html" title="A csapatok szülőobjektuma. Ez írja je a csapatok közös viselkedését, tulajdonságait." alt="" coords="18,5,129,288"/>
+</map>

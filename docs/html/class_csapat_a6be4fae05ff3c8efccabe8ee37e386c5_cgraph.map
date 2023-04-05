@@ -1,0 +1,4 @@
+<map id="Csapat::~Csapat" name="Csapat::~Csapat">
+<area shape="rect" id="node1" title="Virtuális destruktor (mert öröklődik majd a class)." alt="" coords="5,5,125,31"/>
+<area shape="rect" id="node2" href="$class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="173,5,283,31"/>
+</map>

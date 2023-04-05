@@ -1,0 +1,20 @@
+<map id="Menu::keresFociMenu" name="Menu::keresFociMenu">
+<area shape="rect" id="node1" title="Egy focilabda csapat keresési menüje." alt="" coords="5,216,156,241"/>
+<area shape="rect" id="node2" href="$class_menu.html#aa92add4d48ff869624f7ccc4813f0348" title="A láncolt lista egy elemét módosító almenü." alt="" coords="209,153,349,179"/>
+<area shape="rect" id="node4" href="$class_nyilvantartas.html#a8dcbf9bb384068f31d89f3850674f0c2" title="Elmenti az összes listát (keziCS, kosarCS, fociCS) a megfelelő fileokba." alt="" coords="409,55,540,80"/>
+<area shape="rect" id="node11" href="$class_nyilvantartas.html#a0d3e5cfab71a0e9e94acdee6ce79dfac" title="A paraméternek megfelelő nevű csapatra mutató pointert ad vissza. Kikeresi a láncolt listából." alt="" coords="204,216,353,241"/>
+<area shape="rect" id="node12" href="$class_menu.html#a131e748e8f24d3dd7cdda924db76b414" title="Egy listaelemet ír ki megformázva." alt="" coords="223,291,334,316"/>
+<area shape="rect" id="node18" href="$class_nyilvantartas.html#aa6afbf48b834dd04efbd123b605c70c6" title="Kitörli a láncolt listából a paraméterben megadott listaelemet." alt="" coords="219,340,338,365"/>
+<area shape="rect" id="node3" href="$class_foci.html#a0c70d3a8339645645c1332a877805f16" title="Egy darab új edzőt ad hozzá a csapathoz. Növeli az edzoDB countert eggyel." alt="" coords="421,104,528,129"/>
+<area shape="rect" id="node8" href="$class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="405,153,544,179"/>
+<area shape="rect" id="node9" href="$class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="419,203,530,228"/>
+<area shape="rect" id="node5" href="$class_nyilvantartas.html#acf3d8ec657e4a1e0038a20c14acc6cf6" title="Elmenti a foci.txt fileba a fociCS adatait." alt="" coords="601,5,755,31"/>
+<area shape="rect" id="node6" href="$class_nyilvantartas.html#a467a1363bccc1e5a09be70b67f4900a8" title="Elmenti a kezi.txt fileba a keziCS adatait." alt="" coords="600,55,756,80"/>
+<area shape="rect" id="node7" href="$class_nyilvantartas.html#a61c60dc62b7ccfc3304e426fef3c4363" title="Elmenti a kosar.txt fileba a kosarCS adatait." alt="" coords="596,104,760,129"/>
+<area shape="rect" id="node10" href="$class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="623,203,733,228"/>
+<area shape="rect" id="node13" href="$class_csapat.html#ac88ac916828fec75fc1d84286e88be03" title="Visszaadja a csapat létszámát." alt="" coords="609,253,747,279"/>
+<area shape="rect" id="node14" href="$class_csapat.html#a4a9d5a571b4fb0936b33e5d61274f7a8" title="Visszaadja a csapat nevét." alt="" coords="623,304,733,329"/>
+<area shape="rect" id="node15" href="$class_menu.html#ac183ce914dd13e202c2d0f822d2a8a02" title="Egy adott listaelem sorának hosszát adja vissza. Design felhasználási céllal." alt="" coords="401,355,548,380"/>
+<area shape="rect" id="node16" href="$class_kezi.html#a613f5e5f275485d0a4fab918e567aae0" title="Visszaadja a támogatások számát." alt="" coords="609,404,747,429"/>
+<area shape="rect" id="node17" href="$class_nyilvantartas.html#a9604b1a0d7f81045cc47b51747f8424d" title="Kiszamolja egy szám legnagyobb helyiértékét (tehát, milyen hosszú a szám). Statikus függvény." alt="" coords="611,355,745,380"/>
+</map>

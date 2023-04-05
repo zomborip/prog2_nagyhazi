@@ -1,0 +1,12 @@
+<map id="Nyilvantartas::getFociLista" name="Nyilvantartas::getFociLista">
+<area shape="rect" id="node1" title="Visszaadja a Focilabda csapatok láncolt listáját." alt="" coords="703,56,877,81"/>
+<area shape="rect" id="node2" href="$class_menu.html#aeade250ba2c9aefaca95036ee0339992" title="Kiszámolja a leghoszabb sor hosszát a nyilvántartásban. Erre a TAB&#45;ok és a kinézet miatt van szügség." alt="" coords="501,107,655,132"/>
+<area shape="rect" id="node3" href="$class_menu.html#ad7106b22912d94b8fc50e4dbd8291fb8" title="Kilistázza megformázva az összes adatot." alt="" coords="341,5,444,31"/>
+<area shape="rect" id="node5" href="$class_menu.html#a16d89092ef2464d51932e29adadf0939" title="Kilistázza megformázva a Focilabda (Foci) csapatokat." alt="" coords="337,56,449,81"/>
+<area shape="rect" id="node7" href="$class_menu.html#aa1f6c80eb45a32e53a3477672b02bca3" title="Kilistázza megformázva a Kézilabda (Kezi) csapatokat." alt="" coords="336,105,449,131"/>
+<area shape="rect" id="node9" href="$class_menu.html#ab16c7117e7b5c0cc079f1565b4083cc1" title="Kilistázza megformázva a Kárlabda (Kosar) csapatokat." alt="" coords="332,155,453,180"/>
+<area shape="rect" id="node4" href="$class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,81,109,107"/>
+<area shape="rect" id="node6" href="$class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="163,56,278,81"/>
+<area shape="rect" id="node8" href="$class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="161,105,280,131"/>
+<area shape="rect" id="node10" href="$class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="157,155,284,180"/>
+</map>

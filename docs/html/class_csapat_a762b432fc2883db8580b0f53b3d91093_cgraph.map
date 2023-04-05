@@ -1,0 +1,4 @@
+<map id="Csapat::setNev" name="Csapat::setNev">
+<area shape="rect" id="node1" title="A csapat nevét átállító, beállító függvény." alt="" coords="5,5,116,31"/>
+<area shape="rect" id="node2" href="$class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="164,5,273,31"/>
+</map>

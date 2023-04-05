@@ -1,0 +1,5 @@
+<map id="Nyilvantartas::loadKosar" name="Nyilvantartas::loadKosar">
+<area shape="rect" id="node1" title="Betölti a kosar.txt fileból a kosárlabda csapat adatait a kosarCS listába." alt="" coords="324,5,487,31"/>
+<area shape="rect" id="node2" href="$class_nyilvantartas.html#a27fbdde787ab60aa9f019f7d59d9eaef" title="Betölti az összes fileból (kezi.txt, kosar.txt, foci.txt) az adatokat a." alt="" coords="148,5,276,31"/>
+<area shape="rect" id="node3" href="$class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Default konstruktor, betölti a nyilvántartás adatait fileból." alt="" coords="5,5,100,31"/>
+</map>

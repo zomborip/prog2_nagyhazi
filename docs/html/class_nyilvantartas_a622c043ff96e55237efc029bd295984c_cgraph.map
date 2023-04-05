@@ -1,0 +1,8 @@
+<map id="Nyilvantartas::addKosar" name="Nyilvantartas::addKosar">
+<area shape="rect" id="node1" title="Beleláncol a listába a paramétereknek megfelelő Kosárlabda csapatot." alt="" coords="5,80,164,105"/>
+<area shape="rect" id="node2" href="$class_kosar.html#a6187c448bd5bfb9382ced21545e8086c" title="Egy darab pompomlányt ad hozzá a csapathoz." alt="" coords="217,5,355,31"/>
+<area shape="rect" id="node3" href="$class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="217,55,355,80"/>
+<area shape="rect" id="node4" href="$class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="231,104,341,129"/>
+<area shape="rect" id="node6" href="$class_nyilvantartas.html#ab192a1947f4d0ded57bdc40778ee56a2" title="Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="212,153,360,179"/>
+<area shape="rect" id="node5" href="$class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="408,104,517,129"/>
+</map>

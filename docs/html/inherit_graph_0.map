@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_csapat.html" title="A csapatok szülőobjektuma. Ez írja je a csapatok közös viselkedését, tulajdonságait." alt="" coords="5,55,68,80"/>
+<area shape="rect" id="node2" href="$class_foci.html" title="A focicsapat objektumja, amely örökli a Csapat objektum tulajdonságait." alt="" coords="121,5,167,31"/>
+<area shape="rect" id="node3" href="$class_kezi.html" title="A kézilabda csapat objektumja, amely örökli a Csapat objektum tulajdonságait." alt="" coords="120,55,168,80"/>
+<area shape="rect" id="node4" href="$class_kosar.html" title="A kosárlabda csapat objektumja, amely örökli a Csapat objektum tulajdonságait." alt="" coords="116,104,172,129"/>
+</map>

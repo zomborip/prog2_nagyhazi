@@ -1,0 +1,5 @@
+<map id="Kosar::getPomPomDb" name="Kosar::getPomPomDb">
+<area shape="rect" id="node1" title="Visszaadja a pompomlányok számát." alt="" coords="200,31,352,56"/>
+<area shape="rect" id="node2" href="$class_menu.html#a3ce31da2913ce93598f5df8134d0ac94" title="Egy adott listaelem sorának hosszát adja vissza. Design felhasználási céllal." alt="" coords="5,5,152,31"/>
+<area shape="rect" id="node3" href="$class_menu.html#a1230f5837802b5760ede2416b2a5069c" title="Egy listaelemet ír ki megformázva." alt="" coords="23,55,134,80"/>
+</map>

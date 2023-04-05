@@ -1,0 +1,11 @@
+<map id="Menu::editKeziMenu" name="Menu::editKeziMenu">
+<area shape="rect" id="node1" title="A láncolt lista egy elemét módosító almenü." alt="" coords="5,80,147,105"/>
+<area shape="rect" id="node2" href="$class_kezi.html#ad46f6b62ded92e9321d57634d00af62d" title="A megadott számmal növeli a tamogatas változót." alt="" coords="195,5,336,31"/>
+<area shape="rect" id="node3" href="$class_nyilvantartas.html#a8dcbf9bb384068f31d89f3850674f0c2" title="Elmenti az összes listát (keziCS, kosarCS, fociCS) a megfelelő fileokba." alt="" coords="200,55,331,80"/>
+<area shape="rect" id="node7" href="$class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="196,104,335,129"/>
+<area shape="rect" id="node8" href="$class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="210,153,321,179"/>
+<area shape="rect" id="node4" href="$class_nyilvantartas.html#acf3d8ec657e4a1e0038a20c14acc6cf6" title="Elmenti a foci.txt fileba a fociCS adatait." alt="" coords="389,5,543,31"/>
+<area shape="rect" id="node5" href="$class_nyilvantartas.html#a467a1363bccc1e5a09be70b67f4900a8" title="Elmenti a kezi.txt fileba a keziCS adatait." alt="" coords="388,55,544,80"/>
+<area shape="rect" id="node6" href="$class_nyilvantartas.html#a61c60dc62b7ccfc3304e426fef3c4363" title="Elmenti a kosar.txt fileba a kosarCS adatait." alt="" coords="384,104,548,129"/>
+<area shape="rect" id="node9" href="$class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="411,153,521,179"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="Nyilvantartas::strdel" name="Nyilvantartas::strdel">
+<area shape="rect" id="node1" title="Felszabadít és nullptr&#45;é tesz egy karakterpointert. Statikus." alt="" coords="535,55,671,80"/>
+<area shape="rect" id="node2" href="$class_nyilvantartas.html#a72844b808d5a49d463e832af6c57fbe3" title="Betölti a foci.txt fileból a kosárlabda csapat adatait a fociCS listába." alt="" coords="329,5,482,31"/>
+<area shape="rect" id="node5" href="$class_nyilvantartas.html#aefa79a45a52a8f58ca955239e92a2f42" title="Betölti a kezi.txt fileból a kézilabda csapat adatait a keziCS listába." alt="" coords="328,55,483,80"/>
+<area shape="rect" id="node6" href="$class_nyilvantartas.html#a8b9b4e975e6fca4115414685d75d11d4" title="Betölti a kosar.txt fileból a kosárlabda csapat adatait a kosarCS listába." alt="" coords="324,104,487,129"/>
+<area shape="rect" id="node3" href="$class_nyilvantartas.html#a27fbdde787ab60aa9f019f7d59d9eaef" title="Betölti az összes fileból (kezi.txt, kosar.txt, foci.txt) az adatokat a." alt="" coords="148,55,276,80"/>
+<area shape="rect" id="node4" href="$class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Default konstruktor, betölti a nyilvántartás adatait fileból." alt="" coords="5,55,100,80"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Nyilvantartas::save" name="Nyilvantartas::save">
+<area shape="rect" id="node1" title="Elmenti az összes listát (keziCS, kosarCS, fociCS) a megfelelő fileokba." alt="" coords="5,55,136,80"/>
+<area shape="rect" id="node2" href="$class_nyilvantartas.html#acf3d8ec657e4a1e0038a20c14acc6cf6" title="Elmenti a foci.txt fileba a fociCS adatait." alt="" coords="189,5,343,31"/>
+<area shape="rect" id="node3" href="$class_nyilvantartas.html#a467a1363bccc1e5a09be70b67f4900a8" title="Elmenti a kezi.txt fileba a keziCS adatait." alt="" coords="188,55,344,80"/>
+<area shape="rect" id="node4" href="$class_nyilvantartas.html#a61c60dc62b7ccfc3304e426fef3c4363" title="Elmenti a kosar.txt fileba a kosarCS adatait." alt="" coords="184,104,348,129"/>
+</map>

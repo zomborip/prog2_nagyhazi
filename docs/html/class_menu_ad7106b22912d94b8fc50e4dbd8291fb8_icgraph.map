@@ -1,0 +1,4 @@
+<map id="Menu::printAll" name="Menu::printAll">
+<area shape="rect" id="node1" title="Kilistázza megformázva az összes adatot." alt="" coords="157,5,260,31"/>
+<area shape="rect" id="node2" href="$class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,5,109,31"/>
+</map>

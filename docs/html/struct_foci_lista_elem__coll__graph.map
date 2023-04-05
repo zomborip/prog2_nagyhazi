@@ -1,0 +1,5 @@
+<map id="FociListaElem" name="FociListaElem">
+<area shape="rect" id="node1" title="A Foci osztály láncolt listázásához szolgáló struktúra. Ez egy darab listaelem." alt="" coords="21,536,126,613"/>
+<area shape="rect" id="node2" href="$class_foci.html" title="A focicsapat objektumja, amely örökli a Csapat objektum tulajdonságait." alt="" coords="5,337,141,473"/>
+<area shape="rect" id="node3" href="$class_csapat.html" title="A csapatok szülőobjektuma. Ez írja je a csapatok közös viselkedését, tulajdonságait." alt="" coords="18,5,129,288"/>
+</map>

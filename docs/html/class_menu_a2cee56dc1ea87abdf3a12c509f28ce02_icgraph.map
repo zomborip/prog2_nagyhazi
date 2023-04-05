@@ -1,0 +1,5 @@
+<map id="Menu::keresKeziMenu" name="Menu::keresKeziMenu">
+<area shape="rect" id="node1" title="Egy kézilabda csapat keresési menüje." alt="" coords="324,5,476,31"/>
+<area shape="rect" id="node2" href="$class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="157,5,276,31"/>
+<area shape="rect" id="node3" href="$class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,5,109,31"/>
+</map>

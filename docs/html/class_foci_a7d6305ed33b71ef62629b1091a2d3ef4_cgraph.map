@@ -1,0 +1,4 @@
+<map id="Foci::Foci" name="Foci::Foci">
+<area shape="rect" id="node1" title="A default konstruktor, amely a Csapat default konstruktorát használja." alt="" coords="5,5,85,31"/>
+<area shape="rect" id="node2" href="$class_csapat.html#afcff7ec2eef4c1f450d6c7b8b9a5b707" title="A csapat típusát beállító függvény (többször átállítani nincs értelme, mert úgyis öröklődik és az örö..." alt="" coords="133,5,253,31"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="Nyilvantartas::saveFoci" name="Nyilvantartas::saveFoci">
+<area shape="rect" id="node1" title="Elmenti a foci.txt fileba a fociCS adatait." alt="" coords="916,164,1071,190"/>
+<area shape="rect" id="node2" href="$class_nyilvantartas.html#a8dcbf9bb384068f31d89f3850674f0c2" title="Elmenti az összes listát (keziCS, kosarCS, fociCS) a megfelelő fileokba." alt="" coords="737,164,868,190"/>
+<area shape="rect" id="node3" href="$class_menu.html#aa92add4d48ff869624f7ccc4813f0348" title="A láncolt lista egy elemét módosító almenü." alt="" coords="545,38,685,63"/>
+<area shape="rect" id="node4" href="$class_menu.html#a81a694a66ab7541066719373533ea60c" title="Egy focilabda csapat keresési menüje." alt="" coords="337,38,487,63"/>
+<area shape="rect" id="node7" href="$class_menu.html#a62f3e21d81bed61fd29f9910bc86b1d2" title="A láncolt lista egy elemét módosító almenü." alt="" coords="544,190,685,215"/>
+<area shape="rect" id="node8" href="$class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02" title="Egy kézilabda csapat keresési menüje." alt="" coords="336,139,488,164"/>
+<area shape="rect" id="node10" href="$class_menu.html#a54e5d7069a346abf5471f0b321055d6f" title="A láncolt lista egy elemét módosító almenü." alt="" coords="540,291,689,316"/>
+<area shape="rect" id="node11" href="$class_menu.html#a39be72db102923be41b2516836714018" title="Egy kosárlabda csapat keresési menüje." alt="" coords="332,240,492,266"/>
+<area shape="rect" id="node13" href="$class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="360,88,464,114"/>
+<area shape="rect" id="node14" href="$class_menu.html#a831387f51358cfb88cd018e1777bc980" title="Destruktor, lementi a nyilvántartás adatait fileokba." alt="" coords="563,340,666,366"/>
+<area shape="rect" id="node5" href="$class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="163,64,278,90"/>
+<area shape="rect" id="node6" href="$class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,114,109,139"/>
+<area shape="rect" id="node9" href="$class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="161,114,280,139"/>
+<area shape="rect" id="node12" href="$class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="157,163,284,188"/>
+</map>
