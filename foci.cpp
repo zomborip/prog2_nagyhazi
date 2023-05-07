@@ -11,8 +11,6 @@ Foci::Foci(const char *p = "", const int n = 0) :
   setTipus(FOCI);
 }
 
-void Foci::addEdzo() {edzoDB++;}
-
 void Foci::addEdzo(const int n) {edzoDB = n;}
 
 const int Foci::getEdzokszama() const {return edzoDB;}

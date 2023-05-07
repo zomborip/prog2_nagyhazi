@@ -7,31 +7,10 @@
 #include "foci.h"
 #include "memtrace.h"
 
-/// @brief A Kezi osztály láncolt listázásához szolgáló struktúra. Ez egy darab listaelem.
-struct KeziListaElem {
-  /// @brief A listaelem adata, ami egy Kezi osztály.
-  Kezi adat;
-
-  /// @brief A következő listaelemre mutató pointer.
-  KeziListaElem *kovi;
-};
-
-/// @brief A Kosar osztály láncolt listázásához szolgáló struktúra. Ez egy darab listaelem.
-struct KosarListaElem {
-  /// @brief A listaelem adata, ami egy Kosar osztály.
-  Kosar adat;
-
-  /// @brief A következő listaelemre mutató pointer.
-  KosarListaElem *kovi;
-};
-
-/// @brief A Foci osztály láncolt listázásához szolgáló struktúra. Ez egy darab listaelem.
-struct FociListaElem {
-  /// @brief A listaelem adata, ami egy Foci osztály.
-  Foci adat;
-
-  /// @brief A következő listaelemre mutató pointer.
-  FociListaElem *kovi;
+/// @brief Láncolt listaelem
+struct Lista {
+  Csapat *adat;
+  Lista *kovi;
 };
 
 /// @brief A nyilvántartás osztály. Ez tárolja a csapatokat (Kosar, Foci, Kezi) láncolt listákban.
@@ -39,46 +18,17 @@ struct FociListaElem {
 /// @brief A program futása során ebből több mint egyet létrehozni nem kell (nem értelmes).
 class Nyilvantartas {
   private:
-    /// @brief A kézilabda csapatokat tároló láncolt lista.
-    KeziListaElem   *keziCS;
-    
-    /// @brief A kosárlabda csapatokat tároló láncolt lista.
-    KosarListaElem  *kosarCS;
-
-    /// @brief A focilabda csapatokat tároló láncolt lista. 
-    FociListaElem   *fociCS;
+    /// @brief A csapatokat tároló lista.
+    Lista *csapatok;
 
     /// @brief A kézilabda csapatokat táloló láncolt listát felszabadító segédfüggvény.
-    void delKezi(){
-      if (keziCS != nullptr) {
-        KeziListaElem* i = keziCS;
+    void delAll(){
+      if (csapatok != nullptr) {
+        Lista* i = csapatok;
         while (i != nullptr) {
-          KeziListaElem *kov = i->kovi;
-          delete[] i;
-          i = kov;
-        }
-      }
-    }
-
-    /// @brief A kosárlabda csapatokat táloló láncolt listát felszabadító segédfüggvény.
-    void delKosar(){
-      if (kosarCS != nullptr) {
-        KosarListaElem* i = kosarCS;
-        while (i != nullptr) {
-          KosarListaElem *kov = i->kovi;
-          delete[] i;
-          i = kov;
-        }
-      }
-    }
-
-    /// @brief A focilabda csapatokat táloló láncolt listát felszabadító segédfüggvény.
-    void delFoci(){
-      if (fociCS != nullptr) {
-        FociListaElem* i = fociCS;
-        while (i != nullptr) {
-          FociListaElem *kov = i->kovi;
-          delete[] i;
+          Lista *kov = i->kovi;
+          delete i->adat;
+          delete i;
           i = kov;
         }
       }
@@ -104,25 +54,16 @@ class Nyilvantartas {
 
     /// @brief A default konstruktor, amely 'nem csinál semmit'. Magyarul inicializála a 
     /// @brief láncolt listákat. (mindegyiket nullptr-re rakja).
-    Nyilvantartas() : keziCS(nullptr), kosarCS(nullptr), fociCS(nullptr) {}
+    Nyilvantartas() : csapatok(nullptr) {}
 
     /// @brief A destruktor, felszabadítja a láncolt listákat a segédfüggvények segítségével.
     ~Nyilvantartas();
 
-    /// @brief Létrehoz egy új kézilabda láncolt lista elemet, beláncolja a listába, majd 
+    /// @brief Létrehoz egy új láncolt lista elemet, beláncolja a listába, majd 
     /// @brief visszaadja az erre mutató pointer (azért, hogy lehessen vele dolgozni.)
+    /// @param tipus Az új csapat típusa
     /// @return Az újjonnan létrehozott láncolt listaelem pointere.
-    KeziListaElem   *ujKezi();
-
-    /// @brief Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd 
-    /// @brief visszaadja az erre mutató pointer (azért, hogy lehessen vele dolgozni.)
-    /// @return Az újjonnan létrehozott láncolt listaelem pointere.
-    KosarListaElem  *ujKosar();
-
-    /// @brief Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd 
-    /// @brief visszaadja az erre mutató pointer (azért, hogy lehessen vele dolgozni.)
-    /// @return Az újjonnan létrehozott láncolt listaelem pointere.
-    FociListaElem   *ujFoci();
+    Lista *uj(Tipus);
 
     /// @brief Beleláncol a listába a paramétereknek megfelelő Kézilabda csapatot.
     /// @param csapatnev a csapat neve.
@@ -152,41 +93,15 @@ class Nyilvantartas {
     /// @brief A paraméternek megfelelő nevű csapatra mutató pointert ad vissza. Kikeresi a láncolt listából.
     /// @param csapat_nev a keresendő csapat neve.
     /// @return A keresendő csapatra mutató pointer, VAGY nullptr ha nem található ilyen csapat.
-    KeziListaElem   *findKezi(const char*) const;
-
-    /// @brief A paraméternek megfelelő nevű csapatra mutató pointert ad vissza. Kikeresi a láncolt listából.
-    /// @param csapat_nev a keresendő csapat neve.
-    /// @return A keresendő csapatra mutató pointer, VAGY nullptr ha nem található ilyen csapat.
-    KosarListaElem  *findKosar(const char*) const;
-
-    /// @brief A paraméternek megfelelő nevű csapatra mutató pointert ad vissza. Kikeresi a láncolt listából.
-    /// @param csapat_nev a keresendő csapat neve.
-    /// @return A keresendő csapatra mutató pointer, VAGY nullptr ha nem található ilyen csapat.
-    FociListaElem   *findFoci(const char*) const;
+    Lista *find(const char*) const;
     
     /// @brief Kitörli a láncolt listából a paraméterben megadott listaelemet.
     /// @param lista_elem a láncolt listában egy elem-re mutató pointer.
-    void rm(KeziListaElem *&);
-
-    /// @brief Kitörli a láncolt listából a paraméterben megadott listaelemet.
-    /// @param lista_elem a láncolt listában egy elem-re mutató pointer.
-    void rm(KosarListaElem *&);
+    void rm(Lista *&);
     
-    /// @brief Kitörli a láncolt listából a paraméterben megadott listaelemet.
-    /// @param lista_elem a láncolt listában egy elem-re mutató pointer.
-    void rm(FociListaElem *&);
-    
-    /// @brief Visszaadja a Kézilabda csapatok láncolt listáját.
+    /// @brief Visszaadja a csapatok láncolt listáját.
     /// @return Az első listaelemre mutató pointer, vagy nullptr ha üres a lista.
-    KeziListaElem   *getKeziLista() const;
-
-    /// @brief Visszaadja a Kosárlabda csapatok láncolt listáját.
-    /// @return Az első listaelemre mutató pointer, vagy nullptr ha üres a lista.
-    KosarListaElem  *getKosarLista() const;
-
-    /// @brief Visszaadja a Focilabda csapatok láncolt listáját.
-    /// @return Az első listaelemre mutató pointer, vagy nullptr ha üres a lista.
-    FociListaElem   *getFociLista() const;
+    Lista *getLista() const;
 
     /// @brief Betölti a kezi.txt fileból a kézilabda csapat adatait a keziCS listába.
     /// @return Igaz, ha sikerült betölteni, hamis ha nem.

@@ -1,0 +1,4 @@
+<map id="Nyilvantartas::delAll" name="Nyilvantartas::delAll">
+<area shape="rect" id="node1" title="A kézilabda csapatokat táloló láncolt listát felszabadító segédfüggvény." alt="" coords="240,5,376,31"/>
+<area shape="rect" id="node2" href="$class_nyilvantartas.html#ac8a89a7ed8a45d58b53b9c71bff74b76" title="A destruktor, felszabadítja a láncolt listákat a segédfüggvények segítségével." alt="" coords="5,5,192,31"/>
+</map>

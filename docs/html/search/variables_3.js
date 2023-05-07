@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nev_0',['nev',['../class_csapat.html#a6185e84380b5deabfc49e66cab8c84ff',1,'Csapat']]]
+  ['edzodb_0',['edzoDB',['../class_foci.html#a0fb2f6fb6fb72b3318acf89c736316e8',1,'Foci']]]
 ];

@@ -1,36 +1,35 @@
 <map id="Menu::fociMenu" name="Menu::fociMenu">
-<area shape="rect" id="node1" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="5,525,120,551"/>
-<area shape="rect" id="node2" href="$class_menu.html#a81a694a66ab7541066719373533ea60c" title="Egy focilabda csapat keresési menüje." alt="" coords="168,525,319,551"/>
-<area shape="rect" id="node20" href="$class_menu.html#a16d89092ef2464d51932e29adadf0939" title="Kilistázza megformázva a Focilabda (Foci) csapatokat." alt="" coords="385,700,497,725"/>
-<area shape="rect" id="node25" href="$class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="191,424,295,449"/>
-<area shape="rect" id="node3" href="$class_menu.html#aa92add4d48ff869624f7ccc4813f0348" title="A láncolt lista egy elemét módosító almenü." alt="" coords="371,356,511,381"/>
-<area shape="rect" id="node5" href="$class_nyilvantartas.html#a8dcbf9bb384068f31d89f3850674f0c2" title="Elmenti az összes listát (keziCS, kosarCS, fociCS) a megfelelő fileokba." alt="" coords="578,437,709,463"/>
-<area shape="rect" id="node12" href="$class_nyilvantartas.html#a0d3e5cfab71a0e9e94acdee6ce79dfac" title="A paraméternek megfelelő nevű csapatra mutató pointert ad vissza. Kikeresi a láncolt listából." alt="" coords="367,525,516,551"/>
-<area shape="rect" id="node13" href="$class_menu.html#a131e748e8f24d3dd7cdda924db76b414" title="Egy listaelemet ír ki megformázva." alt="" coords="386,575,497,600"/>
-<area shape="rect" id="node19" href="$class_nyilvantartas.html#aa6afbf48b834dd04efbd123b605c70c6" title="Kitörli a láncolt listából a paraméterben megadott listaelemet." alt="" coords="382,624,501,649"/>
-<area shape="rect" id="node4" href="$class_foci.html#a0c70d3a8339645645c1332a877805f16" title="Egy darab új edzőt ad hozzá a csapathoz. Növeli az edzoDB countert eggyel." alt="" coords="809,351,916,376"/>
-<area shape="rect" id="node9" href="$class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="793,252,932,277"/>
-<area shape="rect" id="node10" href="$class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="807,203,918,228"/>
-<area shape="rect" id="node6" href="$class_nyilvantartas.html#acf3d8ec657e4a1e0038a20c14acc6cf6" title="Elmenti a foci.txt fileba a fociCS adatait." alt="" coords="785,449,940,475"/>
-<area shape="rect" id="node7" href="$class_nyilvantartas.html#a467a1363bccc1e5a09be70b67f4900a8" title="Elmenti a kezi.txt fileba a keziCS adatait." alt="" coords="785,499,941,524"/>
-<area shape="rect" id="node8" href="$class_nyilvantartas.html#a61c60dc62b7ccfc3304e426fef3c4363" title="Elmenti a kosar.txt fileba a kosarCS adatait." alt="" coords="781,400,945,425"/>
-<area shape="rect" id="node11" href="$class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="1003,203,1112,228"/>
-<area shape="rect" id="node14" href="$class_csapat.html#ac88ac916828fec75fc1d84286e88be03" title="Visszaadja a csapat létszámát." alt="" coords="793,597,932,623"/>
-<area shape="rect" id="node15" href="$class_csapat.html#a4a9d5a571b4fb0936b33e5d61274f7a8" title="Visszaadja a csapat nevét." alt="" coords="807,647,918,672"/>
-<area shape="rect" id="node16" href="$class_menu.html#ac183ce914dd13e202c2d0f822d2a8a02" title="Egy adott listaelem sorának hosszát adja vissza. Design felhasználási céllal." alt="" coords="570,625,717,651"/>
-<area shape="rect" id="node17" href="$class_kezi.html#a613f5e5f275485d0a4fab918e567aae0" title="Visszaadja a támogatások számát." alt="" coords="793,548,932,573"/>
-<area shape="rect" id="node18" href="$class_nyilvantartas.html#a9604b1a0d7f81045cc47b51747f8424d" title="Kiszamolja egy szám legnagyobb helyiértékét (tehát, milyen hosszú a szám). Statikus függvény." alt="" coords="795,696,930,721"/>
-<area shape="rect" id="node21" href="$class_nyilvantartas.html#aeeb7ed431f80b9ffbd90bdd24794bddc" title="Visszaadja a Focilabda csapatok láncolt listáját." alt="" coords="775,745,950,771"/>
-<area shape="rect" id="node22" href="$class_menu.html#aeade250ba2c9aefaca95036ee0339992" title="Kiszámolja a leghoszabb sor hosszát a nyilvántartásban. Erre a TAB&#45;ok és a kinézet miatt van szügség." alt="" coords="567,777,720,803"/>
-<area shape="rect" id="node23" href="$class_nyilvantartas.html#ad6b8de317a7fb06ef561284645db2567" title="Visszaadja a Kézilabda csapatok láncolt listáját." alt="" coords="775,795,951,820"/>
-<area shape="rect" id="node24" href="$class_nyilvantartas.html#ac5d09b83892e100ac2068ad9967bc06f" title="Visszaadja a Kosárlabda csapatok láncolt listáját." alt="" coords="771,844,955,869"/>
-<area shape="rect" id="node26" href="$class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="379,229,504,255"/>
-<area shape="rect" id="node27" href="$class_nyilvantartas.html#a85746723b3b5f24b54e8b2c3348dd30a" title="Beleláncol a listába a paramétereknek megfelelő Focilabda csapatot." alt="" coords="568,305,719,331"/>
-<area shape="rect" id="node29" href="$class_nyilvantartas.html#a64c7d359d2fc06bd3ada15154c5d5fbd" title="Beleláncol a listába a paramétereknek megfelelő Kézilabda csapatot." alt="" coords="568,104,719,129"/>
-<area shape="rect" id="node32" href="$class_nyilvantartas.html#a622c043ff96e55237efc029bd295984c" title="Beleláncol a listába a paramétereknek megfelelő Kosárlabda csapatot." alt="" coords="564,153,723,179"/>
-<area shape="rect" id="node28" href="$class_nyilvantartas.html#af05bda7d2042e5d655e570b3a8b142d0" title="Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="793,301,932,327"/>
-<area shape="rect" id="node30" href="$class_kezi.html#ad46f6b62ded92e9321d57634d00af62d" title="A megadott számmal növeli a tamogatas változót." alt="" coords="792,55,933,80"/>
-<area shape="rect" id="node31" href="$class_nyilvantartas.html#a66fe61d7c04ecf59b40a374efef4e09b" title="Létrehoz egy új kézilabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="793,5,933,31"/>
-<area shape="rect" id="node33" href="$class_kosar.html#a6187c448bd5bfb9382ced21545e8086c" title="Egy darab pompomlányt ad hozzá a csapathoz." alt="" coords="794,104,931,129"/>
-<area shape="rect" id="node34" href="$class_nyilvantartas.html#ab192a1947f4d0ded57bdc40778ee56a2" title="Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="789,153,937,179"/>
+<area shape="rect" id="node1" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="5,404,120,429"/>
+<area shape="rect" id="node2" href="$class_menu.html#a81a694a66ab7541066719373533ea60c" title="Egy focilabda csapat keresési menüje." alt="" coords="168,404,319,429"/>
+<area shape="rect" id="node23" href="$class_menu.html#a16d89092ef2464d51932e29adadf0939" title="Kilistázza megformázva a Focilabda (Foci) csapatokat." alt="" coords="373,631,485,656"/>
+<area shape="rect" id="node26" href="$class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="191,277,295,303"/>
+<area shape="rect" id="node3" href="$class_menu.html#a1cd6ffee4b264c854024f6c6fc91868a" title="A láncolt lista egy elemét módosító almenü." alt="" coords="549,227,689,252"/>
+<area shape="rect" id="node5" href="$class_csapat.html#a1e724883ce504521eb068a1031074a9c" title="Viszaadja a csapat típusát a Tipus enum segítségével." alt="" coords="769,404,889,429"/>
+<area shape="rect" id="node6" href="$class_nyilvantartas.html#a8dcbf9bb384068f31d89f3850674f0c2" title="Elmenti az összes listát (keziCS, kosarCS, fociCS) a megfelelő fileokba." alt="" coords="764,301,895,327"/>
+<area shape="rect" id="node13" href="$class_nyilvantartas.html#ace26b7e278dc17a3d20c402c2de82a7e" title="A paraméternek megfelelő nevű csapatra mutató pointert ad vissza. Kikeresi a láncolt listából." alt="" coords="367,580,491,605"/>
+<area shape="rect" id="node14" href="$class_menu.html#a3b2e80da44059f552e13e61b3693c3ee" title="Egy listaelemet ír ki megformázva." alt="" coords="374,531,485,556"/>
+<area shape="rect" id="node22" href="$class_nyilvantartas.html#a225b6a03837caa58618b22b1394db7d2" title="Kitörli a láncolt listából a paraméterben megadott listaelemet." alt="" coords="370,379,489,404"/>
+<area shape="rect" id="node4" href="$class_csapat.html#aeba636b5132ac77411a93e95cd0503ae" title="Focicsapatokra vonatkozó függvénypointer." alt="" coords="768,252,891,277"/>
+<area shape="rect" id="node10" href="$class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="760,153,899,179"/>
+<area shape="rect" id="node11" href="$class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="774,203,885,228"/>
+<area shape="rect" id="node7" href="$class_nyilvantartas.html#acf3d8ec657e4a1e0038a20c14acc6cf6" title="Elmenti a foci.txt fileba a fociCS adatait." alt="" coords="965,351,1119,376"/>
+<area shape="rect" id="node8" href="$class_nyilvantartas.html#a467a1363bccc1e5a09be70b67f4900a8" title="Elmenti a kezi.txt fileba a keziCS adatait." alt="" coords="964,252,1120,277"/>
+<area shape="rect" id="node9" href="$class_nyilvantartas.html#a61c60dc62b7ccfc3304e426fef3c4363" title="Elmenti a kosar.txt fileba a kosarCS adatait." alt="" coords="960,301,1124,327"/>
+<area shape="rect" id="node12" href="$class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="987,203,1097,228"/>
+<area shape="rect" id="node15" href="$class_csapat.html#aa749d01e32c0d615df172e7c8b27cf7d" title="Focicsapatokra vonatkozó függvénypointer." alt="" coords="747,456,912,481"/>
+<area shape="rect" id="node16" href="$class_csapat.html#ac88ac916828fec75fc1d84286e88be03" title="Visszaadja a csapat létszámát." alt="" coords="760,507,899,532"/>
+<area shape="rect" id="node17" href="$class_csapat.html#a4a9d5a571b4fb0936b33e5d61274f7a8" title="Visszaadja a csapat nevét." alt="" coords="774,557,885,583"/>
+<area shape="rect" id="node18" href="$class_csapat.html#a8cc16ae5e9f3a263b3eb0ed3000dff85" title="Kosárcsapatra vonatkozó függvénypointer." alt="" coords="750,608,909,633"/>
+<area shape="rect" id="node19" href="$class_menu.html#aa8adcc5dd7c7c05b77b22b9e26e93a54" title="Egy adott listaelem sorának hosszát adja vissza. Design felhasználási céllal." alt="" coords="546,607,693,632"/>
+<area shape="rect" id="node20" href="$class_csapat.html#a0e252a6da8bfa87c54bf1f00cace545e" title="Kézicsapatra vonatkozó függvénypointer." alt="" coords="753,657,906,683"/>
+<area shape="rect" id="node21" href="$class_nyilvantartas.html#a9604b1a0d7f81045cc47b51747f8424d" title="Kiszamolja egy szám legnagyobb helyiértékét (tehát, milyen hosszú a szám). Statikus függvény." alt="" coords="762,708,897,733"/>
+<area shape="rect" id="node24" href="$class_nyilvantartas.html#afee3bf2152317a8a59d5a5b2c4585dfc" title="Visszaadja a csapatok láncolt listáját." alt="" coords="754,784,905,809"/>
+<area shape="rect" id="node25" href="$class_menu.html#aeade250ba2c9aefaca95036ee0339992" title="Kiszámolja a leghoszabb sor hosszát a nyilvántartásban. Erre a TAB&#45;ok és a kinézet miatt van szügség." alt="" coords="543,759,696,784"/>
+<area shape="rect" id="node27" href="$class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="367,152,492,177"/>
+<area shape="rect" id="node28" href="$class_nyilvantartas.html#a85746723b3b5f24b54e8b2c3348dd30a" title="Beleláncol a listába a paramétereknek megfelelő Focilabda csapatot." alt="" coords="544,177,695,203"/>
+<area shape="rect" id="node30" href="$class_nyilvantartas.html#a64c7d359d2fc06bd3ada15154c5d5fbd" title="Beleláncol a listába a paramétereknek megfelelő Kézilabda csapatot." alt="" coords="544,79,695,104"/>
+<area shape="rect" id="node32" href="$class_nyilvantartas.html#a622c043ff96e55237efc029bd295984c" title="Beleláncol a listába a paramétereknek megfelelő Kosárlabda csapatot." alt="" coords="540,128,699,153"/>
+<area shape="rect" id="node29" href="$class_nyilvantartas.html#a293fc5789cd5ecbd57c94033cdbd4d7d" title="Létrehoz egy új láncolt lista elemet, beláncolja a listába, majd." alt="" coords="772,55,887,80"/>
+<area shape="rect" id="node31" href="$class_csapat.html#af79780d2d9114e5f5a095375a8222377" title="Kézicsapatra vonatkozó függvénypointer." alt="" coords="751,5,907,31"/>
+<area shape="rect" id="node33" href="$class_csapat.html#a63814f0361836f43d029917086a7dc13" title="Kosárcsapatra vonatkozó függvénypointer." alt="" coords="757,104,901,129"/>
 </map>

@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Nagyhazi: Nyilvantartas Class Reference</title>
+<title>Nagyházi: Nyilvantartas Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Nagyhazi
+   <div id="projectname">Nagyházi
    </div>
+   <div id="projectbrief">Sportegyesület</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_nyilvantartas.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,11 +89,12 @@ $(function() {
 </div>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_nyilvantartas-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Nyilvantartas Class Reference</div></div>
 </div><!--header-->
@@ -86,7 +109,9 @@ Collaboration diagram for Nyilvantartas:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_nyilvantartas__coll__graph.png" border="0" usemap="#a_nyilvantartas_coll__map" alt="Collaboration graph"/></div>
 <map name="a_nyilvantartas_coll__map" id="a_nyilvantartas_coll__map">
-<area shape="rect" title="A nyilvántartás osztály. Ez tárolja a csapatokat (Kosar, Foci, Kezi) láncolt listákban." alt="" coords="5,5,129,273"/>
+<area shape="rect" title="A nyilvántartás osztály. Ez tárolja a csapatokat (Kosar, Foci, Kezi) láncolt listákban." alt="" coords="22,579,251,1052"/>
+<area shape="rect" href="struct_lista.html" title="Láncolt listaelem." alt="" coords="111,439,162,516"/>
+<area shape="rect" href="class_csapat.html" title="A csapatok szülőobjektuma. Ez írja je a csapatok közös viselkedését, tulajdonságait." alt="" coords="5,5,268,376"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -98,15 +123,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac8a89a7ed8a45d58b53b9c71bff74b76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#ac8a89a7ed8a45d58b53b9c71bff74b76">~Nyilvantartas</a> ()</td></tr>
 <tr class="memdesc:ac8a89a7ed8a45d58b53b9c71bff74b76"><td class="mdescLeft">&#160;</td><td class="mdescRight">A destruktor, felszabadítja a láncolt listákat a segédfüggvények segítségével.  <br /></td></tr>
 <tr class="separator:ac8a89a7ed8a45d58b53b9c71bff74b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66fe61d7c04ecf59b40a374efef4e09b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_kezi_lista_elem.html">KeziListaElem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#a66fe61d7c04ecf59b40a374efef4e09b">ujKezi</a> ()</td></tr>
-<tr class="memdesc:a66fe61d7c04ecf59b40a374efef4e09b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Létrehoz egy új kézilabda láncolt lista elemet, beláncolja a listába, majd.  <br /></td></tr>
-<tr class="separator:a66fe61d7c04ecf59b40a374efef4e09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab192a1947f4d0ded57bdc40778ee56a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_kosar_lista_elem.html">KosarListaElem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#ab192a1947f4d0ded57bdc40778ee56a2">ujKosar</a> ()</td></tr>
-<tr class="memdesc:ab192a1947f4d0ded57bdc40778ee56a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd.  <br /></td></tr>
-<tr class="separator:ab192a1947f4d0ded57bdc40778ee56a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af05bda7d2042e5d655e570b3a8b142d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_foci_lista_elem.html">FociListaElem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#af05bda7d2042e5d655e570b3a8b142d0">ujFoci</a> ()</td></tr>
-<tr class="memdesc:af05bda7d2042e5d655e570b3a8b142d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd.  <br /></td></tr>
-<tr class="separator:af05bda7d2042e5d655e570b3a8b142d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a293fc5789cd5ecbd57c94033cdbd4d7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lista.html">Lista</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#a293fc5789cd5ecbd57c94033cdbd4d7d">uj</a> (<a class="el" href="csapat_8h.html#acc8869282127c9c2dc3d8c41d882c879">Tipus</a>)</td></tr>
+<tr class="memdesc:a293fc5789cd5ecbd57c94033cdbd4d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Létrehoz egy új láncolt lista elemet, beláncolja a listába, majd.  <br /></td></tr>
+<tr class="separator:a293fc5789cd5ecbd57c94033cdbd4d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64c7d359d2fc06bd3ada15154c5d5fbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#a64c7d359d2fc06bd3ada15154c5d5fbd">addKezi</a> (const char *, const int, const int)</td></tr>
 <tr class="memdesc:a64c7d359d2fc06bd3ada15154c5d5fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Beleláncol a listába a paramétereknek megfelelő Kézilabda csapatot.  <br /></td></tr>
 <tr class="separator:a64c7d359d2fc06bd3ada15154c5d5fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,36 +135,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a85746723b3b5f24b54e8b2c3348dd30a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#a85746723b3b5f24b54e8b2c3348dd30a">addFoci</a> (const char *, const int, const int)</td></tr>
 <tr class="memdesc:a85746723b3b5f24b54e8b2c3348dd30a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Beleláncol a listába a paramétereknek megfelelő Focilabda csapatot.  <br /></td></tr>
 <tr class="separator:a85746723b3b5f24b54e8b2c3348dd30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b6c6b283ad4a460939f538373b3a81e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e">add</a> (const Tipus, const char *, const int, const int)</td></tr>
+<tr class="memitem:a2b6c6b283ad4a460939f538373b3a81e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e">add</a> (const <a class="el" href="csapat_8h.html#acc8869282127c9c2dc3d8c41d882c879">Tipus</a>, const char *, const int, const int)</td></tr>
 <tr class="memdesc:a2b6c6b283ad4a460939f538373b3a81e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot.  <br /></td></tr>
 <tr class="separator:a2b6c6b283ad4a460939f538373b3a81e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad88f93a5f0267032ad23e3549db2bf65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_kezi_lista_elem.html">KeziListaElem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#ad88f93a5f0267032ad23e3549db2bf65">findKezi</a> (const char *) const</td></tr>
-<tr class="memdesc:ad88f93a5f0267032ad23e3549db2bf65"><td class="mdescLeft">&#160;</td><td class="mdescRight">A paraméternek megfelelő nevű csapatra mutató pointert ad vissza. Kikeresi a láncolt listából.  <br /></td></tr>
-<tr class="separator:ad88f93a5f0267032ad23e3549db2bf65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8304e4987c64bb6b6f07b94a5feb663"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_kosar_lista_elem.html">KosarListaElem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#ad8304e4987c64bb6b6f07b94a5feb663">findKosar</a> (const char *) const</td></tr>
-<tr class="memdesc:ad8304e4987c64bb6b6f07b94a5feb663"><td class="mdescLeft">&#160;</td><td class="mdescRight">A paraméternek megfelelő nevű csapatra mutató pointert ad vissza. Kikeresi a láncolt listából.  <br /></td></tr>
-<tr class="separator:ad8304e4987c64bb6b6f07b94a5feb663"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d3e5cfab71a0e9e94acdee6ce79dfac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_foci_lista_elem.html">FociListaElem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#a0d3e5cfab71a0e9e94acdee6ce79dfac">findFoci</a> (const char *) const</td></tr>
-<tr class="memdesc:a0d3e5cfab71a0e9e94acdee6ce79dfac"><td class="mdescLeft">&#160;</td><td class="mdescRight">A paraméternek megfelelő nevű csapatra mutató pointert ad vissza. Kikeresi a láncolt listából.  <br /></td></tr>
-<tr class="separator:a0d3e5cfab71a0e9e94acdee6ce79dfac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6afbf48b834dd04efbd123b605c70c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#aa6afbf48b834dd04efbd123b605c70c6">rm</a> (<a class="el" href="struct_kezi_lista_elem.html">KeziListaElem</a> *&amp;)</td></tr>
-<tr class="memdesc:aa6afbf48b834dd04efbd123b605c70c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kitörli a láncolt listából a paraméterben megadott listaelemet.  <br /></td></tr>
-<tr class="separator:aa6afbf48b834dd04efbd123b605c70c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15e6dda9bc8c77ec55446be2b84054df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#a15e6dda9bc8c77ec55446be2b84054df">rm</a> (<a class="el" href="struct_kosar_lista_elem.html">KosarListaElem</a> *&amp;)</td></tr>
-<tr class="memdesc:a15e6dda9bc8c77ec55446be2b84054df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kitörli a láncolt listából a paraméterben megadott listaelemet.  <br /></td></tr>
-<tr class="separator:a15e6dda9bc8c77ec55446be2b84054df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b1ad27788acf3dac77268dbd03ca919"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#a8b1ad27788acf3dac77268dbd03ca919">rm</a> (<a class="el" href="struct_foci_lista_elem.html">FociListaElem</a> *&amp;)</td></tr>
-<tr class="memdesc:a8b1ad27788acf3dac77268dbd03ca919"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kitörli a láncolt listából a paraméterben megadott listaelemet.  <br /></td></tr>
-<tr class="separator:a8b1ad27788acf3dac77268dbd03ca919"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6b8de317a7fb06ef561284645db2567"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_kezi_lista_elem.html">KeziListaElem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#ad6b8de317a7fb06ef561284645db2567">getKeziLista</a> () const</td></tr>
-<tr class="memdesc:ad6b8de317a7fb06ef561284645db2567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visszaadja a Kézilabda csapatok láncolt listáját.  <br /></td></tr>
-<tr class="separator:ad6b8de317a7fb06ef561284645db2567"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5d09b83892e100ac2068ad9967bc06f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_kosar_lista_elem.html">KosarListaElem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#ac5d09b83892e100ac2068ad9967bc06f">getKosarLista</a> () const</td></tr>
-<tr class="memdesc:ac5d09b83892e100ac2068ad9967bc06f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visszaadja a Kosárlabda csapatok láncolt listáját.  <br /></td></tr>
-<tr class="separator:ac5d09b83892e100ac2068ad9967bc06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeb7ed431f80b9ffbd90bdd24794bddc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_foci_lista_elem.html">FociListaElem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#aeeb7ed431f80b9ffbd90bdd24794bddc">getFociLista</a> () const</td></tr>
-<tr class="memdesc:aeeb7ed431f80b9ffbd90bdd24794bddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visszaadja a Focilabda csapatok láncolt listáját.  <br /></td></tr>
-<tr class="separator:aeeb7ed431f80b9ffbd90bdd24794bddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace26b7e278dc17a3d20c402c2de82a7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lista.html">Lista</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#ace26b7e278dc17a3d20c402c2de82a7e">find</a> (const char *) const</td></tr>
+<tr class="memdesc:ace26b7e278dc17a3d20c402c2de82a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A paraméternek megfelelő nevű csapatra mutató pointert ad vissza. Kikeresi a láncolt listából.  <br /></td></tr>
+<tr class="separator:ace26b7e278dc17a3d20c402c2de82a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a225b6a03837caa58618b22b1394db7d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#a225b6a03837caa58618b22b1394db7d2">rm</a> (<a class="el" href="struct_lista.html">Lista</a> *&amp;)</td></tr>
+<tr class="memdesc:a225b6a03837caa58618b22b1394db7d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kitörli a láncolt listából a paraméterben megadott listaelemet.  <br /></td></tr>
+<tr class="separator:a225b6a03837caa58618b22b1394db7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee3bf2152317a8a59d5a5b2c4585dfc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lista.html">Lista</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#afee3bf2152317a8a59d5a5b2c4585dfc">getLista</a> () const</td></tr>
+<tr class="memdesc:afee3bf2152317a8a59d5a5b2c4585dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visszaadja a csapatok láncolt listáját.  <br /></td></tr>
+<tr class="separator:afee3bf2152317a8a59d5a5b2c4585dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefa79a45a52a8f58ca955239e92a2f42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#aefa79a45a52a8f58ca955239e92a2f42">loadKezi</a> ()</td></tr>
 <tr class="memdesc:aefa79a45a52a8f58ca955239e92a2f42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Betölti a kezi.txt fileból a kézilabda csapat adatait a keziCS listába.  <br /></td></tr>
 <tr class="separator:aefa79a45a52a8f58ca955239e92a2f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,13 +183,23 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aeeeb0f73cdd628b4bf835f86af3e295b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#aeeeb0f73cdd628b4bf835f86af3e295b">strdel</a> (char *&amp;)</td></tr>
 <tr class="memdesc:aeeeb0f73cdd628b4bf835f86af3e295b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Felszabadít és nullptr-é tesz egy karakterpointert. Statikus.  <br /></td></tr>
 <tr class="separator:aeeeb0f73cdd628b4bf835f86af3e295b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:abe6dcc49f43b156f94f80a7a4441b825"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#abe6dcc49f43b156f94f80a7a4441b825">delAll</a> ()</td></tr>
+<tr class="memdesc:abe6dcc49f43b156f94f80a7a4441b825"><td class="mdescLeft">&#160;</td><td class="mdescRight">A kézilabda csapatokat táloló láncolt listát felszabadító segédfüggvény.  <br /></td></tr>
+<tr class="separator:abe6dcc49f43b156f94f80a7a4441b825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a425878bc514b08709e4d7276cf898a45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lista.html">Lista</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nyilvantartas.html#a425878bc514b08709e4d7276cf898a45">csapatok</a></td></tr>
+<tr class="memdesc:a425878bc514b08709e4d7276cf898a45"><td class="mdescLeft">&#160;</td><td class="mdescRight">A csapatokat tároló lista.  <br /></td></tr>
+<tr class="separator:a425878bc514b08709e4d7276cf898a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A nyilvántartás osztály. Ez tárolja a csapatokat (<a class="el" href="class_kosar.html" title="A kosárlabda csapat objektumja, amely örökli a Csapat objektum tulajdonságait.">Kosar</a>, <a class="el" href="class_foci.html" title="A focicsapat objektumja, amely örökli a Csapat objektum tulajdonságait.">Foci</a>, <a class="el" href="class_kezi.html" title="A kézilabda csapat objektumja, amely örökli a Csapat objektum tulajdonságait.">Kezi</a>) láncolt listákban. </p>
 <p>Képes ezeket fileokból beolvasni, lementeni. Hozzáadni csapatokat, törölni csapatokat.</p>
 <p>A program futása során ebből több mint egyet létrehozni nem kell (nem értelmes). </p>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8h_source.html#l00040">40</a> of file <a class="el" href="nyilvantartas_8h_source.html">nyilvantartas.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae587040b0983e0b3e60fc0e88f844e3f" name="ae587040b0983e0b3e60fc0e88f844e3f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae587040b0983e0b3e60fc0e88f844e3f">&#9670;&#160;</a></span>Nyilvantartas()</h2>
@@ -216,8 +227,6 @@ Static Public Member Functions</h2></td></tr>
 <p>A default konstruktor, amely 'nem csinál semmit'. Magyarul inicializála a. </p>
 <p>láncolt listákat. (mindegyiket nullptr-re rakja). </p>
 
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8h_source.html#l00107">107</a> of file <a class="el" href="nyilvantartas_8h_source.html">nyilvantartas.h</a>.</p>
-
 </div>
 </div>
 <a id="ac8a89a7ed8a45d58b53b9c71bff74b76" name="ac8a89a7ed8a45d58b53b9c71bff74b76"></a>
@@ -236,8 +245,15 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A destruktor, felszabadítja a láncolt listákat a segédfüggvények segítségével. </p>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00016">16</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_nyilvantartas_ac8a89a7ed8a45d58b53b9c71bff74b76_cgraph.png" border="0" usemap="#aclass_nyilvantartas_ac8a89a7ed8a45d58b53b9c71bff74b76_cgraph" alt=""/></div>
+<map name="aclass_nyilvantartas_ac8a89a7ed8a45d58b53b9c71bff74b76_cgraph" id="aclass_nyilvantartas_ac8a89a7ed8a45d58b53b9c71bff74b76_cgraph">
+<area shape="rect" title="A destruktor, felszabadítja a láncolt listákat a segédfüggvények segítségével." alt="" coords="5,5,192,31"/>
+<area shape="rect" href="class_nyilvantartas.html#abe6dcc49f43b156f94f80a7a4441b825" title="A kézilabda csapatokat táloló láncolt listát felszabadító segédfüggvény." alt="" coords="240,5,376,31"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -251,7 +267,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void Nyilvantartas::add </td>
           <td>(</td>
-          <td class="paramtype">const Tipus&#160;</td>
+          <td class="paramtype">const <a class="el" href="csapat_8h.html#acc8869282127c9c2dc3d8c41d882c879">Tipus</a>&#160;</td>
           <td class="paramname"><em>T</em>, </td>
         </tr>
         <tr>
@@ -290,26 +306,22 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00085">85</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_nyilvantartas_a2b6c6b283ad4a460939f538373b3a81e_cgraph.png" border="0" usemap="#aclass_nyilvantartas_a2b6c6b283ad4a460939f538373b3a81e_cgraph" alt=""/></div>
 <map name="aclass_nyilvantartas_a2b6c6b283ad4a460939f538373b3a81e_cgraph" id="aclass_nyilvantartas_a2b6c6b283ad4a460939f538373b3a81e_cgraph">
-<area shape="rect" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="5,203,131,228"/>
-<area shape="rect" href="class_nyilvantartas.html#a85746723b3b5f24b54e8b2c3348dd30a" title="Beleláncol a listába a paramétereknek megfelelő Focilabda csapatot." alt="" coords="183,153,333,179"/>
-<area shape="rect" href="class_nyilvantartas.html#a64c7d359d2fc06bd3ada15154c5d5fbd" title="Beleláncol a listába a paramétereknek megfelelő Kézilabda csapatot." alt="" coords="183,252,333,277"/>
-<area shape="rect" href="class_nyilvantartas.html#a622c043ff96e55237efc029bd295984c" title="Beleláncol a listába a paramétereknek megfelelő Kosárlabda csapatot." alt="" coords="179,203,337,228"/>
-<area shape="rect" href="class_foci.html#a0c70d3a8339645645c1332a877805f16" title="Egy darab új edzőt ad hozzá a csapathoz. Növeli az edzoDB countert eggyel." alt="" coords="406,5,513,31"/>
-<area shape="rect" href="class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="390,203,529,228"/>
-<area shape="rect" href="class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="404,252,515,277"/>
-<area shape="rect" href="class_nyilvantartas.html#af05bda7d2042e5d655e570b3a8b142d0" title="Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="390,55,529,80"/>
-<area shape="rect" href="class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="581,252,691,277"/>
-<area shape="rect" href="class_kezi.html#ad46f6b62ded92e9321d57634d00af62d" title="A megadott számmal növeli a tamogatas változót." alt="" coords="389,301,530,327"/>
-<area shape="rect" href="class_nyilvantartas.html#a66fe61d7c04ecf59b40a374efef4e09b" title="Létrehoz egy új kézilabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="389,351,529,376"/>
-<area shape="rect" href="class_kosar.html#a6187c448bd5bfb9382ced21545e8086c" title="Egy darab pompomlányt ad hozzá a csapathoz." alt="" coords="391,104,528,129"/>
-<area shape="rect" href="class_nyilvantartas.html#ab192a1947f4d0ded57bdc40778ee56a2" title="Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="385,153,533,179"/>
+<area shape="rect" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="5,104,131,129"/>
+<area shape="rect" href="class_nyilvantartas.html#a85746723b3b5f24b54e8b2c3348dd30a" title="Beleláncol a listába a paramétereknek megfelelő Focilabda csapatot." alt="" coords="183,55,333,80"/>
+<area shape="rect" href="class_nyilvantartas.html#a64c7d359d2fc06bd3ada15154c5d5fbd" title="Beleláncol a listába a paramétereknek megfelelő Kézilabda csapatot." alt="" coords="183,153,333,179"/>
+<area shape="rect" href="class_nyilvantartas.html#a622c043ff96e55237efc029bd295984c" title="Beleláncol a listába a paramétereknek megfelelő Kosárlabda csapatot." alt="" coords="179,104,337,129"/>
+<area shape="rect" href="class_csapat.html#aeba636b5132ac77411a93e95cd0503ae" title="Focicsapatokra vonatkozó függvénypointer." alt="" coords="402,5,525,31"/>
+<area shape="rect" href="class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="394,55,533,80"/>
+<area shape="rect" href="class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="408,104,519,129"/>
+<area shape="rect" href="class_nyilvantartas.html#a293fc5789cd5ecbd57c94033cdbd4d7d" title="Létrehoz egy új láncolt lista elemet, beláncolja a listába, majd." alt="" coords="406,153,521,179"/>
+<area shape="rect" href="class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="589,104,699,129"/>
+<area shape="rect" href="class_csapat.html#af79780d2d9114e5f5a095375a8222377" title="Kézicsapatra vonatkozó függvénypointer." alt="" coords="385,252,541,277"/>
+<area shape="rect" href="class_csapat.html#a63814f0361836f43d029917086a7dc13" title="Kosárcsapatra vonatkozó függvénypointer." alt="" coords="391,203,535,228"/>
 </map>
 </div>
 <div class="dynheader">
@@ -317,17 +329,19 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_nyilvantartas_a2b6c6b283ad4a460939f538373b3a81e_icgraph.png" border="0" usemap="#aclass_nyilvantartas_a2b6c6b283ad4a460939f538373b3a81e_icgraph" alt=""/></div>
 <map name="aclass_nyilvantartas_a2b6c6b283ad4a460939f538373b3a81e_icgraph" id="aclass_nyilvantartas_a2b6c6b283ad4a460939f538373b3a81e_icgraph">
-<area shape="rect" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="544,80,669,105"/>
-<area shape="rect" href="class_nyilvantartas.html#a72844b808d5a49d463e832af6c57fbe3" title="Betölti a foci.txt fileból a kosárlabda csapat adatait a fociCS listába." alt="" coords="338,5,491,31"/>
-<area shape="rect" href="class_nyilvantartas.html#aefa79a45a52a8f58ca955239e92a2f42" title="Betölti a kezi.txt fileból a kézilabda csapat adatait a keziCS listába." alt="" coords="337,55,492,80"/>
-<area shape="rect" href="class_nyilvantartas.html#a8b9b4e975e6fca4115414685d75d11d4" title="Betölti a kosar.txt fileból a kosárlabda csapat adatait a kosarCS listába." alt="" coords="333,104,496,129"/>
-<area shape="rect" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="363,153,467,179"/>
-<area shape="rect" href="class_nyilvantartas.html#a27fbdde787ab60aa9f019f7d59d9eaef" title="Betölti az összes fileból (kezi.txt, kosar.txt, foci.txt) az adatokat a." alt="" coords="157,55,285,80"/>
-<area shape="rect" href="class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Default konstruktor, betölti a nyilvántartás adatait fileból." alt="" coords="10,55,105,80"/>
-<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="164,104,279,129"/>
-<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="162,153,281,179"/>
-<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="158,203,285,228"/>
-<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,153,109,179"/>
+<area shape="rect" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="781,80,907,105"/>
+<area shape="rect" href="class_nyilvantartas.html#a72844b808d5a49d463e832af6c57fbe3" title="Betölti a foci.txt fileból a kosárlabda csapat adatait a fociCS listába." alt="" coords="575,5,729,31"/>
+<area shape="rect" href="class_nyilvantartas.html#aefa79a45a52a8f58ca955239e92a2f42" title="Betölti a kezi.txt fileból a kézilabda csapat adatait a keziCS listába." alt="" coords="575,55,729,80"/>
+<area shape="rect" href="class_nyilvantartas.html#a8b9b4e975e6fca4115414685d75d11d4" title="Betölti a kosar.txt fileból a kosárlabda csapat adatait a kosarCS listába." alt="" coords="571,104,733,129"/>
+<area shape="rect" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="600,153,704,179"/>
+<area shape="rect" href="class_nyilvantartas.html#a27fbdde787ab60aa9f019f7d59d9eaef" title="Betölti az összes fileból (kezi.txt, kosar.txt, foci.txt) az adatokat a." alt="" coords="395,55,523,80"/>
+<area shape="rect" href="class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Default konstruktor, betölti a nyilvántartás adatait fileból." alt="" coords="247,55,342,80"/>
+<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="401,104,516,129"/>
+<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="399,153,518,179"/>
+<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="395,203,522,228"/>
+<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="243,153,347,179"/>
+<area shape="rect" href="main_8cpp.html#a61c946b4a6992a77af01bd8fa7e4c986" title=" " alt="" coords="104,153,195,179"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,153,56,179"/>
 </map>
 </div>
 
@@ -374,18 +388,16 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00078">78</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_nyilvantartas_a85746723b3b5f24b54e8b2c3348dd30a_cgraph.png" border="0" usemap="#aclass_nyilvantartas_a85746723b3b5f24b54e8b2c3348dd30a_cgraph" alt=""/></div>
 <map name="aclass_nyilvantartas_a85746723b3b5f24b54e8b2c3348dd30a_cgraph" id="aclass_nyilvantartas_a85746723b3b5f24b54e8b2c3348dd30a_cgraph">
 <area shape="rect" title="Beleláncol a listába a paramétereknek megfelelő Focilabda csapatot." alt="" coords="5,80,156,105"/>
-<area shape="rect" href="class_foci.html#a0c70d3a8339645645c1332a877805f16" title="Egy darab új edzőt ad hozzá a csapathoz. Növeli az edzoDB countert eggyel." alt="" coords="220,5,327,31"/>
+<area shape="rect" href="class_csapat.html#aeba636b5132ac77411a93e95cd0503ae" title="Focicsapatokra vonatkozó függvénypointer." alt="" coords="212,5,335,31"/>
 <area shape="rect" href="class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="204,55,343,80"/>
 <area shape="rect" href="class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="218,104,329,129"/>
-<area shape="rect" href="class_nyilvantartas.html#af05bda7d2042e5d655e570b3a8b142d0" title="Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="204,153,343,179"/>
+<area shape="rect" href="class_nyilvantartas.html#a293fc5789cd5ecbd57c94033cdbd4d7d" title="Létrehoz egy új láncolt lista elemet, beláncolja a listába, majd." alt="" coords="216,153,331,179"/>
 <area shape="rect" href="class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="391,104,500,129"/>
 </map>
 </div>
@@ -394,18 +406,20 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_nyilvantartas_a85746723b3b5f24b54e8b2c3348dd30a_icgraph.png" border="0" usemap="#aclass_nyilvantartas_a85746723b3b5f24b54e8b2c3348dd30a_icgraph" alt=""/></div>
 <map name="aclass_nyilvantartas_a85746723b3b5f24b54e8b2c3348dd30a_icgraph" id="aclass_nyilvantartas_a85746723b3b5f24b54e8b2c3348dd30a_icgraph">
-<area shape="rect" title="Beleláncol a listába a paramétereknek megfelelő Focilabda csapatot." alt="" coords="717,80,868,105"/>
-<area shape="rect" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="544,80,669,105"/>
-<area shape="rect" href="class_nyilvantartas.html#a72844b808d5a49d463e832af6c57fbe3" title="Betölti a foci.txt fileból a kosárlabda csapat adatait a fociCS listába." alt="" coords="338,5,491,31"/>
-<area shape="rect" href="class_nyilvantartas.html#aefa79a45a52a8f58ca955239e92a2f42" title="Betölti a kezi.txt fileból a kézilabda csapat adatait a keziCS listába." alt="" coords="337,55,492,80"/>
-<area shape="rect" href="class_nyilvantartas.html#a8b9b4e975e6fca4115414685d75d11d4" title="Betölti a kosar.txt fileból a kosárlabda csapat adatait a kosarCS listába." alt="" coords="333,104,496,129"/>
-<area shape="rect" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="363,153,467,179"/>
-<area shape="rect" href="class_nyilvantartas.html#a27fbdde787ab60aa9f019f7d59d9eaef" title="Betölti az összes fileból (kezi.txt, kosar.txt, foci.txt) az adatokat a." alt="" coords="157,55,285,80"/>
-<area shape="rect" href="class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Default konstruktor, betölti a nyilvántartás adatait fileból." alt="" coords="10,55,105,80"/>
-<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="164,104,279,129"/>
-<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="162,153,281,179"/>
-<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="158,203,285,228"/>
-<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,153,109,179"/>
+<area shape="rect" title="Beleláncol a listába a paramétereknek megfelelő Focilabda csapatot." alt="" coords="955,80,1105,105"/>
+<area shape="rect" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="781,80,907,105"/>
+<area shape="rect" href="class_nyilvantartas.html#a72844b808d5a49d463e832af6c57fbe3" title="Betölti a foci.txt fileból a kosárlabda csapat adatait a fociCS listába." alt="" coords="575,5,729,31"/>
+<area shape="rect" href="class_nyilvantartas.html#aefa79a45a52a8f58ca955239e92a2f42" title="Betölti a kezi.txt fileból a kézilabda csapat adatait a keziCS listába." alt="" coords="575,55,729,80"/>
+<area shape="rect" href="class_nyilvantartas.html#a8b9b4e975e6fca4115414685d75d11d4" title="Betölti a kosar.txt fileból a kosárlabda csapat adatait a kosarCS listába." alt="" coords="571,104,733,129"/>
+<area shape="rect" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="600,153,704,179"/>
+<area shape="rect" href="class_nyilvantartas.html#a27fbdde787ab60aa9f019f7d59d9eaef" title="Betölti az összes fileból (kezi.txt, kosar.txt, foci.txt) az adatokat a." alt="" coords="395,55,523,80"/>
+<area shape="rect" href="class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Default konstruktor, betölti a nyilvántartás adatait fileból." alt="" coords="247,55,342,80"/>
+<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="401,104,516,129"/>
+<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="399,153,518,179"/>
+<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="395,203,522,228"/>
+<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="243,153,347,179"/>
+<area shape="rect" href="main_8cpp.html#a61c946b4a6992a77af01bd8fa7e4c986" title=" " alt="" coords="104,153,195,179"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,153,56,179"/>
 </map>
 </div>
 
@@ -452,19 +466,17 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00036">36</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_nyilvantartas_a64c7d359d2fc06bd3ada15154c5d5fbd_cgraph.png" border="0" usemap="#aclass_nyilvantartas_a64c7d359d2fc06bd3ada15154c5d5fbd_cgraph" alt=""/></div>
 <map name="aclass_nyilvantartas_a64c7d359d2fc06bd3ada15154c5d5fbd_cgraph" id="aclass_nyilvantartas_a64c7d359d2fc06bd3ada15154c5d5fbd_cgraph">
 <area shape="rect" title="Beleláncol a listába a paramétereknek megfelelő Kézilabda csapatot." alt="" coords="5,80,156,105"/>
-<area shape="rect" href="class_kezi.html#ad46f6b62ded92e9321d57634d00af62d" title="A megadott számmal növeli a tamogatas változót." alt="" coords="204,5,345,31"/>
-<area shape="rect" href="class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="205,55,344,80"/>
-<area shape="rect" href="class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="219,104,330,129"/>
-<area shape="rect" href="class_nyilvantartas.html#a66fe61d7c04ecf59b40a374efef4e09b" title="Létrehoz egy új kézilabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="205,153,345,179"/>
-<area shape="rect" href="class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="393,104,503,129"/>
+<area shape="rect" href="class_csapat.html#af79780d2d9114e5f5a095375a8222377" title="Kézicsapatra vonatkozó függvénypointer." alt="" coords="204,5,360,31"/>
+<area shape="rect" href="class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="213,55,351,80"/>
+<area shape="rect" href="class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="227,104,337,129"/>
+<area shape="rect" href="class_nyilvantartas.html#a293fc5789cd5ecbd57c94033cdbd4d7d" title="Létrehoz egy új láncolt lista elemet, beláncolja a listába, majd." alt="" coords="225,153,339,179"/>
+<area shape="rect" href="class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="408,104,517,129"/>
 </map>
 </div>
 <div class="dynheader">
@@ -472,18 +484,20 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_nyilvantartas_a64c7d359d2fc06bd3ada15154c5d5fbd_icgraph.png" border="0" usemap="#aclass_nyilvantartas_a64c7d359d2fc06bd3ada15154c5d5fbd_icgraph" alt=""/></div>
 <map name="aclass_nyilvantartas_a64c7d359d2fc06bd3ada15154c5d5fbd_icgraph" id="aclass_nyilvantartas_a64c7d359d2fc06bd3ada15154c5d5fbd_icgraph">
-<area shape="rect" title="Beleláncol a listába a paramétereknek megfelelő Kézilabda csapatot." alt="" coords="717,80,868,105"/>
-<area shape="rect" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="544,80,669,105"/>
-<area shape="rect" href="class_nyilvantartas.html#a72844b808d5a49d463e832af6c57fbe3" title="Betölti a foci.txt fileból a kosárlabda csapat adatait a fociCS listába." alt="" coords="338,5,491,31"/>
-<area shape="rect" href="class_nyilvantartas.html#aefa79a45a52a8f58ca955239e92a2f42" title="Betölti a kezi.txt fileból a kézilabda csapat adatait a keziCS listába." alt="" coords="337,55,492,80"/>
-<area shape="rect" href="class_nyilvantartas.html#a8b9b4e975e6fca4115414685d75d11d4" title="Betölti a kosar.txt fileból a kosárlabda csapat adatait a kosarCS listába." alt="" coords="333,104,496,129"/>
-<area shape="rect" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="363,153,467,179"/>
-<area shape="rect" href="class_nyilvantartas.html#a27fbdde787ab60aa9f019f7d59d9eaef" title="Betölti az összes fileból (kezi.txt, kosar.txt, foci.txt) az adatokat a." alt="" coords="157,55,285,80"/>
-<area shape="rect" href="class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Default konstruktor, betölti a nyilvántartás adatait fileból." alt="" coords="10,55,105,80"/>
-<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="164,104,279,129"/>
-<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="162,153,281,179"/>
-<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="158,203,285,228"/>
-<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,153,109,179"/>
+<area shape="rect" title="Beleláncol a listába a paramétereknek megfelelő Kézilabda csapatot." alt="" coords="955,80,1105,105"/>
+<area shape="rect" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="781,80,907,105"/>
+<area shape="rect" href="class_nyilvantartas.html#a72844b808d5a49d463e832af6c57fbe3" title="Betölti a foci.txt fileból a kosárlabda csapat adatait a fociCS listába." alt="" coords="575,5,729,31"/>
+<area shape="rect" href="class_nyilvantartas.html#aefa79a45a52a8f58ca955239e92a2f42" title="Betölti a kezi.txt fileból a kézilabda csapat adatait a keziCS listába." alt="" coords="575,55,729,80"/>
+<area shape="rect" href="class_nyilvantartas.html#a8b9b4e975e6fca4115414685d75d11d4" title="Betölti a kosar.txt fileból a kosárlabda csapat adatait a kosarCS listába." alt="" coords="571,104,733,129"/>
+<area shape="rect" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="600,153,704,179"/>
+<area shape="rect" href="class_nyilvantartas.html#a27fbdde787ab60aa9f019f7d59d9eaef" title="Betölti az összes fileból (kezi.txt, kosar.txt, foci.txt) az adatokat a." alt="" coords="395,55,523,80"/>
+<area shape="rect" href="class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Default konstruktor, betölti a nyilvántartás adatait fileból." alt="" coords="247,55,342,80"/>
+<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="401,104,516,129"/>
+<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="399,153,518,179"/>
+<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="395,203,522,228"/>
+<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="243,153,347,179"/>
+<area shape="rect" href="main_8cpp.html#a61c946b4a6992a77af01bd8fa7e4c986" title=" " alt="" coords="104,153,195,179"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,153,56,179"/>
 </map>
 </div>
 
@@ -530,19 +544,17 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00057">57</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_nyilvantartas_a622c043ff96e55237efc029bd295984c_cgraph.png" border="0" usemap="#aclass_nyilvantartas_a622c043ff96e55237efc029bd295984c_cgraph" alt=""/></div>
 <map name="aclass_nyilvantartas_a622c043ff96e55237efc029bd295984c_cgraph" id="aclass_nyilvantartas_a622c043ff96e55237efc029bd295984c_cgraph">
 <area shape="rect" title="Beleláncol a listába a paramétereknek megfelelő Kosárlabda csapatot." alt="" coords="5,80,164,105"/>
-<area shape="rect" href="class_kosar.html#a6187c448bd5bfb9382ced21545e8086c" title="Egy darab pompomlányt ad hozzá a csapathoz." alt="" coords="217,5,355,31"/>
-<area shape="rect" href="class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="217,55,355,80"/>
-<area shape="rect" href="class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="231,104,341,129"/>
-<area shape="rect" href="class_nyilvantartas.html#ab192a1947f4d0ded57bdc40778ee56a2" title="Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="212,153,360,179"/>
-<area shape="rect" href="class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="408,104,517,129"/>
+<area shape="rect" href="class_csapat.html#a63814f0361836f43d029917086a7dc13" title="Kosárcsapatra vonatkozó függvénypointer." alt="" coords="212,5,356,31"/>
+<area shape="rect" href="class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="215,55,353,80"/>
+<area shape="rect" href="class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="229,104,339,129"/>
+<area shape="rect" href="class_nyilvantartas.html#a293fc5789cd5ecbd57c94033cdbd4d7d" title="Létrehoz egy új láncolt lista elemet, beláncolja a listába, majd." alt="" coords="227,153,341,179"/>
+<area shape="rect" href="class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="404,104,513,129"/>
 </map>
 </div>
 <div class="dynheader">
@@ -550,31 +562,69 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_nyilvantartas_a622c043ff96e55237efc029bd295984c_icgraph.png" border="0" usemap="#aclass_nyilvantartas_a622c043ff96e55237efc029bd295984c_icgraph" alt=""/></div>
 <map name="aclass_nyilvantartas_a622c043ff96e55237efc029bd295984c_icgraph" id="aclass_nyilvantartas_a622c043ff96e55237efc029bd295984c_icgraph">
-<area shape="rect" title="Beleláncol a listába a paramétereknek megfelelő Kosárlabda csapatot." alt="" coords="717,80,876,105"/>
-<area shape="rect" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="544,80,669,105"/>
-<area shape="rect" href="class_nyilvantartas.html#a72844b808d5a49d463e832af6c57fbe3" title="Betölti a foci.txt fileból a kosárlabda csapat adatait a fociCS listába." alt="" coords="338,5,491,31"/>
-<area shape="rect" href="class_nyilvantartas.html#aefa79a45a52a8f58ca955239e92a2f42" title="Betölti a kezi.txt fileból a kézilabda csapat adatait a keziCS listába." alt="" coords="337,55,492,80"/>
-<area shape="rect" href="class_nyilvantartas.html#a8b9b4e975e6fca4115414685d75d11d4" title="Betölti a kosar.txt fileból a kosárlabda csapat adatait a kosarCS listába." alt="" coords="333,104,496,129"/>
-<area shape="rect" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="363,153,467,179"/>
-<area shape="rect" href="class_nyilvantartas.html#a27fbdde787ab60aa9f019f7d59d9eaef" title="Betölti az összes fileból (kezi.txt, kosar.txt, foci.txt) az adatokat a." alt="" coords="157,55,285,80"/>
-<area shape="rect" href="class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Default konstruktor, betölti a nyilvántartás adatait fileból." alt="" coords="10,55,105,80"/>
-<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="164,104,279,129"/>
-<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="162,153,281,179"/>
-<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="158,203,285,228"/>
-<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,153,109,179"/>
+<area shape="rect" title="Beleláncol a listába a paramétereknek megfelelő Kosárlabda csapatot." alt="" coords="955,80,1113,105"/>
+<area shape="rect" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="781,80,907,105"/>
+<area shape="rect" href="class_nyilvantartas.html#a72844b808d5a49d463e832af6c57fbe3" title="Betölti a foci.txt fileból a kosárlabda csapat adatait a fociCS listába." alt="" coords="575,5,729,31"/>
+<area shape="rect" href="class_nyilvantartas.html#aefa79a45a52a8f58ca955239e92a2f42" title="Betölti a kezi.txt fileból a kézilabda csapat adatait a keziCS listába." alt="" coords="575,55,729,80"/>
+<area shape="rect" href="class_nyilvantartas.html#a8b9b4e975e6fca4115414685d75d11d4" title="Betölti a kosar.txt fileból a kosárlabda csapat adatait a kosarCS listába." alt="" coords="571,104,733,129"/>
+<area shape="rect" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="600,153,704,179"/>
+<area shape="rect" href="class_nyilvantartas.html#a27fbdde787ab60aa9f019f7d59d9eaef" title="Betölti az összes fileból (kezi.txt, kosar.txt, foci.txt) az adatokat a." alt="" coords="395,55,523,80"/>
+<area shape="rect" href="class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Default konstruktor, betölti a nyilvántartás adatait fileból." alt="" coords="247,55,342,80"/>
+<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="401,104,516,129"/>
+<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="399,153,518,179"/>
+<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="395,203,522,228"/>
+<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="243,153,347,179"/>
+<area shape="rect" href="main_8cpp.html#a61c946b4a6992a77af01bd8fa7e4c986" title=" " alt="" coords="104,153,195,179"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,153,56,179"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a0d3e5cfab71a0e9e94acdee6ce79dfac" name="a0d3e5cfab71a0e9e94acdee6ce79dfac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d3e5cfab71a0e9e94acdee6ce79dfac">&#9670;&#160;</a></span>findFoci()</h2>
+<a id="abe6dcc49f43b156f94f80a7a4441b825" name="abe6dcc49f43b156f94f80a7a4441b825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe6dcc49f43b156f94f80a7a4441b825">&#9670;&#160;</a></span>delAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Nyilvantartas::delAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A kézilabda csapatokat táloló láncolt listát felszabadító segédfüggvény. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_nyilvantartas_abe6dcc49f43b156f94f80a7a4441b825_icgraph.png" border="0" usemap="#aclass_nyilvantartas_abe6dcc49f43b156f94f80a7a4441b825_icgraph" alt=""/></div>
+<map name="aclass_nyilvantartas_abe6dcc49f43b156f94f80a7a4441b825_icgraph" id="aclass_nyilvantartas_abe6dcc49f43b156f94f80a7a4441b825_icgraph">
+<area shape="rect" title="A kézilabda csapatokat táloló láncolt listát felszabadító segédfüggvény." alt="" coords="240,5,376,31"/>
+<area shape="rect" href="class_nyilvantartas.html#ac8a89a7ed8a45d58b53b9c71bff74b76" title="A destruktor, felszabadítja a láncolt listákat a segédfüggvények segítségével." alt="" coords="5,5,192,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ace26b7e278dc17a3d20c402c2de82a7e" name="ace26b7e278dc17a3d20c402c2de82a7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace26b7e278dc17a3d20c402c2de82a7e">&#9670;&#160;</a></span>find()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_foci_lista_elem.html">FociListaElem</a> * Nyilvantartas::findFoci </td>
+          <td class="memname"><a class="el" href="struct_lista.html">Lista</a> * Nyilvantartas::find </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>csapatnev</em></td><td>)</td>
@@ -591,110 +641,34 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A keresendő csapatra mutató pointer, VAGY nullptr ha nem található ilyen csapat. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00119">119</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_nyilvantartas_a0d3e5cfab71a0e9e94acdee6ce79dfac_icgraph.png" border="0" usemap="#aclass_nyilvantartas_a0d3e5cfab71a0e9e94acdee6ce79dfac_icgraph" alt=""/></div>
-<map name="aclass_nyilvantartas_a0d3e5cfab71a0e9e94acdee6ce79dfac_icgraph" id="aclass_nyilvantartas_a0d3e5cfab71a0e9e94acdee6ce79dfac_icgraph">
-<area shape="rect" title="A paraméternek megfelelő nevű csapatra mutató pointert ad vissza. Kikeresi a láncolt listából." alt="" coords="519,5,668,31"/>
-<area shape="rect" href="class_menu.html#a81a694a66ab7541066719373533ea60c" title="Egy focilabda csapat keresési menüje." alt="" coords="320,5,471,31"/>
-<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="157,5,272,31"/>
-<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,5,109,31"/>
+<div class="center"><img src="class_nyilvantartas_ace26b7e278dc17a3d20c402c2de82a7e_icgraph.png" border="0" usemap="#aclass_nyilvantartas_ace26b7e278dc17a3d20c402c2de82a7e_icgraph" alt=""/></div>
+<map name="aclass_nyilvantartas_ace26b7e278dc17a3d20c402c2de82a7e_icgraph" id="aclass_nyilvantartas_ace26b7e278dc17a3d20c402c2de82a7e_icgraph">
+<area shape="rect" title="A paraméternek megfelelő nevű csapatra mutató pointert ad vissza. Kikeresi a láncolt listából." alt="" coords="777,55,901,80"/>
+<area shape="rect" href="class_menu.html#a81a694a66ab7541066719373533ea60c" title="Egy focilabda csapat keresési menüje." alt="" coords="574,5,725,31"/>
+<area shape="rect" href="class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02" title="Egy kézilabda csapat keresési menüje." alt="" coords="573,55,725,80"/>
+<area shape="rect" href="class_menu.html#a39be72db102923be41b2516836714018" title="Egy kosárlabda csapat keresési menüje." alt="" coords="569,104,729,129"/>
+<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="401,5,515,31"/>
+<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="243,55,347,80"/>
+<area shape="rect" href="main_8cpp.html#a61c946b4a6992a77af01bd8fa7e4c986" title=" " alt="" coords="104,55,195,80"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,55,56,80"/>
+<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="399,55,517,80"/>
+<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="395,104,521,129"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ad88f93a5f0267032ad23e3549db2bf65" name="ad88f93a5f0267032ad23e3549db2bf65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad88f93a5f0267032ad23e3549db2bf65">&#9670;&#160;</a></span>findKezi()</h2>
+<a id="afee3bf2152317a8a59d5a5b2c4585dfc" name="afee3bf2152317a8a59d5a5b2c4585dfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afee3bf2152317a8a59d5a5b2c4585dfc">&#9670;&#160;</a></span>getLista()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_kezi_lista_elem.html">KeziListaElem</a> * Nyilvantartas::findKezi </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>csapatnev</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A paraméternek megfelelő nevű csapatra mutató pointert ad vissza. Kikeresi a láncolt listából. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">csapat_nev</td><td>a keresendő csapat neve. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A keresendő csapatra mutató pointer, VAGY nullptr ha nem található ilyen csapat. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00091">91</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_nyilvantartas_ad88f93a5f0267032ad23e3549db2bf65_icgraph.png" border="0" usemap="#aclass_nyilvantartas_ad88f93a5f0267032ad23e3549db2bf65_icgraph" alt=""/></div>
-<map name="aclass_nyilvantartas_ad88f93a5f0267032ad23e3549db2bf65_icgraph" id="aclass_nyilvantartas_ad88f93a5f0267032ad23e3549db2bf65_icgraph">
-<area shape="rect" title="A paraméternek megfelelő nevű csapatra mutató pointert ad vissza. Kikeresi a láncolt listából." alt="" coords="524,5,675,31"/>
-<area shape="rect" href="class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02" title="Egy kézilabda csapat keresési menüje." alt="" coords="324,5,476,31"/>
-<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="157,5,276,31"/>
-<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,5,109,31"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ad8304e4987c64bb6b6f07b94a5feb663" name="ad8304e4987c64bb6b6f07b94a5feb663"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8304e4987c64bb6b6f07b94a5feb663">&#9670;&#160;</a></span>findKosar()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_kosar_lista_elem.html">KosarListaElem</a> * Nyilvantartas::findKosar </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>csapatnev</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A paraméternek megfelelő nevű csapatra mutató pointert ad vissza. Kikeresi a láncolt listából. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">csapat_nev</td><td>a keresendő csapat neve. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A keresendő csapatra mutató pointer, VAGY nullptr ha nem található ilyen csapat. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00105">105</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_nyilvantartas_ad8304e4987c64bb6b6f07b94a5feb663_icgraph.png" border="0" usemap="#aclass_nyilvantartas_ad8304e4987c64bb6b6f07b94a5feb663_icgraph" alt=""/></div>
-<map name="aclass_nyilvantartas_ad8304e4987c64bb6b6f07b94a5feb663_icgraph" id="aclass_nyilvantartas_ad8304e4987c64bb6b6f07b94a5feb663_icgraph">
-<area shape="rect" title="A paraméternek megfelelő nevű csapatra mutató pointert ad vissza. Kikeresi a láncolt listából." alt="" coords="540,5,699,31"/>
-<area shape="rect" href="class_menu.html#a39be72db102923be41b2516836714018" title="Egy kosárlabda csapat keresési menüje." alt="" coords="332,5,492,31"/>
-<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="157,5,284,31"/>
-<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,5,109,31"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aeeb7ed431f80b9ffbd90bdd24794bddc" name="aeeb7ed431f80b9ffbd90bdd24794bddc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeeb7ed431f80b9ffbd90bdd24794bddc">&#9670;&#160;</a></span>getFociLista()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_foci_lista_elem.html">FociListaElem</a> * Nyilvantartas::getFociLista </td>
+          <td class="memname"><a class="el" href="struct_lista.html">Lista</a> * Nyilvantartas::getLista </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -702,103 +676,25 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Visszaadja a Focilabda csapatok láncolt listáját. </p>
+<p>Visszaadja a csapatok láncolt listáját. </p>
 <dl class="section return"><dt>Returns</dt><dd>Az első listaelemre mutató pointer, vagy nullptr ha üres a lista. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00179">179</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_nyilvantartas_aeeb7ed431f80b9ffbd90bdd24794bddc_icgraph.png" border="0" usemap="#aclass_nyilvantartas_aeeb7ed431f80b9ffbd90bdd24794bddc_icgraph" alt=""/></div>
-<map name="aclass_nyilvantartas_aeeb7ed431f80b9ffbd90bdd24794bddc_icgraph" id="aclass_nyilvantartas_aeeb7ed431f80b9ffbd90bdd24794bddc_icgraph">
-<area shape="rect" title="Visszaadja a Focilabda csapatok láncolt listáját." alt="" coords="703,56,877,81"/>
-<area shape="rect" href="class_menu.html#aeade250ba2c9aefaca95036ee0339992" title="Kiszámolja a leghoszabb sor hosszát a nyilvántartásban. Erre a TAB&#45;ok és a kinézet miatt van szügség." alt="" coords="501,107,655,132"/>
-<area shape="rect" href="class_menu.html#ad7106b22912d94b8fc50e4dbd8291fb8" title="Kilistázza megformázva az összes adatot." alt="" coords="341,5,444,31"/>
-<area shape="rect" href="class_menu.html#a16d89092ef2464d51932e29adadf0939" title="Kilistázza megformázva a Focilabda (Foci) csapatokat." alt="" coords="337,56,449,81"/>
-<area shape="rect" href="class_menu.html#aa1f6c80eb45a32e53a3477672b02bca3" title="Kilistázza megformázva a Kézilabda (Kezi) csapatokat." alt="" coords="336,105,449,131"/>
-<area shape="rect" href="class_menu.html#ab16c7117e7b5c0cc079f1565b4083cc1" title="Kilistázza megformázva a Kárlabda (Kosar) csapatokat." alt="" coords="332,155,453,180"/>
-<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,81,109,107"/>
-<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="163,56,278,81"/>
-<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="161,105,280,131"/>
-<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="157,155,284,180"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ad6b8de317a7fb06ef561284645db2567" name="ad6b8de317a7fb06ef561284645db2567"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6b8de317a7fb06ef561284645db2567">&#9670;&#160;</a></span>getKeziLista()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_kezi_lista_elem.html">KeziListaElem</a> * Nyilvantartas::getKeziLista </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Visszaadja a Kézilabda csapatok láncolt listáját. </p>
-<dl class="section return"><dt>Returns</dt><dd>Az első listaelemre mutató pointer, vagy nullptr ha üres a lista. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00175">175</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_nyilvantartas_ad6b8de317a7fb06ef561284645db2567_icgraph.png" border="0" usemap="#aclass_nyilvantartas_ad6b8de317a7fb06ef561284645db2567_icgraph" alt=""/></div>
-<map name="aclass_nyilvantartas_ad6b8de317a7fb06ef561284645db2567_icgraph" id="aclass_nyilvantartas_ad6b8de317a7fb06ef561284645db2567_icgraph">
-<area shape="rect" title="Visszaadja a Kézilabda csapatok láncolt listáját." alt="" coords="703,68,879,93"/>
-<area shape="rect" href="class_menu.html#aeade250ba2c9aefaca95036ee0339992" title="Kiszámolja a leghoszabb sor hosszát a nyilvántartásban. Erre a TAB&#45;ok és a kinézet miatt van szügség." alt="" coords="501,68,655,93"/>
-<area shape="rect" href="class_menu.html#ad7106b22912d94b8fc50e4dbd8291fb8" title="Kilistázza megformázva az összes adatot." alt="" coords="341,5,444,31"/>
-<area shape="rect" href="class_menu.html#aa1f6c80eb45a32e53a3477672b02bca3" title="Kilistázza megformázva a Kézilabda (Kezi) csapatokat." alt="" coords="336,153,449,179"/>
-<area shape="rect" href="class_menu.html#a16d89092ef2464d51932e29adadf0939" title="Kilistázza megformázva a Focilabda (Foci) csapatokat." alt="" coords="337,55,449,80"/>
-<area shape="rect" href="class_menu.html#ab16c7117e7b5c0cc079f1565b4083cc1" title="Kilistázza megformázva a Kárlabda (Kosar) csapatokat." alt="" coords="332,104,453,129"/>
-<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,80,109,105"/>
-<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="163,55,278,80"/>
-<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="161,153,280,179"/>
-<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="157,104,284,129"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ac5d09b83892e100ac2068ad9967bc06f" name="ac5d09b83892e100ac2068ad9967bc06f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5d09b83892e100ac2068ad9967bc06f">&#9670;&#160;</a></span>getKosarLista()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_kosar_lista_elem.html">KosarListaElem</a> * Nyilvantartas::getKosarLista </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Visszaadja a Kosárlabda csapatok láncolt listáját. </p>
-<dl class="section return"><dt>Returns</dt><dd>Az első listaelemre mutató pointer, vagy nullptr ha üres a lista. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00177">177</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_nyilvantartas_ac5d09b83892e100ac2068ad9967bc06f_icgraph.png" border="0" usemap="#aclass_nyilvantartas_ac5d09b83892e100ac2068ad9967bc06f_icgraph" alt=""/></div>
-<map name="aclass_nyilvantartas_ac5d09b83892e100ac2068ad9967bc06f_icgraph" id="aclass_nyilvantartas_ac5d09b83892e100ac2068ad9967bc06f_icgraph">
-<area shape="rect" title="Visszaadja a Kosárlabda csapatok láncolt listáját." alt="" coords="703,68,887,93"/>
-<area shape="rect" href="class_menu.html#aeade250ba2c9aefaca95036ee0339992" title="Kiszámolja a leghoszabb sor hosszát a nyilvántartásban. Erre a TAB&#45;ok és a kinézet miatt van szügség." alt="" coords="501,68,655,93"/>
-<area shape="rect" href="class_menu.html#ad7106b22912d94b8fc50e4dbd8291fb8" title="Kilistázza megformázva az összes adatot." alt="" coords="341,5,444,31"/>
-<area shape="rect" href="class_menu.html#ab16c7117e7b5c0cc079f1565b4083cc1" title="Kilistázza megformázva a Kárlabda (Kosar) csapatokat." alt="" coords="332,153,453,179"/>
-<area shape="rect" href="class_menu.html#a16d89092ef2464d51932e29adadf0939" title="Kilistázza megformázva a Focilabda (Foci) csapatokat." alt="" coords="337,55,449,80"/>
-<area shape="rect" href="class_menu.html#aa1f6c80eb45a32e53a3477672b02bca3" title="Kilistázza megformázva a Kézilabda (Kezi) csapatokat." alt="" coords="336,104,449,129"/>
-<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,80,109,105"/>
-<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="163,55,278,80"/>
-<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="161,104,280,129"/>
-<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="157,153,284,179"/>
+<div class="center"><img src="class_nyilvantartas_afee3bf2152317a8a59d5a5b2c4585dfc_icgraph.png" border="0" usemap="#aclass_nyilvantartas_afee3bf2152317a8a59d5a5b2c4585dfc_icgraph" alt=""/></div>
+<map name="aclass_nyilvantartas_afee3bf2152317a8a59d5a5b2c4585dfc_icgraph" id="aclass_nyilvantartas_afee3bf2152317a8a59d5a5b2c4585dfc_icgraph">
+<area shape="rect" title="Visszaadja a csapatok láncolt listáját." alt="" coords="940,80,1091,105"/>
+<area shape="rect" href="class_menu.html#aeade250ba2c9aefaca95036ee0339992" title="Kiszámolja a leghoszabb sor hosszát a nyilvántartásban. Erre a TAB&#45;ok és a kinézet miatt van szügség." alt="" coords="739,80,892,105"/>
+<area shape="rect" href="class_menu.html#ad7106b22912d94b8fc50e4dbd8291fb8" title="Kilistázza megformázva az összes adatot." alt="" coords="579,5,681,31"/>
+<area shape="rect" href="class_menu.html#a16d89092ef2464d51932e29adadf0939" title="Kilistázza megformázva a Focilabda (Foci) csapatokat." alt="" coords="574,56,686,81"/>
+<area shape="rect" href="class_menu.html#aa1f6c80eb45a32e53a3477672b02bca3" title="Kilistázza megformázva a Kézilabda (Kezi) csapatokat." alt="" coords="573,105,687,131"/>
+<area shape="rect" href="class_menu.html#ab16c7117e7b5c0cc079f1565b4083cc1" title="Kilistázza megformázva a Kárlabda (Kosar) csapatokat." alt="" coords="569,155,691,180"/>
+<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="243,81,347,107"/>
+<area shape="rect" href="main_8cpp.html#a61c946b4a6992a77af01bd8fa7e4c986" title=" " alt="" coords="104,81,195,107"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,56,107"/>
+<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="401,56,515,81"/>
+<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="399,105,517,131"/>
+<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="395,155,521,180"/>
 </map>
 </div>
 
@@ -837,28 +733,28 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A szám legnagyobb helyiértéke. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00329">329</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_nyilvantartas_a9604b1a0d7f81045cc47b51747f8424d_icgraph.png" border="0" usemap="#aclass_nyilvantartas_a9604b1a0d7f81045cc47b51747f8424d_icgraph" alt=""/></div>
 <map name="aclass_nyilvantartas_a9604b1a0d7f81045cc47b51747f8424d_icgraph" id="aclass_nyilvantartas_a9604b1a0d7f81045cc47b51747f8424d_icgraph">
-<area shape="rect" title="Kiszamolja egy szám legnagyobb helyiértékét (tehát, milyen hosszú a szám). Statikus függvény." alt="" coords="911,80,1045,105"/>
-<area shape="rect" href="class_menu.html#ac183ce914dd13e202c2d0f822d2a8a02" title="Egy adott listaelem sorának hosszát adja vissza. Design felhasználási céllal." alt="" coords="713,104,859,129"/>
-<area shape="rect" href="class_menu.html#aeade250ba2c9aefaca95036ee0339992" title="Kiszámolja a leghoszabb sor hosszát a nyilvántartásban. Erre a TAB&#45;ok és a kinézet miatt van szügség." alt="" coords="709,55,863,80"/>
-<area shape="rect" href="class_menu.html#ad7106b22912d94b8fc50e4dbd8291fb8" title="Kilistázza megformázva az összes adatot." alt="" coords="549,5,652,31"/>
-<area shape="rect" href="class_menu.html#a16d89092ef2464d51932e29adadf0939" title="Kilistázza megformázva a Focilabda (Foci) csapatokat." alt="" coords="545,203,657,228"/>
-<area shape="rect" href="class_menu.html#aa1f6c80eb45a32e53a3477672b02bca3" title="Kilistázza megformázva a Kézilabda (Kezi) csapatokat." alt="" coords="544,104,657,129"/>
-<area shape="rect" href="class_menu.html#ab16c7117e7b5c0cc079f1565b4083cc1" title="Kilistázza megformázva a Kárlabda (Kosar) csapatokat." alt="" coords="540,55,661,80"/>
-<area shape="rect" href="class_menu.html#a131e748e8f24d3dd7cdda924db76b414" title="Egy listaelemet ír ki megformázva." alt="" coords="545,153,656,179"/>
-<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,79,109,104"/>
-<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="163,204,278,229"/>
-<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="161,104,280,129"/>
-<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="157,53,284,79"/>
-<area shape="rect" href="class_menu.html#a81a694a66ab7541066719373533ea60c" title="Egy focilabda csapat keresési menüje." alt="" coords="337,204,487,229"/>
-<area shape="rect" href="class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02" title="Egy kézilabda csapat keresési menüje." alt="" coords="336,155,488,180"/>
-<area shape="rect" href="class_menu.html#a39be72db102923be41b2516836714018" title="Egy kosárlabda csapat keresési menüje." alt="" coords="332,53,492,79"/>
+<area shape="rect" title="Kiszamolja egy szám legnagyobb helyiértékét (tehát, milyen hosszú a szám). Statikus függvény." alt="" coords="1148,80,1283,105"/>
+<area shape="rect" href="class_menu.html#aa8adcc5dd7c7c05b77b22b9e26e93a54" title="Egy adott listaelem sorának hosszát adja vissza. Design felhasználási céllal." alt="" coords="950,104,1097,129"/>
+<area shape="rect" href="class_menu.html#aeade250ba2c9aefaca95036ee0339992" title="Kiszámolja a leghoszabb sor hosszát a nyilvántartásban. Erre a TAB&#45;ok és a kinézet miatt van szügség." alt="" coords="947,55,1100,80"/>
+<area shape="rect" href="class_menu.html#ad7106b22912d94b8fc50e4dbd8291fb8" title="Kilistázza megformázva az összes adatot." alt="" coords="787,5,889,31"/>
+<area shape="rect" href="class_menu.html#a16d89092ef2464d51932e29adadf0939" title="Kilistázza megformázva a Focilabda (Foci) csapatokat." alt="" coords="782,203,894,228"/>
+<area shape="rect" href="class_menu.html#aa1f6c80eb45a32e53a3477672b02bca3" title="Kilistázza megformázva a Kézilabda (Kezi) csapatokat." alt="" coords="781,104,895,129"/>
+<area shape="rect" href="class_menu.html#ab16c7117e7b5c0cc079f1565b4083cc1" title="Kilistázza megformázva a Kárlabda (Kosar) csapatokat." alt="" coords="777,55,899,80"/>
+<area shape="rect" href="class_menu.html#a3b2e80da44059f552e13e61b3693c3ee" title="Egy listaelemet ír ki megformázva." alt="" coords="783,153,893,179"/>
+<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="243,79,347,104"/>
+<area shape="rect" href="main_8cpp.html#a61c946b4a6992a77af01bd8fa7e4c986" title=" " alt="" coords="104,79,195,104"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,79,56,104"/>
+<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="401,204,515,229"/>
+<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="399,104,517,129"/>
+<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="395,53,521,79"/>
+<area shape="rect" href="class_menu.html#a81a694a66ab7541066719373533ea60c" title="Egy focilabda csapat keresési menüje." alt="" coords="574,204,725,229"/>
+<area shape="rect" href="class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02" title="Egy kézilabda csapat keresési menüje." alt="" coords="573,155,725,180"/>
+<area shape="rect" href="class_menu.html#a39be72db102923be41b2516836714018" title="Egy kosárlabda csapat keresési menüje." alt="" coords="569,53,729,79"/>
 </map>
 </div>
 
@@ -881,32 +777,28 @@ Here is the caller graph for this function:</div>
 
 <p>Betölti az összes fileból (kezi.txt, kosar.txt, foci.txt) az adatokat a. </p>
 <p>listákba (keziCS, kosarCS, fociCS) a segédfüggvények segítségével. </p><dl class="section return"><dt>Returns</dt><dd>igaz ha sikeres, hamis ha nem sikeres. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00322">322</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_nyilvantartas_a27fbdde787ab60aa9f019f7d59d9eaef_cgraph.png" border="0" usemap="#aclass_nyilvantartas_a27fbdde787ab60aa9f019f7d59d9eaef_cgraph" alt=""/></div>
 <map name="aclass_nyilvantartas_a27fbdde787ab60aa9f019f7d59d9eaef_cgraph" id="aclass_nyilvantartas_a27fbdde787ab60aa9f019f7d59d9eaef_cgraph">
-<area shape="rect" title="Betölti az összes fileból (kezi.txt, kosar.txt, foci.txt) az adatokat a." alt="" coords="5,252,133,277"/>
-<area shape="rect" href="class_nyilvantartas.html#a72844b808d5a49d463e832af6c57fbe3" title="Betölti a foci.txt fileból a kosárlabda csapat adatait a fociCS listába." alt="" coords="186,203,339,228"/>
-<area shape="rect" href="class_nyilvantartas.html#aefa79a45a52a8f58ca955239e92a2f42" title="Betölti a kezi.txt fileból a kézilabda csapat adatait a keziCS listába." alt="" coords="185,252,340,277"/>
-<area shape="rect" href="class_nyilvantartas.html#a8b9b4e975e6fca4115414685d75d11d4" title="Betölti a kosar.txt fileból a kosárlabda csapat adatait a kosarCS listába." alt="" coords="181,301,344,327"/>
-<area shape="rect" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="403,203,528,228"/>
-<area shape="rect" href="class_nyilvantartas.html#a8c363810854573881a142023766a862d" title="Statikus. Hozzáfűz egy karakterpointerhez egy betűt. (VIGYÁZAT UTÁNNA DELETE[]&#45;ELNI KELL)." alt="" coords="392,252,539,277"/>
-<area shape="rect" href="class_nyilvantartas.html#aeeeb0f73cdd628b4bf835f86af3e295b" title="Felszabadít és nullptr&#45;é tesz egy karakterpointert. Statikus." alt="" coords="397,301,533,327"/>
-<area shape="rect" href="class_nyilvantartas.html#a85746723b3b5f24b54e8b2c3348dd30a" title="Beleláncol a listába a paramétereknek megfelelő Focilabda csapatot." alt="" coords="591,153,741,179"/>
-<area shape="rect" href="class_nyilvantartas.html#a64c7d359d2fc06bd3ada15154c5d5fbd" title="Beleláncol a listába a paramétereknek megfelelő Kézilabda csapatot." alt="" coords="591,252,741,277"/>
-<area shape="rect" href="class_nyilvantartas.html#a622c043ff96e55237efc029bd295984c" title="Beleláncol a listába a paramétereknek megfelelő Kosárlabda csapatot." alt="" coords="587,203,745,228"/>
-<area shape="rect" href="class_foci.html#a0c70d3a8339645645c1332a877805f16" title="Egy darab új edzőt ad hozzá a csapathoz. Növeli az edzoDB countert eggyel." alt="" coords="814,5,921,31"/>
-<area shape="rect" href="class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="798,203,937,228"/>
-<area shape="rect" href="class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="812,252,923,277"/>
-<area shape="rect" href="class_nyilvantartas.html#af05bda7d2042e5d655e570b3a8b142d0" title="Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="798,55,937,80"/>
-<area shape="rect" href="class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="989,252,1099,277"/>
-<area shape="rect" href="class_kezi.html#ad46f6b62ded92e9321d57634d00af62d" title="A megadott számmal növeli a tamogatas változót." alt="" coords="797,301,938,327"/>
-<area shape="rect" href="class_nyilvantartas.html#a66fe61d7c04ecf59b40a374efef4e09b" title="Létrehoz egy új kézilabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="797,351,937,376"/>
-<area shape="rect" href="class_kosar.html#a6187c448bd5bfb9382ced21545e8086c" title="Egy darab pompomlányt ad hozzá a csapathoz." alt="" coords="799,104,936,129"/>
-<area shape="rect" href="class_nyilvantartas.html#ab192a1947f4d0ded57bdc40778ee56a2" title="Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="793,153,941,179"/>
+<area shape="rect" title="Betölti az összes fileból (kezi.txt, kosar.txt, foci.txt) az adatokat a." alt="" coords="5,153,133,179"/>
+<area shape="rect" href="class_nyilvantartas.html#a72844b808d5a49d463e832af6c57fbe3" title="Betölti a foci.txt fileból a kosárlabda csapat adatait a fociCS listába." alt="" coords="186,104,339,129"/>
+<area shape="rect" href="class_nyilvantartas.html#aefa79a45a52a8f58ca955239e92a2f42" title="Betölti a kezi.txt fileból a kézilabda csapat adatait a keziCS listába." alt="" coords="185,153,340,179"/>
+<area shape="rect" href="class_nyilvantartas.html#a8b9b4e975e6fca4115414685d75d11d4" title="Betölti a kosar.txt fileból a kosárlabda csapat adatait a kosarCS listába." alt="" coords="181,203,344,228"/>
+<area shape="rect" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="403,104,528,129"/>
+<area shape="rect" href="class_nyilvantartas.html#a8c363810854573881a142023766a862d" title="Statikus. Hozzáfűz egy karakterpointerhez egy betűt. (VIGYÁZAT UTÁNNA DELETE[]&#45;ELNI KELL)." alt="" coords="392,153,539,179"/>
+<area shape="rect" href="class_nyilvantartas.html#aeeeb0f73cdd628b4bf835f86af3e295b" title="Felszabadít és nullptr&#45;é tesz egy karakterpointert. Statikus." alt="" coords="397,203,533,228"/>
+<area shape="rect" href="class_nyilvantartas.html#a85746723b3b5f24b54e8b2c3348dd30a" title="Beleláncol a listába a paramétereknek megfelelő Focilabda csapatot." alt="" coords="591,55,741,80"/>
+<area shape="rect" href="class_nyilvantartas.html#a64c7d359d2fc06bd3ada15154c5d5fbd" title="Beleláncol a listába a paramétereknek megfelelő Kézilabda csapatot." alt="" coords="591,153,741,179"/>
+<area shape="rect" href="class_nyilvantartas.html#a622c043ff96e55237efc029bd295984c" title="Beleláncol a listába a paramétereknek megfelelő Kosárlabda csapatot." alt="" coords="587,104,745,129"/>
+<area shape="rect" href="class_csapat.html#aeba636b5132ac77411a93e95cd0503ae" title="Focicsapatokra vonatkozó függvénypointer." alt="" coords="810,5,933,31"/>
+<area shape="rect" href="class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="802,55,941,80"/>
+<area shape="rect" href="class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="816,104,927,129"/>
+<area shape="rect" href="class_nyilvantartas.html#a293fc5789cd5ecbd57c94033cdbd4d7d" title="Létrehoz egy új láncolt lista elemet, beláncolja a listába, majd." alt="" coords="814,153,929,179"/>
+<area shape="rect" href="class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="997,104,1107,129"/>
+<area shape="rect" href="class_csapat.html#af79780d2d9114e5f5a095375a8222377" title="Kézicsapatra vonatkozó függvénypointer." alt="" coords="793,252,949,277"/>
+<area shape="rect" href="class_csapat.html#a63814f0361836f43d029917086a7dc13" title="Kosárcsapatra vonatkozó függvénypointer." alt="" coords="799,203,943,228"/>
 </map>
 </div>
 <div class="dynheader">
@@ -938,29 +830,25 @@ Here is the caller graph for this function:</div>
 
 <p>Betölti a foci.txt fileból a kosárlabda csapat adatait a fociCS listába. </p>
 <dl class="section return"><dt>Returns</dt><dd>Igaz, ha sikerült betölteni, hamis ha nem. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00275">275</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_nyilvantartas_a72844b808d5a49d463e832af6c57fbe3_cgraph.png" border="0" usemap="#aclass_nyilvantartas_a72844b808d5a49d463e832af6c57fbe3_cgraph" alt=""/></div>
 <map name="aclass_nyilvantartas_a72844b808d5a49d463e832af6c57fbe3_cgraph" id="aclass_nyilvantartas_a72844b808d5a49d463e832af6c57fbe3_cgraph">
-<area shape="rect" title="Betölti a foci.txt fileból a kosárlabda csapat adatait a fociCS listába." alt="" coords="5,252,159,277"/>
-<area shape="rect" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="217,203,343,228"/>
-<area shape="rect" href="class_nyilvantartas.html#a8c363810854573881a142023766a862d" title="Statikus. Hozzáfűz egy karakterpointerhez egy betűt. (VIGYÁZAT UTÁNNA DELETE[]&#45;ELNI KELL)." alt="" coords="207,252,353,277"/>
-<area shape="rect" href="class_nyilvantartas.html#aeeeb0f73cdd628b4bf835f86af3e295b" title="Felszabadít és nullptr&#45;é tesz egy karakterpointert. Statikus." alt="" coords="212,301,348,327"/>
-<area shape="rect" href="class_nyilvantartas.html#a85746723b3b5f24b54e8b2c3348dd30a" title="Beleláncol a listába a paramétereknek megfelelő Focilabda csapatot." alt="" coords="405,153,556,179"/>
-<area shape="rect" href="class_nyilvantartas.html#a64c7d359d2fc06bd3ada15154c5d5fbd" title="Beleláncol a listába a paramétereknek megfelelő Kézilabda csapatot." alt="" coords="405,252,556,277"/>
-<area shape="rect" href="class_nyilvantartas.html#a622c043ff96e55237efc029bd295984c" title="Beleláncol a listába a paramétereknek megfelelő Kosárlabda csapatot." alt="" coords="401,203,560,228"/>
-<area shape="rect" href="class_foci.html#a0c70d3a8339645645c1332a877805f16" title="Egy darab új edzőt ad hozzá a csapathoz. Növeli az edzoDB countert eggyel." alt="" coords="629,5,735,31"/>
-<area shape="rect" href="class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="613,203,751,228"/>
-<area shape="rect" href="class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="627,252,737,277"/>
-<area shape="rect" href="class_nyilvantartas.html#af05bda7d2042e5d655e570b3a8b142d0" title="Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="613,55,751,80"/>
-<area shape="rect" href="class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="804,252,913,277"/>
-<area shape="rect" href="class_kezi.html#ad46f6b62ded92e9321d57634d00af62d" title="A megadott számmal növeli a tamogatas változót." alt="" coords="611,301,753,327"/>
-<area shape="rect" href="class_nyilvantartas.html#a66fe61d7c04ecf59b40a374efef4e09b" title="Létrehoz egy új kézilabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="612,351,752,376"/>
-<area shape="rect" href="class_kosar.html#a6187c448bd5bfb9382ced21545e8086c" title="Egy darab pompomlányt ad hozzá a csapathoz." alt="" coords="613,104,751,129"/>
-<area shape="rect" href="class_nyilvantartas.html#ab192a1947f4d0ded57bdc40778ee56a2" title="Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="608,153,756,179"/>
+<area shape="rect" title="Betölti a foci.txt fileból a kosárlabda csapat adatait a fociCS listába." alt="" coords="5,153,159,179"/>
+<area shape="rect" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="217,104,343,129"/>
+<area shape="rect" href="class_nyilvantartas.html#a8c363810854573881a142023766a862d" title="Statikus. Hozzáfűz egy karakterpointerhez egy betűt. (VIGYÁZAT UTÁNNA DELETE[]&#45;ELNI KELL)." alt="" coords="207,153,353,179"/>
+<area shape="rect" href="class_nyilvantartas.html#aeeeb0f73cdd628b4bf835f86af3e295b" title="Felszabadít és nullptr&#45;é tesz egy karakterpointert. Statikus." alt="" coords="212,203,348,228"/>
+<area shape="rect" href="class_nyilvantartas.html#a85746723b3b5f24b54e8b2c3348dd30a" title="Beleláncol a listába a paramétereknek megfelelő Focilabda csapatot." alt="" coords="405,55,556,80"/>
+<area shape="rect" href="class_nyilvantartas.html#a64c7d359d2fc06bd3ada15154c5d5fbd" title="Beleláncol a listába a paramétereknek megfelelő Kézilabda csapatot." alt="" coords="405,153,556,179"/>
+<area shape="rect" href="class_nyilvantartas.html#a622c043ff96e55237efc029bd295984c" title="Beleláncol a listába a paramétereknek megfelelő Kosárlabda csapatot." alt="" coords="401,104,560,129"/>
+<area shape="rect" href="class_csapat.html#aeba636b5132ac77411a93e95cd0503ae" title="Focicsapatokra vonatkozó függvénypointer." alt="" coords="625,5,747,31"/>
+<area shape="rect" href="class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="617,55,755,80"/>
+<area shape="rect" href="class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="631,104,741,129"/>
+<area shape="rect" href="class_nyilvantartas.html#a293fc5789cd5ecbd57c94033cdbd4d7d" title="Létrehoz egy új láncolt lista elemet, beláncolja a listába, majd." alt="" coords="629,153,743,179"/>
+<area shape="rect" href="class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="812,104,921,129"/>
+<area shape="rect" href="class_csapat.html#af79780d2d9114e5f5a095375a8222377" title="Kézicsapatra vonatkozó függvénypointer." alt="" coords="608,252,764,277"/>
+<area shape="rect" href="class_csapat.html#a63814f0361836f43d029917086a7dc13" title="Kosárcsapatra vonatkozó függvénypointer." alt="" coords="614,203,758,228"/>
 </map>
 </div>
 <div class="dynheader">
@@ -993,29 +881,25 @@ Here is the caller graph for this function:</div>
 
 <p>Betölti a kezi.txt fileból a kézilabda csapat adatait a keziCS listába. </p>
 <dl class="section return"><dt>Returns</dt><dd>Igaz, ha sikerült betölteni, hamis ha nem. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00181">181</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_nyilvantartas_aefa79a45a52a8f58ca955239e92a2f42_cgraph.png" border="0" usemap="#aclass_nyilvantartas_aefa79a45a52a8f58ca955239e92a2f42_cgraph" alt=""/></div>
 <map name="aclass_nyilvantartas_aefa79a45a52a8f58ca955239e92a2f42_cgraph" id="aclass_nyilvantartas_aefa79a45a52a8f58ca955239e92a2f42_cgraph">
-<area shape="rect" title="Betölti a kezi.txt fileból a kézilabda csapat adatait a keziCS listába." alt="" coords="5,252,160,277"/>
-<area shape="rect" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="219,203,344,228"/>
-<area shape="rect" href="class_nyilvantartas.html#a8c363810854573881a142023766a862d" title="Statikus. Hozzáfűz egy karakterpointerhez egy betűt. (VIGYÁZAT UTÁNNA DELETE[]&#45;ELNI KELL)." alt="" coords="208,252,355,277"/>
-<area shape="rect" href="class_nyilvantartas.html#aeeeb0f73cdd628b4bf835f86af3e295b" title="Felszabadít és nullptr&#45;é tesz egy karakterpointert. Statikus." alt="" coords="213,301,349,327"/>
-<area shape="rect" href="class_nyilvantartas.html#a85746723b3b5f24b54e8b2c3348dd30a" title="Beleláncol a listába a paramétereknek megfelelő Focilabda csapatot." alt="" coords="407,153,557,179"/>
-<area shape="rect" href="class_nyilvantartas.html#a64c7d359d2fc06bd3ada15154c5d5fbd" title="Beleláncol a listába a paramétereknek megfelelő Kézilabda csapatot." alt="" coords="407,252,557,277"/>
-<area shape="rect" href="class_nyilvantartas.html#a622c043ff96e55237efc029bd295984c" title="Beleláncol a listába a paramétereknek megfelelő Kosárlabda csapatot." alt="" coords="403,203,561,228"/>
-<area shape="rect" href="class_foci.html#a0c70d3a8339645645c1332a877805f16" title="Egy darab új edzőt ad hozzá a csapathoz. Növeli az edzoDB countert eggyel." alt="" coords="630,5,737,31"/>
-<area shape="rect" href="class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="614,203,753,228"/>
-<area shape="rect" href="class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="628,252,739,277"/>
-<area shape="rect" href="class_nyilvantartas.html#af05bda7d2042e5d655e570b3a8b142d0" title="Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="614,55,753,80"/>
-<area shape="rect" href="class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="805,252,915,277"/>
-<area shape="rect" href="class_kezi.html#ad46f6b62ded92e9321d57634d00af62d" title="A megadott számmal növeli a tamogatas változót." alt="" coords="613,301,754,327"/>
-<area shape="rect" href="class_nyilvantartas.html#a66fe61d7c04ecf59b40a374efef4e09b" title="Létrehoz egy új kézilabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="613,351,753,376"/>
-<area shape="rect" href="class_kosar.html#a6187c448bd5bfb9382ced21545e8086c" title="Egy darab pompomlányt ad hozzá a csapathoz." alt="" coords="615,104,752,129"/>
-<area shape="rect" href="class_nyilvantartas.html#ab192a1947f4d0ded57bdc40778ee56a2" title="Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="609,153,757,179"/>
+<area shape="rect" title="Betölti a kezi.txt fileból a kézilabda csapat adatait a keziCS listába." alt="" coords="5,153,160,179"/>
+<area shape="rect" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="219,104,344,129"/>
+<area shape="rect" href="class_nyilvantartas.html#a8c363810854573881a142023766a862d" title="Statikus. Hozzáfűz egy karakterpointerhez egy betűt. (VIGYÁZAT UTÁNNA DELETE[]&#45;ELNI KELL)." alt="" coords="208,153,355,179"/>
+<area shape="rect" href="class_nyilvantartas.html#aeeeb0f73cdd628b4bf835f86af3e295b" title="Felszabadít és nullptr&#45;é tesz egy karakterpointert. Statikus." alt="" coords="213,203,349,228"/>
+<area shape="rect" href="class_nyilvantartas.html#a85746723b3b5f24b54e8b2c3348dd30a" title="Beleláncol a listába a paramétereknek megfelelő Focilabda csapatot." alt="" coords="407,55,557,80"/>
+<area shape="rect" href="class_nyilvantartas.html#a64c7d359d2fc06bd3ada15154c5d5fbd" title="Beleláncol a listába a paramétereknek megfelelő Kézilabda csapatot." alt="" coords="407,153,557,179"/>
+<area shape="rect" href="class_nyilvantartas.html#a622c043ff96e55237efc029bd295984c" title="Beleláncol a listába a paramétereknek megfelelő Kosárlabda csapatot." alt="" coords="403,104,561,129"/>
+<area shape="rect" href="class_csapat.html#aeba636b5132ac77411a93e95cd0503ae" title="Focicsapatokra vonatkozó függvénypointer." alt="" coords="626,5,749,31"/>
+<area shape="rect" href="class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="618,55,757,80"/>
+<area shape="rect" href="class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="632,104,743,129"/>
+<area shape="rect" href="class_nyilvantartas.html#a293fc5789cd5ecbd57c94033cdbd4d7d" title="Létrehoz egy új láncolt lista elemet, beláncolja a listába, majd." alt="" coords="630,153,745,179"/>
+<area shape="rect" href="class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="813,104,923,129"/>
+<area shape="rect" href="class_csapat.html#af79780d2d9114e5f5a095375a8222377" title="Kézicsapatra vonatkozó függvénypointer." alt="" coords="609,252,765,277"/>
+<area shape="rect" href="class_csapat.html#a63814f0361836f43d029917086a7dc13" title="Kosárcsapatra vonatkozó függvénypointer." alt="" coords="615,203,759,228"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1049,29 +933,25 @@ Here is the caller graph for this function:</div>
 <p>Betölti a kosar.txt fileból a kosárlabda csapat adatait a kosarCS listába. </p>
 <dl class="section return"><dt>Returns</dt><dd>Igaz, ha sikerült betölteni, hamis ha nem. </dd></dl>
 <p>File leírás:</p>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00228">228</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_nyilvantartas_a8b9b4e975e6fca4115414685d75d11d4_cgraph.png" border="0" usemap="#aclass_nyilvantartas_a8b9b4e975e6fca4115414685d75d11d4_cgraph" alt=""/></div>
 <map name="aclass_nyilvantartas_a8b9b4e975e6fca4115414685d75d11d4_cgraph" id="aclass_nyilvantartas_a8b9b4e975e6fca4115414685d75d11d4_cgraph">
-<area shape="rect" title="Betölti a kosar.txt fileból a kosárlabda csapat adatait a kosarCS listába." alt="" coords="5,252,168,277"/>
-<area shape="rect" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="227,203,352,228"/>
-<area shape="rect" href="class_nyilvantartas.html#a8c363810854573881a142023766a862d" title="Statikus. Hozzáfűz egy karakterpointerhez egy betűt. (VIGYÁZAT UTÁNNA DELETE[]&#45;ELNI KELL)." alt="" coords="216,252,363,277"/>
-<area shape="rect" href="class_nyilvantartas.html#aeeeb0f73cdd628b4bf835f86af3e295b" title="Felszabadít és nullptr&#45;é tesz egy karakterpointert. Statikus." alt="" coords="221,301,357,327"/>
-<area shape="rect" href="class_nyilvantartas.html#a85746723b3b5f24b54e8b2c3348dd30a" title="Beleláncol a listába a paramétereknek megfelelő Focilabda csapatot." alt="" coords="415,153,565,179"/>
-<area shape="rect" href="class_nyilvantartas.html#a64c7d359d2fc06bd3ada15154c5d5fbd" title="Beleláncol a listába a paramétereknek megfelelő Kézilabda csapatot." alt="" coords="415,252,565,277"/>
-<area shape="rect" href="class_nyilvantartas.html#a622c043ff96e55237efc029bd295984c" title="Beleláncol a listába a paramétereknek megfelelő Kosárlabda csapatot." alt="" coords="411,203,569,228"/>
-<area shape="rect" href="class_foci.html#a0c70d3a8339645645c1332a877805f16" title="Egy darab új edzőt ad hozzá a csapathoz. Növeli az edzoDB countert eggyel." alt="" coords="638,5,745,31"/>
-<area shape="rect" href="class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="622,203,761,228"/>
-<area shape="rect" href="class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="636,252,747,277"/>
-<area shape="rect" href="class_nyilvantartas.html#af05bda7d2042e5d655e570b3a8b142d0" title="Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="622,55,761,80"/>
-<area shape="rect" href="class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="813,252,923,277"/>
-<area shape="rect" href="class_kezi.html#ad46f6b62ded92e9321d57634d00af62d" title="A megadott számmal növeli a tamogatas változót." alt="" coords="621,301,762,327"/>
-<area shape="rect" href="class_nyilvantartas.html#a66fe61d7c04ecf59b40a374efef4e09b" title="Létrehoz egy új kézilabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="621,351,761,376"/>
-<area shape="rect" href="class_kosar.html#a6187c448bd5bfb9382ced21545e8086c" title="Egy darab pompomlányt ad hozzá a csapathoz." alt="" coords="623,104,760,129"/>
-<area shape="rect" href="class_nyilvantartas.html#ab192a1947f4d0ded57bdc40778ee56a2" title="Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="617,153,765,179"/>
+<area shape="rect" title="Betölti a kosar.txt fileból a kosárlabda csapat adatait a kosarCS listába." alt="" coords="5,153,168,179"/>
+<area shape="rect" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="227,104,352,129"/>
+<area shape="rect" href="class_nyilvantartas.html#a8c363810854573881a142023766a862d" title="Statikus. Hozzáfűz egy karakterpointerhez egy betűt. (VIGYÁZAT UTÁNNA DELETE[]&#45;ELNI KELL)." alt="" coords="216,153,363,179"/>
+<area shape="rect" href="class_nyilvantartas.html#aeeeb0f73cdd628b4bf835f86af3e295b" title="Felszabadít és nullptr&#45;é tesz egy karakterpointert. Statikus." alt="" coords="221,203,357,228"/>
+<area shape="rect" href="class_nyilvantartas.html#a85746723b3b5f24b54e8b2c3348dd30a" title="Beleláncol a listába a paramétereknek megfelelő Focilabda csapatot." alt="" coords="415,55,565,80"/>
+<area shape="rect" href="class_nyilvantartas.html#a64c7d359d2fc06bd3ada15154c5d5fbd" title="Beleláncol a listába a paramétereknek megfelelő Kézilabda csapatot." alt="" coords="415,153,565,179"/>
+<area shape="rect" href="class_nyilvantartas.html#a622c043ff96e55237efc029bd295984c" title="Beleláncol a listába a paramétereknek megfelelő Kosárlabda csapatot." alt="" coords="411,104,569,129"/>
+<area shape="rect" href="class_csapat.html#aeba636b5132ac77411a93e95cd0503ae" title="Focicsapatokra vonatkozó függvénypointer." alt="" coords="634,5,757,31"/>
+<area shape="rect" href="class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="626,55,765,80"/>
+<area shape="rect" href="class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="640,104,751,129"/>
+<area shape="rect" href="class_nyilvantartas.html#a293fc5789cd5ecbd57c94033cdbd4d7d" title="Létrehoz egy új láncolt lista elemet, beláncolja a listába, majd." alt="" coords="638,153,753,179"/>
+<area shape="rect" href="class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="821,104,931,129"/>
+<area shape="rect" href="class_csapat.html#af79780d2d9114e5f5a095375a8222377" title="Kézicsapatra vonatkozó függvénypointer." alt="" coords="617,252,773,277"/>
+<area shape="rect" href="class_csapat.html#a63814f0361836f43d029917086a7dc13" title="Kosárcsapatra vonatkozó függvénypointer." alt="" coords="623,203,767,228"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1087,8 +967,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a8b1ad27788acf3dac77268dbd03ca919" name="a8b1ad27788acf3dac77268dbd03ca919"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b1ad27788acf3dac77268dbd03ca919">&#9670;&#160;</a></span>rm() <span class="overload">[1/3]</span></h2>
+<a id="a225b6a03837caa58618b22b1394db7d2" name="a225b6a03837caa58618b22b1394db7d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a225b6a03837caa58618b22b1394db7d2">&#9670;&#160;</a></span>rm()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1096,7 +976,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void Nyilvantartas::rm </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_foci_lista_elem.html">FociListaElem</a> *&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_lista.html">Lista</a> *&amp;&#160;</td>
           <td class="paramname"><em>torlendo</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1110,79 +990,23 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00161">161</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
-
-</div>
-</div>
-<a id="aa6afbf48b834dd04efbd123b605c70c6" name="aa6afbf48b834dd04efbd123b605c70c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6afbf48b834dd04efbd123b605c70c6">&#9670;&#160;</a></span>rm() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Nyilvantartas::rm </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_kezi_lista_elem.html">KeziListaElem</a> *&amp;&#160;</td>
-          <td class="paramname"><em>torlendo</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Kitörli a láncolt listából a paraméterben megadott listaelemet. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">lista_elem</td><td>a láncolt listában egy elem-re mutató pointer. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00133">133</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_nyilvantartas_aa6afbf48b834dd04efbd123b605c70c6_icgraph.png" border="0" usemap="#aclass_nyilvantartas_aa6afbf48b834dd04efbd123b605c70c6_icgraph" alt=""/></div>
-<map name="aclass_nyilvantartas_aa6afbf48b834dd04efbd123b605c70c6_icgraph" id="aclass_nyilvantartas_aa6afbf48b834dd04efbd123b605c70c6_icgraph">
-<area shape="rect" title="Kitörli a láncolt listából a paraméterben megadott listaelemet." alt="" coords="540,55,659,80"/>
-<area shape="rect" href="class_menu.html#a81a694a66ab7541066719373533ea60c" title="Egy focilabda csapat keresési menüje." alt="" coords="337,5,487,31"/>
-<area shape="rect" href="class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02" title="Egy kézilabda csapat keresési menüje." alt="" coords="336,55,488,80"/>
-<area shape="rect" href="class_menu.html#a39be72db102923be41b2516836714018" title="Egy kosárlabda csapat keresési menüje." alt="" coords="332,104,492,129"/>
-<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="163,5,278,31"/>
-<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,55,109,80"/>
-<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="161,55,280,80"/>
-<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="157,104,284,129"/>
+<div class="center"><img src="class_nyilvantartas_a225b6a03837caa58618b22b1394db7d2_icgraph.png" border="0" usemap="#aclass_nyilvantartas_a225b6a03837caa58618b22b1394db7d2_icgraph" alt=""/></div>
+<map name="aclass_nyilvantartas_a225b6a03837caa58618b22b1394db7d2_icgraph" id="aclass_nyilvantartas_a225b6a03837caa58618b22b1394db7d2_icgraph">
+<area shape="rect" title="Kitörli a láncolt listából a paraméterben megadott listaelemet." alt="" coords="777,55,896,80"/>
+<area shape="rect" href="class_menu.html#a81a694a66ab7541066719373533ea60c" title="Egy focilabda csapat keresési menüje." alt="" coords="574,5,725,31"/>
+<area shape="rect" href="class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02" title="Egy kézilabda csapat keresési menüje." alt="" coords="573,55,725,80"/>
+<area shape="rect" href="class_menu.html#a39be72db102923be41b2516836714018" title="Egy kosárlabda csapat keresési menüje." alt="" coords="569,104,729,129"/>
+<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="401,5,515,31"/>
+<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="243,55,347,80"/>
+<area shape="rect" href="main_8cpp.html#a61c946b4a6992a77af01bd8fa7e4c986" title=" " alt="" coords="104,55,195,80"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,55,56,80"/>
+<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="399,55,517,80"/>
+<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="395,104,521,129"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="a15e6dda9bc8c77ec55446be2b84054df" name="a15e6dda9bc8c77ec55446be2b84054df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15e6dda9bc8c77ec55446be2b84054df">&#9670;&#160;</a></span>rm() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Nyilvantartas::rm </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_kosar_lista_elem.html">KosarListaElem</a> *&amp;&#160;</td>
-          <td class="paramname"><em>torlendo</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Kitörli a láncolt listából a paraméterben megadott listaelemet. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">lista_elem</td><td>a láncolt listában egy elem-re mutató pointer. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00147">147</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
 
 </div>
 </div>
@@ -1203,8 +1027,6 @@ Here is the caller graph for this function:</div>
 
 <p>Elmenti az összes listát (keziCS, kosarCS, fociCS) a megfelelő fileokba. </p>
 <p>(kezi.txt, kosar.txt, foci.txt) a segédfüggvények segítségével. </p>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00393">393</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1221,19 +1043,21 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_nyilvantartas_a8dcbf9bb384068f31d89f3850674f0c2_icgraph.png" border="0" usemap="#aclass_nyilvantartas_a8dcbf9bb384068f31d89f3850674f0c2_icgraph" alt=""/></div>
 <map name="aclass_nyilvantartas_a8dcbf9bb384068f31d89f3850674f0c2_icgraph" id="aclass_nyilvantartas_a8dcbf9bb384068f31d89f3850674f0c2_icgraph">
-<area shape="rect" title="Elmenti az összes listát (keziCS, kosarCS, fociCS) a megfelelő fileokba." alt="" coords="737,164,868,190"/>
-<area shape="rect" href="class_menu.html#aa92add4d48ff869624f7ccc4813f0348" title="A láncolt lista egy elemét módosító almenü." alt="" coords="545,38,685,63"/>
-<area shape="rect" href="class_menu.html#a81a694a66ab7541066719373533ea60c" title="Egy focilabda csapat keresési menüje." alt="" coords="337,38,487,63"/>
-<area shape="rect" href="class_menu.html#a62f3e21d81bed61fd29f9910bc86b1d2" title="A láncolt lista egy elemét módosító almenü." alt="" coords="544,190,685,215"/>
-<area shape="rect" href="class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02" title="Egy kézilabda csapat keresési menüje." alt="" coords="336,139,488,164"/>
-<area shape="rect" href="class_menu.html#a54e5d7069a346abf5471f0b321055d6f" title="A láncolt lista egy elemét módosító almenü." alt="" coords="540,291,689,316"/>
-<area shape="rect" href="class_menu.html#a39be72db102923be41b2516836714018" title="Egy kosárlabda csapat keresési menüje." alt="" coords="332,240,492,266"/>
-<area shape="rect" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="360,88,464,114"/>
-<area shape="rect" href="class_menu.html#a831387f51358cfb88cd018e1777bc980" title="Destruktor, lementi a nyilvántartás adatait fileokba." alt="" coords="563,340,666,366"/>
-<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="163,64,278,90"/>
-<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,114,109,139"/>
-<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="161,114,280,139"/>
-<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="157,163,284,188"/>
+<area shape="rect" title="Elmenti az összes listát (keziCS, kosarCS, fociCS) a megfelelő fileokba." alt="" coords="975,164,1105,190"/>
+<area shape="rect" href="class_menu.html#a1cd6ffee4b264c854024f6c6fc91868a" title="A láncolt lista egy elemét módosító almenü." alt="" coords="782,38,922,63"/>
+<area shape="rect" href="class_menu.html#a81a694a66ab7541066719373533ea60c" title="Egy focilabda csapat keresési menüje." alt="" coords="574,38,725,63"/>
+<area shape="rect" href="class_menu.html#a0bc3d0f4c522dacccc94373081004cbe" title="A láncolt lista egy elemét módosító almenü." alt="" coords="781,190,923,215"/>
+<area shape="rect" href="class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02" title="Egy kézilabda csapat keresési menüje." alt="" coords="573,139,725,164"/>
+<area shape="rect" href="class_menu.html#a5c2afd84dcaca022fdb98bac2d88cd44" title="A láncolt lista egy elemét módosító almenü." alt="" coords="777,291,927,316"/>
+<area shape="rect" href="class_menu.html#a39be72db102923be41b2516836714018" title="Egy kosárlabda csapat keresési menüje." alt="" coords="569,240,729,266"/>
+<area shape="rect" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="597,88,701,114"/>
+<area shape="rect" href="class_menu.html#a831387f51358cfb88cd018e1777bc980" title="Destruktor, lementi a nyilvántartás adatait fileokba." alt="" coords="801,340,903,366"/>
+<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="401,64,515,90"/>
+<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="243,114,347,139"/>
+<area shape="rect" href="main_8cpp.html#a61c946b4a6992a77af01bd8fa7e4c986" title=" " alt="" coords="104,114,195,139"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,114,56,139"/>
+<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="399,114,517,139"/>
+<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="395,163,521,188"/>
 </map>
 </div>
 
@@ -1255,27 +1079,27 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Elmenti a foci.txt fileba a fociCS adatait. </p>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00382">382</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_nyilvantartas_acf3d8ec657e4a1e0038a20c14acc6cf6_icgraph.png" border="0" usemap="#aclass_nyilvantartas_acf3d8ec657e4a1e0038a20c14acc6cf6_icgraph" alt=""/></div>
 <map name="aclass_nyilvantartas_acf3d8ec657e4a1e0038a20c14acc6cf6_icgraph" id="aclass_nyilvantartas_acf3d8ec657e4a1e0038a20c14acc6cf6_icgraph">
-<area shape="rect" title="Elmenti a foci.txt fileba a fociCS adatait." alt="" coords="916,164,1071,190"/>
-<area shape="rect" href="class_nyilvantartas.html#a8dcbf9bb384068f31d89f3850674f0c2" title="Elmenti az összes listát (keziCS, kosarCS, fociCS) a megfelelő fileokba." alt="" coords="737,164,868,190"/>
-<area shape="rect" href="class_menu.html#aa92add4d48ff869624f7ccc4813f0348" title="A láncolt lista egy elemét módosító almenü." alt="" coords="545,38,685,63"/>
-<area shape="rect" href="class_menu.html#a81a694a66ab7541066719373533ea60c" title="Egy focilabda csapat keresési menüje." alt="" coords="337,38,487,63"/>
-<area shape="rect" href="class_menu.html#a62f3e21d81bed61fd29f9910bc86b1d2" title="A láncolt lista egy elemét módosító almenü." alt="" coords="544,190,685,215"/>
-<area shape="rect" href="class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02" title="Egy kézilabda csapat keresési menüje." alt="" coords="336,139,488,164"/>
-<area shape="rect" href="class_menu.html#a54e5d7069a346abf5471f0b321055d6f" title="A láncolt lista egy elemét módosító almenü." alt="" coords="540,291,689,316"/>
-<area shape="rect" href="class_menu.html#a39be72db102923be41b2516836714018" title="Egy kosárlabda csapat keresési menüje." alt="" coords="332,240,492,266"/>
-<area shape="rect" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="360,88,464,114"/>
-<area shape="rect" href="class_menu.html#a831387f51358cfb88cd018e1777bc980" title="Destruktor, lementi a nyilvántartás adatait fileokba." alt="" coords="563,340,666,366"/>
-<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="163,64,278,90"/>
-<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,114,109,139"/>
-<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="161,114,280,139"/>
-<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="157,163,284,188"/>
+<area shape="rect" title="Elmenti a foci.txt fileba a fociCS adatait." alt="" coords="1153,164,1308,190"/>
+<area shape="rect" href="class_nyilvantartas.html#a8dcbf9bb384068f31d89f3850674f0c2" title="Elmenti az összes listát (keziCS, kosarCS, fociCS) a megfelelő fileokba." alt="" coords="975,164,1105,190"/>
+<area shape="rect" href="class_menu.html#a1cd6ffee4b264c854024f6c6fc91868a" title="A láncolt lista egy elemét módosító almenü." alt="" coords="782,38,922,63"/>
+<area shape="rect" href="class_menu.html#a81a694a66ab7541066719373533ea60c" title="Egy focilabda csapat keresési menüje." alt="" coords="574,38,725,63"/>
+<area shape="rect" href="class_menu.html#a0bc3d0f4c522dacccc94373081004cbe" title="A láncolt lista egy elemét módosító almenü." alt="" coords="781,190,923,215"/>
+<area shape="rect" href="class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02" title="Egy kézilabda csapat keresési menüje." alt="" coords="573,139,725,164"/>
+<area shape="rect" href="class_menu.html#a5c2afd84dcaca022fdb98bac2d88cd44" title="A láncolt lista egy elemét módosító almenü." alt="" coords="777,291,927,316"/>
+<area shape="rect" href="class_menu.html#a39be72db102923be41b2516836714018" title="Egy kosárlabda csapat keresési menüje." alt="" coords="569,240,729,266"/>
+<area shape="rect" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="597,88,701,114"/>
+<area shape="rect" href="class_menu.html#a831387f51358cfb88cd018e1777bc980" title="Destruktor, lementi a nyilvántartás adatait fileokba." alt="" coords="801,340,903,366"/>
+<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="401,64,515,90"/>
+<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="243,114,347,139"/>
+<area shape="rect" href="main_8cpp.html#a61c946b4a6992a77af01bd8fa7e4c986" title=" " alt="" coords="104,114,195,139"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,114,56,139"/>
+<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="399,114,517,139"/>
+<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="395,163,521,188"/>
 </map>
 </div>
 
@@ -1297,27 +1121,27 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Elmenti a kezi.txt fileba a keziCS adatait. </p>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00360">360</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_nyilvantartas_a467a1363bccc1e5a09be70b67f4900a8_icgraph.png" border="0" usemap="#aclass_nyilvantartas_a467a1363bccc1e5a09be70b67f4900a8_icgraph" alt=""/></div>
 <map name="aclass_nyilvantartas_a467a1363bccc1e5a09be70b67f4900a8_icgraph" id="aclass_nyilvantartas_a467a1363bccc1e5a09be70b67f4900a8_icgraph">
-<area shape="rect" title="Elmenti a kezi.txt fileba a keziCS adatait." alt="" coords="916,164,1072,190"/>
-<area shape="rect" href="class_nyilvantartas.html#a8dcbf9bb384068f31d89f3850674f0c2" title="Elmenti az összes listát (keziCS, kosarCS, fociCS) a megfelelő fileokba." alt="" coords="737,164,868,190"/>
-<area shape="rect" href="class_menu.html#aa92add4d48ff869624f7ccc4813f0348" title="A láncolt lista egy elemét módosító almenü." alt="" coords="545,38,685,63"/>
-<area shape="rect" href="class_menu.html#a81a694a66ab7541066719373533ea60c" title="Egy focilabda csapat keresési menüje." alt="" coords="337,38,487,63"/>
-<area shape="rect" href="class_menu.html#a62f3e21d81bed61fd29f9910bc86b1d2" title="A láncolt lista egy elemét módosító almenü." alt="" coords="544,190,685,215"/>
-<area shape="rect" href="class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02" title="Egy kézilabda csapat keresési menüje." alt="" coords="336,139,488,164"/>
-<area shape="rect" href="class_menu.html#a54e5d7069a346abf5471f0b321055d6f" title="A láncolt lista egy elemét módosító almenü." alt="" coords="540,291,689,316"/>
-<area shape="rect" href="class_menu.html#a39be72db102923be41b2516836714018" title="Egy kosárlabda csapat keresési menüje." alt="" coords="332,240,492,266"/>
-<area shape="rect" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="360,88,464,114"/>
-<area shape="rect" href="class_menu.html#a831387f51358cfb88cd018e1777bc980" title="Destruktor, lementi a nyilvántartás adatait fileokba." alt="" coords="563,340,666,366"/>
-<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="163,64,278,90"/>
-<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,114,109,139"/>
-<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="161,114,280,139"/>
-<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="157,163,284,188"/>
+<area shape="rect" title="Elmenti a kezi.txt fileba a keziCS adatait." alt="" coords="1153,164,1309,190"/>
+<area shape="rect" href="class_nyilvantartas.html#a8dcbf9bb384068f31d89f3850674f0c2" title="Elmenti az összes listát (keziCS, kosarCS, fociCS) a megfelelő fileokba." alt="" coords="975,164,1105,190"/>
+<area shape="rect" href="class_menu.html#a1cd6ffee4b264c854024f6c6fc91868a" title="A láncolt lista egy elemét módosító almenü." alt="" coords="782,38,922,63"/>
+<area shape="rect" href="class_menu.html#a81a694a66ab7541066719373533ea60c" title="Egy focilabda csapat keresési menüje." alt="" coords="574,38,725,63"/>
+<area shape="rect" href="class_menu.html#a0bc3d0f4c522dacccc94373081004cbe" title="A láncolt lista egy elemét módosító almenü." alt="" coords="781,190,923,215"/>
+<area shape="rect" href="class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02" title="Egy kézilabda csapat keresési menüje." alt="" coords="573,139,725,164"/>
+<area shape="rect" href="class_menu.html#a5c2afd84dcaca022fdb98bac2d88cd44" title="A láncolt lista egy elemét módosító almenü." alt="" coords="777,291,927,316"/>
+<area shape="rect" href="class_menu.html#a39be72db102923be41b2516836714018" title="Egy kosárlabda csapat keresési menüje." alt="" coords="569,240,729,266"/>
+<area shape="rect" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="597,88,701,114"/>
+<area shape="rect" href="class_menu.html#a831387f51358cfb88cd018e1777bc980" title="Destruktor, lementi a nyilvántartás adatait fileokba." alt="" coords="801,340,903,366"/>
+<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="401,64,515,90"/>
+<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="243,114,347,139"/>
+<area shape="rect" href="main_8cpp.html#a61c946b4a6992a77af01bd8fa7e4c986" title=" " alt="" coords="104,114,195,139"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,114,56,139"/>
+<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="399,114,517,139"/>
+<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="395,163,521,188"/>
 </map>
 </div>
 
@@ -1339,27 +1163,27 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Elmenti a kosar.txt fileba a kosarCS adatait. </p>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00371">371</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_nyilvantartas_a61c60dc62b7ccfc3304e426fef3c4363_icgraph.png" border="0" usemap="#aclass_nyilvantartas_a61c60dc62b7ccfc3304e426fef3c4363_icgraph" alt=""/></div>
 <map name="aclass_nyilvantartas_a61c60dc62b7ccfc3304e426fef3c4363_icgraph" id="aclass_nyilvantartas_a61c60dc62b7ccfc3304e426fef3c4363_icgraph">
-<area shape="rect" title="Elmenti a kosar.txt fileba a kosarCS adatait." alt="" coords="916,164,1080,190"/>
-<area shape="rect" href="class_nyilvantartas.html#a8dcbf9bb384068f31d89f3850674f0c2" title="Elmenti az összes listát (keziCS, kosarCS, fociCS) a megfelelő fileokba." alt="" coords="737,164,868,190"/>
-<area shape="rect" href="class_menu.html#aa92add4d48ff869624f7ccc4813f0348" title="A láncolt lista egy elemét módosító almenü." alt="" coords="545,38,685,63"/>
-<area shape="rect" href="class_menu.html#a81a694a66ab7541066719373533ea60c" title="Egy focilabda csapat keresési menüje." alt="" coords="337,38,487,63"/>
-<area shape="rect" href="class_menu.html#a62f3e21d81bed61fd29f9910bc86b1d2" title="A láncolt lista egy elemét módosító almenü." alt="" coords="544,190,685,215"/>
-<area shape="rect" href="class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02" title="Egy kézilabda csapat keresési menüje." alt="" coords="336,139,488,164"/>
-<area shape="rect" href="class_menu.html#a54e5d7069a346abf5471f0b321055d6f" title="A láncolt lista egy elemét módosító almenü." alt="" coords="540,291,689,316"/>
-<area shape="rect" href="class_menu.html#a39be72db102923be41b2516836714018" title="Egy kosárlabda csapat keresési menüje." alt="" coords="332,240,492,266"/>
-<area shape="rect" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="360,88,464,114"/>
-<area shape="rect" href="class_menu.html#a831387f51358cfb88cd018e1777bc980" title="Destruktor, lementi a nyilvántartás adatait fileokba." alt="" coords="563,340,666,366"/>
-<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="163,64,278,90"/>
-<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,114,109,139"/>
-<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="161,114,280,139"/>
-<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="157,163,284,188"/>
+<area shape="rect" title="Elmenti a kosar.txt fileba a kosarCS adatait." alt="" coords="1153,164,1317,190"/>
+<area shape="rect" href="class_nyilvantartas.html#a8dcbf9bb384068f31d89f3850674f0c2" title="Elmenti az összes listát (keziCS, kosarCS, fociCS) a megfelelő fileokba." alt="" coords="975,164,1105,190"/>
+<area shape="rect" href="class_menu.html#a1cd6ffee4b264c854024f6c6fc91868a" title="A láncolt lista egy elemét módosító almenü." alt="" coords="782,38,922,63"/>
+<area shape="rect" href="class_menu.html#a81a694a66ab7541066719373533ea60c" title="Egy focilabda csapat keresési menüje." alt="" coords="574,38,725,63"/>
+<area shape="rect" href="class_menu.html#a0bc3d0f4c522dacccc94373081004cbe" title="A láncolt lista egy elemét módosító almenü." alt="" coords="781,190,923,215"/>
+<area shape="rect" href="class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02" title="Egy kézilabda csapat keresési menüje." alt="" coords="573,139,725,164"/>
+<area shape="rect" href="class_menu.html#a5c2afd84dcaca022fdb98bac2d88cd44" title="A láncolt lista egy elemét módosító almenü." alt="" coords="777,291,927,316"/>
+<area shape="rect" href="class_menu.html#a39be72db102923be41b2516836714018" title="Egy kosárlabda csapat keresési menüje." alt="" coords="569,240,729,266"/>
+<area shape="rect" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="597,88,701,114"/>
+<area shape="rect" href="class_menu.html#a831387f51358cfb88cd018e1777bc980" title="Destruktor, lementi a nyilvántartás adatait fileokba." alt="" coords="801,340,903,366"/>
+<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="401,64,515,90"/>
+<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="243,114,347,139"/>
+<area shape="rect" href="main_8cpp.html#a61c946b4a6992a77af01bd8fa7e4c986" title=" " alt="" coords="104,114,195,139"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,114,56,139"/>
+<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="399,114,517,139"/>
+<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="395,163,521,188"/>
 </map>
 </div>
 
@@ -1407,8 +1231,6 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00338">338</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1456,8 +1278,6 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00355">355</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1474,140 +1294,94 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="af05bda7d2042e5d655e570b3a8b142d0" name="af05bda7d2042e5d655e570b3a8b142d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af05bda7d2042e5d655e570b3a8b142d0">&#9670;&#160;</a></span>ujFoci()</h2>
+<a id="a293fc5789cd5ecbd57c94033cdbd4d7d" name="a293fc5789cd5ecbd57c94033cdbd4d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a293fc5789cd5ecbd57c94033cdbd4d7d">&#9670;&#160;</a></span>uj()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_foci_lista_elem.html">FociListaElem</a> * Nyilvantartas::ujFoci </td>
+          <td class="memname"><a class="el" href="struct_lista.html">Lista</a> * Nyilvantartas::uj </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="csapat_8h.html#acc8869282127c9c2dc3d8c41d882c879">Tipus</a>&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd. </p>
-<p>visszaadja az erre mutató pointer (azért, hogy lehessen vele dolgozni.) </p><dl class="section return"><dt>Returns</dt><dd>Az újjonnan létrehozott láncolt listaelem pointere. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00064">64</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
+<p>Létrehoz egy új láncolt lista elemet, beláncolja a listába, majd. </p>
+<p>visszaadja az erre mutató pointer (azért, hogy lehessen vele dolgozni.) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tipus</td><td>Az új csapat típusa </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Az újjonnan létrehozott láncolt listaelem pointere. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_nyilvantartas_af05bda7d2042e5d655e570b3a8b142d0_icgraph.png" border="0" usemap="#aclass_nyilvantartas_af05bda7d2042e5d655e570b3a8b142d0_icgraph" alt=""/></div>
-<map name="aclass_nyilvantartas_af05bda7d2042e5d655e570b3a8b142d0_icgraph" id="aclass_nyilvantartas_af05bda7d2042e5d655e570b3a8b142d0_icgraph">
-<area shape="rect" title="Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="916,80,1055,105"/>
-<area shape="rect" href="class_nyilvantartas.html#a85746723b3b5f24b54e8b2c3348dd30a" title="Beleláncol a listába a paramétereknek megfelelő Focilabda csapatot." alt="" coords="717,80,868,105"/>
-<area shape="rect" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="544,80,669,105"/>
-<area shape="rect" href="class_nyilvantartas.html#a72844b808d5a49d463e832af6c57fbe3" title="Betölti a foci.txt fileból a kosárlabda csapat adatait a fociCS listába." alt="" coords="338,5,491,31"/>
-<area shape="rect" href="class_nyilvantartas.html#aefa79a45a52a8f58ca955239e92a2f42" title="Betölti a kezi.txt fileból a kézilabda csapat adatait a keziCS listába." alt="" coords="337,55,492,80"/>
-<area shape="rect" href="class_nyilvantartas.html#a8b9b4e975e6fca4115414685d75d11d4" title="Betölti a kosar.txt fileból a kosárlabda csapat adatait a kosarCS listába." alt="" coords="333,104,496,129"/>
-<area shape="rect" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="363,153,467,179"/>
-<area shape="rect" href="class_nyilvantartas.html#a27fbdde787ab60aa9f019f7d59d9eaef" title="Betölti az összes fileból (kezi.txt, kosar.txt, foci.txt) az adatokat a." alt="" coords="157,55,285,80"/>
-<area shape="rect" href="class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Default konstruktor, betölti a nyilvántartás adatait fileból." alt="" coords="10,55,105,80"/>
-<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="164,104,279,129"/>
-<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="162,153,281,179"/>
-<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="158,203,285,228"/>
-<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,153,109,179"/>
+<div class="center"><img src="class_nyilvantartas_a293fc5789cd5ecbd57c94033cdbd4d7d_icgraph.png" border="0" usemap="#aclass_nyilvantartas_a293fc5789cd5ecbd57c94033cdbd4d7d_icgraph" alt=""/></div>
+<map name="aclass_nyilvantartas_a293fc5789cd5ecbd57c94033cdbd4d7d_icgraph" id="aclass_nyilvantartas_a293fc5789cd5ecbd57c94033cdbd4d7d_icgraph">
+<area shape="rect" title="Létrehoz egy új láncolt lista elemet, beláncolja a listába, majd." alt="" coords="1161,80,1276,105"/>
+<area shape="rect" href="class_nyilvantartas.html#a85746723b3b5f24b54e8b2c3348dd30a" title="Beleláncol a listába a paramétereknek megfelelő Focilabda csapatot." alt="" coords="959,31,1109,56"/>
+<area shape="rect" href="class_nyilvantartas.html#a64c7d359d2fc06bd3ada15154c5d5fbd" title="Beleláncol a listába a paramétereknek megfelelő Kézilabda csapatot." alt="" coords="959,80,1109,105"/>
+<area shape="rect" href="class_nyilvantartas.html#a622c043ff96e55237efc029bd295984c" title="Beleláncol a listába a paramétereknek megfelelő Kosárlabda csapatot." alt="" coords="955,129,1113,155"/>
+<area shape="rect" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="781,80,907,105"/>
+<area shape="rect" href="class_nyilvantartas.html#a72844b808d5a49d463e832af6c57fbe3" title="Betölti a foci.txt fileból a kosárlabda csapat adatait a fociCS listába." alt="" coords="575,5,729,31"/>
+<area shape="rect" href="class_nyilvantartas.html#aefa79a45a52a8f58ca955239e92a2f42" title="Betölti a kezi.txt fileból a kézilabda csapat adatait a keziCS listába." alt="" coords="575,55,729,80"/>
+<area shape="rect" href="class_nyilvantartas.html#a8b9b4e975e6fca4115414685d75d11d4" title="Betölti a kosar.txt fileból a kosárlabda csapat adatait a kosarCS listába." alt="" coords="571,104,733,129"/>
+<area shape="rect" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="600,153,704,179"/>
+<area shape="rect" href="class_nyilvantartas.html#a27fbdde787ab60aa9f019f7d59d9eaef" title="Betölti az összes fileból (kezi.txt, kosar.txt, foci.txt) az adatokat a." alt="" coords="395,55,523,80"/>
+<area shape="rect" href="class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Default konstruktor, betölti a nyilvántartás adatait fileból." alt="" coords="247,55,342,80"/>
+<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="401,104,516,129"/>
+<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="399,153,518,179"/>
+<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="395,203,522,228"/>
+<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="243,153,347,179"/>
+<area shape="rect" href="main_8cpp.html#a61c946b4a6992a77af01bd8fa7e4c986" title=" " alt="" coords="104,153,195,179"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,153,56,179"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a66fe61d7c04ecf59b40a374efef4e09b" name="a66fe61d7c04ecf59b40a374efef4e09b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66fe61d7c04ecf59b40a374efef4e09b">&#9670;&#160;</a></span>ujKezi()</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a425878bc514b08709e4d7276cf898a45" name="a425878bc514b08709e4d7276cf898a45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a425878bc514b08709e4d7276cf898a45">&#9670;&#160;</a></span>csapatok</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_kezi_lista_elem.html">KeziListaElem</a> * Nyilvantartas::ujKezi </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname"><a class="el" href="struct_lista.html">Lista</a>* Nyilvantartas::csapatok</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Létrehoz egy új kézilabda láncolt lista elemet, beláncolja a listába, majd. </p>
-<p>visszaadja az erre mutató pointer (azért, hogy lehessen vele dolgozni.) </p><dl class="section return"><dt>Returns</dt><dd>Az újjonnan létrehozott láncolt listaelem pointere. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00022">22</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_nyilvantartas_a66fe61d7c04ecf59b40a374efef4e09b_icgraph.png" border="0" usemap="#aclass_nyilvantartas_a66fe61d7c04ecf59b40a374efef4e09b_icgraph" alt=""/></div>
-<map name="aclass_nyilvantartas_a66fe61d7c04ecf59b40a374efef4e09b_icgraph" id="aclass_nyilvantartas_a66fe61d7c04ecf59b40a374efef4e09b_icgraph">
-<area shape="rect" title="Létrehoz egy új kézilabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="916,80,1056,105"/>
-<area shape="rect" href="class_nyilvantartas.html#a64c7d359d2fc06bd3ada15154c5d5fbd" title="Beleláncol a listába a paramétereknek megfelelő Kézilabda csapatot." alt="" coords="717,80,868,105"/>
-<area shape="rect" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="544,80,669,105"/>
-<area shape="rect" href="class_nyilvantartas.html#a72844b808d5a49d463e832af6c57fbe3" title="Betölti a foci.txt fileból a kosárlabda csapat adatait a fociCS listába." alt="" coords="338,5,491,31"/>
-<area shape="rect" href="class_nyilvantartas.html#aefa79a45a52a8f58ca955239e92a2f42" title="Betölti a kezi.txt fileból a kézilabda csapat adatait a keziCS listába." alt="" coords="337,55,492,80"/>
-<area shape="rect" href="class_nyilvantartas.html#a8b9b4e975e6fca4115414685d75d11d4" title="Betölti a kosar.txt fileból a kosárlabda csapat adatait a kosarCS listába." alt="" coords="333,104,496,129"/>
-<area shape="rect" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="363,153,467,179"/>
-<area shape="rect" href="class_nyilvantartas.html#a27fbdde787ab60aa9f019f7d59d9eaef" title="Betölti az összes fileból (kezi.txt, kosar.txt, foci.txt) az adatokat a." alt="" coords="157,55,285,80"/>
-<area shape="rect" href="class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Default konstruktor, betölti a nyilvántartás adatait fileból." alt="" coords="10,55,105,80"/>
-<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="164,104,279,129"/>
-<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="162,153,281,179"/>
-<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="158,203,285,228"/>
-<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,153,109,179"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ab192a1947f4d0ded57bdc40778ee56a2" name="ab192a1947f4d0ded57bdc40778ee56a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab192a1947f4d0ded57bdc40778ee56a2">&#9670;&#160;</a></span>ujKosar()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_kosar_lista_elem.html">KosarListaElem</a> * Nyilvantartas::ujKosar </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd. </p>
-<p>visszaadja az erre mutató pointer (azért, hogy lehessen vele dolgozni.) </p><dl class="section return"><dt>Returns</dt><dd>Az újjonnan létrehozott láncolt listaelem pointere. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="nyilvantartas_8cpp_source.html#l00043">43</a> of file <a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_nyilvantartas_ab192a1947f4d0ded57bdc40778ee56a2_icgraph.png" border="0" usemap="#aclass_nyilvantartas_ab192a1947f4d0ded57bdc40778ee56a2_icgraph" alt=""/></div>
-<map name="aclass_nyilvantartas_ab192a1947f4d0ded57bdc40778ee56a2_icgraph" id="aclass_nyilvantartas_ab192a1947f4d0ded57bdc40778ee56a2_icgraph">
-<area shape="rect" title="Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="924,80,1072,105"/>
-<area shape="rect" href="class_nyilvantartas.html#a622c043ff96e55237efc029bd295984c" title="Beleláncol a listába a paramétereknek megfelelő Kosárlabda csapatot." alt="" coords="717,80,876,105"/>
-<area shape="rect" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="544,80,669,105"/>
-<area shape="rect" href="class_nyilvantartas.html#a72844b808d5a49d463e832af6c57fbe3" title="Betölti a foci.txt fileból a kosárlabda csapat adatait a fociCS listába." alt="" coords="338,5,491,31"/>
-<area shape="rect" href="class_nyilvantartas.html#aefa79a45a52a8f58ca955239e92a2f42" title="Betölti a kezi.txt fileból a kézilabda csapat adatait a keziCS listába." alt="" coords="337,55,492,80"/>
-<area shape="rect" href="class_nyilvantartas.html#a8b9b4e975e6fca4115414685d75d11d4" title="Betölti a kosar.txt fileból a kosárlabda csapat adatait a kosarCS listába." alt="" coords="333,104,496,129"/>
-<area shape="rect" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="363,153,467,179"/>
-<area shape="rect" href="class_nyilvantartas.html#a27fbdde787ab60aa9f019f7d59d9eaef" title="Betölti az összes fileból (kezi.txt, kosar.txt, foci.txt) az adatokat a." alt="" coords="157,55,285,80"/>
-<area shape="rect" href="class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Default konstruktor, betölti a nyilvántartás adatait fileból." alt="" coords="10,55,105,80"/>
-<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="164,104,279,129"/>
-<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="162,153,281,179"/>
-<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="158,203,285,228"/>
-<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,153,109,179"/>
-</map>
-</div>
+<p>A csapatokat tároló lista. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="nyilvantartas_8h_source.html">nyilvantartas.h</a></li>
-<li><a class="el" href="nyilvantartas_8cpp_source.html">nyilvantartas.cpp</a></li>
+<li><a class="el" href="nyilvantartas_8cpp.html">nyilvantartas.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_nyilvantartas.html">Nyilvantartas</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
 </body>
 </html>

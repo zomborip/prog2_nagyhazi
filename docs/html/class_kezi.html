@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Nagyhazi: Kezi Class Reference</title>
+<title>Nagyházi: Kezi Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Nagyhazi
+   <div id="projectname">Nagyházi
    </div>
+   <div id="projectbrief">Sportegyesület</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_kezi.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,10 +89,10 @@ $(function() {
 </div>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_kezi-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Kezi Class Reference</div></div>
 </div><!--header-->
@@ -85,8 +107,8 @@ Inheritance diagram for Kezi:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_kezi__inherit__graph.png" border="0" usemap="#a_kezi_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_kezi_inherit__map" id="a_kezi_inherit__map">
-<area shape="rect" title="A kézilabda csapat objektumja, amely örökli a Csapat objektum tulajdonságait." alt="" coords="5,336,132,457"/>
-<area shape="rect" href="class_csapat.html" title="A csapatok szülőobjektuma. Ez írja je a csapatok közös viselkedését, tulajdonságait." alt="" coords="13,5,124,288"/>
+<area shape="rect" title="A kézilabda csapat objektumja, amely örökli a Csapat objektum tulajdonságait." alt="" coords="29,424,244,545"/>
+<area shape="rect" href="class_csapat.html" title="A csapatok szülőobjektuma. Ez írja je a csapatok közös viselkedését, tulajdonságait." alt="" coords="5,5,268,376"/>
 </map>
 </div>
 <div class="dynheader">
@@ -94,8 +116,8 @@ Collaboration diagram for Kezi:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_kezi__coll__graph.png" border="0" usemap="#a_kezi_coll__map" alt="Collaboration graph"/></div>
 <map name="a_kezi_coll__map" id="a_kezi_coll__map">
-<area shape="rect" title="A kézilabda csapat objektumja, amely örökli a Csapat objektum tulajdonságait." alt="" coords="5,336,132,457"/>
-<area shape="rect" href="class_csapat.html" title="A csapatok szülőobjektuma. Ez írja je a csapatok közös viselkedését, tulajdonságait." alt="" coords="13,5,124,288"/>
+<area shape="rect" title="A kézilabda csapat objektumja, amely örökli a Csapat objektum tulajdonságait." alt="" coords="29,424,244,545"/>
+<area shape="rect" href="class_csapat.html" title="A csapatok szülőobjektuma. Ez írja je a csapatok közös viselkedését, tulajdonságait." alt="" coords="5,5,268,376"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -132,10 +154,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a762b432fc2883db8580b0f53b3d91093 inherit pub_methods_class_csapat"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_csapat.html#a762b432fc2883db8580b0f53b3d91093">setNev</a> (const char *)</td></tr>
 <tr class="memdesc:a762b432fc2883db8580b0f53b3d91093 inherit pub_methods_class_csapat"><td class="mdescLeft">&#160;</td><td class="mdescRight">A csapat nevét átállító, beállító függvény.  <br /></td></tr>
 <tr class="separator:a762b432fc2883db8580b0f53b3d91093 inherit pub_methods_class_csapat"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcff7ec2eef4c1f450d6c7b8b9a5b707 inherit pub_methods_class_csapat"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_csapat.html#afcff7ec2eef4c1f450d6c7b8b9a5b707">setTipus</a> (const Tipus)</td></tr>
+<tr class="memitem:afcff7ec2eef4c1f450d6c7b8b9a5b707 inherit pub_methods_class_csapat"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_csapat.html#afcff7ec2eef4c1f450d6c7b8b9a5b707">setTipus</a> (const <a class="el" href="csapat_8h.html#acc8869282127c9c2dc3d8c41d882c879">Tipus</a>)</td></tr>
 <tr class="memdesc:afcff7ec2eef4c1f450d6c7b8b9a5b707 inherit pub_methods_class_csapat"><td class="mdescLeft">&#160;</td><td class="mdescRight">A csapat típusát beállító függvény (többször átállítani nincs értelme, mert úgyis öröklődik és az örökös tulajdonságai mások).  <br /></td></tr>
 <tr class="separator:afcff7ec2eef4c1f450d6c7b8b9a5b707 inherit pub_methods_class_csapat"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e724883ce504521eb068a1031074a9c inherit pub_methods_class_csapat"><td class="memItemLeft" align="right" valign="top">Tipus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_csapat.html#a1e724883ce504521eb068a1031074a9c">getTipus</a> () const</td></tr>
+<tr class="memitem:a1e724883ce504521eb068a1031074a9c inherit pub_methods_class_csapat"><td class="memItemLeft" align="right" valign="top"><a class="el" href="csapat_8h.html#acc8869282127c9c2dc3d8c41d882c879">Tipus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_csapat.html#a1e724883ce504521eb068a1031074a9c">getTipus</a> () const</td></tr>
 <tr class="memdesc:a1e724883ce504521eb068a1031074a9c inherit pub_methods_class_csapat"><td class="mdescLeft">&#160;</td><td class="mdescRight">Viszaadja a csapat típusát a Tipus enum segítségével.  <br /></td></tr>
 <tr class="separator:a1e724883ce504521eb068a1031074a9c inherit pub_methods_class_csapat"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac88ac916828fec75fc1d84286e88be03 inherit pub_methods_class_csapat"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_csapat.html#ac88ac916828fec75fc1d84286e88be03">getLetszam</a> () const</td></tr>
@@ -150,6 +172,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6be4fae05ff3c8efccabe8ee37e386c5 inherit pub_methods_class_csapat"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_csapat.html#a6be4fae05ff3c8efccabe8ee37e386c5">~Csapat</a> ()</td></tr>
 <tr class="memdesc:a6be4fae05ff3c8efccabe8ee37e386c5 inherit pub_methods_class_csapat"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtuális destruktor (mert öröklődik majd a class).  <br /></td></tr>
 <tr class="separator:a6be4fae05ff3c8efccabe8ee37e386c5 inherit pub_methods_class_csapat"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63814f0361836f43d029917086a7dc13 inherit pub_methods_class_csapat"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_csapat.html#a63814f0361836f43d029917086a7dc13">addPompom</a> (const int)</td></tr>
+<tr class="memdesc:a63814f0361836f43d029917086a7dc13 inherit pub_methods_class_csapat"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kosárcsapatra vonatkozó függvénypointer.  <br /></td></tr>
+<tr class="separator:a63814f0361836f43d029917086a7dc13 inherit pub_methods_class_csapat"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cc16ae5e9f3a263b3eb0ed3000dff85 inherit pub_methods_class_csapat"><td class="memItemLeft" align="right" valign="top">virtual const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_csapat.html#a8cc16ae5e9f3a263b3eb0ed3000dff85">getPomPomDb</a> () const</td></tr>
+<tr class="memdesc:a8cc16ae5e9f3a263b3eb0ed3000dff85 inherit pub_methods_class_csapat"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kosárcsapatra vonatkozó függvénypointer.  <br /></td></tr>
+<tr class="separator:a8cc16ae5e9f3a263b3eb0ed3000dff85 inherit pub_methods_class_csapat"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af79780d2d9114e5f5a095375a8222377 inherit pub_methods_class_csapat"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_csapat.html#af79780d2d9114e5f5a095375a8222377">addTamogatas</a> (const int)</td></tr>
+<tr class="memdesc:af79780d2d9114e5f5a095375a8222377 inherit pub_methods_class_csapat"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kézicsapatra vonatkozó függvénypointer.  <br /></td></tr>
+<tr class="separator:af79780d2d9114e5f5a095375a8222377 inherit pub_methods_class_csapat"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e252a6da8bfa87c54bf1f00cace545e inherit pub_methods_class_csapat"><td class="memItemLeft" align="right" valign="top">virtual const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_csapat.html#a0e252a6da8bfa87c54bf1f00cace545e">getTamogatas</a> () const</td></tr>
+<tr class="memdesc:a0e252a6da8bfa87c54bf1f00cace545e inherit pub_methods_class_csapat"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kézicsapatra vonatkozó függvénypointer.  <br /></td></tr>
+<tr class="separator:a0e252a6da8bfa87c54bf1f00cace545e inherit pub_methods_class_csapat"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeba636b5132ac77411a93e95cd0503ae inherit pub_methods_class_csapat"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_csapat.html#aeba636b5132ac77411a93e95cd0503ae">addEdzo</a> (const int)</td></tr>
+<tr class="memdesc:aeba636b5132ac77411a93e95cd0503ae inherit pub_methods_class_csapat"><td class="mdescLeft">&#160;</td><td class="mdescRight">Focicsapatokra vonatkozó függvénypointer.  <br /></td></tr>
+<tr class="separator:aeba636b5132ac77411a93e95cd0503ae inherit pub_methods_class_csapat"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa749d01e32c0d615df172e7c8b27cf7d inherit pub_methods_class_csapat"><td class="memItemLeft" align="right" valign="top">virtual const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_csapat.html#aa749d01e32c0d615df172e7c8b27cf7d">getEdzokszama</a> () const</td></tr>
+<tr class="memdesc:aa749d01e32c0d615df172e7c8b27cf7d inherit pub_methods_class_csapat"><td class="mdescLeft">&#160;</td><td class="mdescRight">Focicsapatokra vonatkozó függvénypointer.  <br /></td></tr>
+<tr class="separator:aa749d01e32c0d615df172e7c8b27cf7d inherit pub_methods_class_csapat"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac8883975730799caa3dfb2b403f0f5c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kezi.html#ac8883975730799caa3dfb2b403f0f5c8">tamogatas</a></td></tr>
+<tr class="memdesc:ac8883975730799caa3dfb2b403f0f5c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Az éves támogatásokat tároló int.  <br /></td></tr>
+<tr class="separator:ac8883975730799caa3dfb2b403f0f5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -164,14 +210,12 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a5637beff531a0c3f69691894b18f0037 inherit pro_attribs_class_csapat"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_csapat.html#a5637beff531a0c3f69691894b18f0037">letszam</a></td></tr>
 <tr class="memdesc:a5637beff531a0c3f69691894b18f0037 inherit pro_attribs_class_csapat"><td class="mdescLeft">&#160;</td><td class="mdescRight">A csapat létszáma.  <br /></td></tr>
 <tr class="separator:a5637beff531a0c3f69691894b18f0037 inherit pro_attribs_class_csapat"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56a33d08732061e7104c8bd54308c3ba inherit pro_attribs_class_csapat"><td class="memItemLeft" align="right" valign="top">Tipus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_csapat.html#a56a33d08732061e7104c8bd54308c3ba">tipus</a></td></tr>
+<tr class="memitem:a56a33d08732061e7104c8bd54308c3ba inherit pro_attribs_class_csapat"><td class="memItemLeft" align="right" valign="top"><a class="el" href="csapat_8h.html#acc8869282127c9c2dc3d8c41d882c879">Tipus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_csapat.html#a56a33d08732061e7104c8bd54308c3ba">tipus</a></td></tr>
 <tr class="memdesc:a56a33d08732061e7104c8bd54308c3ba inherit pro_attribs_class_csapat"><td class="mdescLeft">&#160;</td><td class="mdescRight">A csapat típusa a Típus enum segítségével.  <br /></td></tr>
 <tr class="separator:a56a33d08732061e7104c8bd54308c3ba inherit pro_attribs_class_csapat"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A kézilabda csapat objektumja, amely örökli a <a class="el" href="class_csapat.html" title="A csapatok szülőobjektuma. Ez írja je a csapatok közös viselkedését, tulajdonságait.">Csapat</a> objektum tulajdonságait. </p>
-
-<p class="definition">Definition at line <a class="el" href="kezi_8h_source.html#l00008">8</a> of file <a class="el" href="kezi_8h_source.html">kezi.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a24e31edfd258e2a01d2d2f3279d6f5d1" name="a24e31edfd258e2a01d2d2f3279d6f5d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a24e31edfd258e2a01d2d2f3279d6f5d1">&#9670;&#160;</a></span>Kezi() <span class="overload">[1/2]</span></h2>
@@ -190,8 +234,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p>A default konstruktor, amely a <a class="el" href="class_csapat.html" title="A csapatok szülőobjektuma. Ez írja je a csapatok közös viselkedését, tulajdonságait.">Csapat</a> default konstruktorát hívja, csak a. </p>
 <p>típust KEZI-re rakja a Típus enum segítségével. </p>
-
-<p class="definition">Definition at line <a class="el" href="kezi_8cpp_source.html#l00005">5</a> of file <a class="el" href="kezi_8cpp_source.html">kezi.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -238,8 +280,6 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="kezi_8cpp_source.html#l00009">9</a> of file <a class="el" href="kezi_8cpp_source.html">kezi.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -258,6 +298,9 @@ Here is the call graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Kezi::addTamogatas </td>
@@ -267,6 +310,11 @@ Here is the call graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>A megadott számmal növeli a tamogatas változót. </p>
@@ -277,29 +325,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="kezi_8cpp_source.html#l00014">14</a> of file <a class="el" href="kezi_8cpp_source.html">kezi.cpp</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_kezi_ad46f6b62ded92e9321d57634d00af62d_icgraph.png" border="0" usemap="#aclass_kezi_ad46f6b62ded92e9321d57634d00af62d_icgraph" alt=""/></div>
-<map name="aclass_kezi_ad46f6b62ded92e9321d57634d00af62d_icgraph" id="aclass_kezi_ad46f6b62ded92e9321d57634d00af62d_icgraph">
-<area shape="rect" title="A megadott számmal növeli a tamogatas változót." alt="" coords="943,155,1084,180"/>
-<area shape="rect" href="class_nyilvantartas.html#a64c7d359d2fc06bd3ada15154c5d5fbd" title="Beleláncol a listába a paramétereknek megfelelő Kézilabda csapatot." alt="" coords="744,129,895,155"/>
-<area shape="rect" href="class_menu.html#a62f3e21d81bed61fd29f9910bc86b1d2" title="A láncolt lista egy elemét módosító almenü." alt="" coords="749,179,890,204"/>
-<area shape="rect" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e" title="Beleláncol a listába a paramétereknek megfelelő, Típustól függő csapatot csapatot." alt="" coords="557,104,683,129"/>
-<area shape="rect" href="class_nyilvantartas.html#a72844b808d5a49d463e832af6c57fbe3" title="Betölti a foci.txt fileból a kosárlabda csapat adatait a fociCS listába." alt="" coords="338,5,491,31"/>
-<area shape="rect" href="class_nyilvantartas.html#aefa79a45a52a8f58ca955239e92a2f42" title="Betölti a kezi.txt fileból a kézilabda csapat adatait a keziCS listába." alt="" coords="337,55,492,80"/>
-<area shape="rect" href="class_nyilvantartas.html#a8b9b4e975e6fca4115414685d75d11d4" title="Betölti a kosar.txt fileból a kosárlabda csapat adatait a kosarCS listába." alt="" coords="333,104,496,129"/>
-<area shape="rect" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8" title="Egy új tipus típusú csapat lérehozására létező almenü." alt="" coords="363,153,467,179"/>
-<area shape="rect" href="class_nyilvantartas.html#a27fbdde787ab60aa9f019f7d59d9eaef" title="Betölti az összes fileból (kezi.txt, kosar.txt, foci.txt) az adatokat a." alt="" coords="157,55,285,80"/>
-<area shape="rect" href="class_menu.html#ad466dd83355124a6ed958430450bfe94" title="Default konstruktor, betölti a nyilvántartás adatait fileból." alt="" coords="10,55,105,80"/>
-<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="164,104,279,129"/>
-<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="162,203,281,228"/>
-<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="158,153,285,179"/>
-<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,153,109,179"/>
-<area shape="rect" href="class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02" title="Egy kézilabda csapat keresési menüje." alt="" coords="544,179,696,204"/>
-</map>
-</div>
+<p>Reimplemented from <a class="el" href="class_csapat.html#af79780d2d9114e5f5a095375a8222377">Csapat</a>.</p>
 
 </div>
 </div>
@@ -308,6 +334,9 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const int Kezi::getTamogatas </td>
@@ -316,44 +345,57 @@ Here is the caller graph for this function:</div>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Visszaadja a támogatások számát. </p>
 <dl class="section return"><dt>Returns</dt><dd>A támogatások száma. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="kezi_8cpp_source.html#l00018">18</a> of file <a class="el" href="kezi_8cpp_source.html">kezi.cpp</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_kezi_a613f5e5f275485d0a4fab918e567aae0_icgraph.png" border="0" usemap="#aclass_kezi_a613f5e5f275485d0a4fab918e567aae0_icgraph" alt=""/></div>
-<map name="aclass_kezi_a613f5e5f275485d0a4fab918e567aae0_icgraph" id="aclass_kezi_a613f5e5f275485d0a4fab918e567aae0_icgraph">
-<area shape="rect" title="Visszaadja a támogatások számát." alt="" coords="904,183,1043,208"/>
-<area shape="rect" href="class_menu.html#ac183ce914dd13e202c2d0f822d2a8a02" title="Egy adott listaelem sorának hosszát adja vissza. Design felhasználási céllal." alt="" coords="709,157,856,183"/>
-<area shape="rect" href="class_menu.html#a131e748e8f24d3dd7cdda924db76b414" title="Egy listaelemet ír ki megformázva." alt="" coords="545,208,656,233"/>
-<area shape="rect" href="class_menu.html#ad7106b22912d94b8fc50e4dbd8291fb8" title="Kilistázza megformázva az összes adatot." alt="" coords="361,5,463,31"/>
-<area shape="rect" href="class_menu.html#a16d89092ef2464d51932e29adadf0939" title="Kilistázza megformázva a Focilabda (Foci) csapatokat." alt="" coords="545,157,657,183"/>
-<area shape="rect" href="class_menu.html#aa1f6c80eb45a32e53a3477672b02bca3" title="Kilistázza megformázva a Kézilabda (Kezi) csapatokat." alt="" coords="544,283,657,308"/>
-<area shape="rect" href="class_menu.html#ab16c7117e7b5c0cc079f1565b4083cc1" title="Kilistázza megformázva a Kárlabda (Kosar) csapatokat." alt="" coords="540,83,661,108"/>
-<area shape="rect" href="class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,132,109,157"/>
-<area shape="rect" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee" title="A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni." alt="" coords="163,157,278,183"/>
-<area shape="rect" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c" title="A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni." alt="" coords="161,257,280,283"/>
-<area shape="rect" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="157,107,284,132"/>
-<area shape="rect" href="class_menu.html#a81a694a66ab7541066719373533ea60c" title="Egy focilabda csapat keresési menüje." alt="" coords="337,208,487,233"/>
-<area shape="rect" href="class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02" title="Egy kézilabda csapat keresési menüje." alt="" coords="336,257,488,283"/>
-<area shape="rect" href="class_menu.html#a39be72db102923be41b2516836714018" title="Egy kosárlabda csapat keresési menüje." alt="" coords="332,107,492,132"/>
-</map>
+<p>Reimplemented from <a class="el" href="class_csapat.html#a0e252a6da8bfa87c54bf1f00cace545e">Csapat</a>.</p>
+
 </div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac8883975730799caa3dfb2b403f0f5c8" name="ac8883975730799caa3dfb2b403f0f5c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8883975730799caa3dfb2b403f0f5c8">&#9670;&#160;</a></span>tamogatas</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Kezi::tamogatas</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Az éves támogatásokat tároló int. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="kezi_8h_source.html">kezi.h</a></li>
-<li><a class="el" href="kezi_8cpp_source.html">kezi.cpp</a></li>
+<li><a class="el" href="kezi_8cpp.html">kezi.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_kezi.html">Kezi</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
 </body>
 </html>

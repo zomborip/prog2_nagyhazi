@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Nagyhazi: menu.h Source File</title>
+<title>Nagyházi: menu.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Nagyhazi
+   <div id="projectname">Nagyházi
    </div>
+   <div id="projectbrief">Sportegyesület</div>
   </td>
  </tr>
  </tbody>
@@ -47,6 +52,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('menu_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -72,22 +93,22 @@ $(function() {
   <div class="headertitle"><div class="title">menu.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef MENU_H</span></div>
+<a href="menu_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef MENU_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define MENU_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;nyilvantartas.h&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;memtrace.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="nyilvantartas_8h.html">nyilvantartas.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="memtrace_8h.html">memtrace.h</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_menu.html">    8</a></span><span class="keyword">class </span><a class="code hl_class" href="class_menu.html">Menu</a> {</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>  <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_class" href="class_nyilvantartas.html">Nyilvantartas</a> DB;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_menu.html#adb038db1de1ad1fc74c8338c6e69f738">   11</a></span>    <a class="code hl_class" href="class_nyilvantartas.html">Nyilvantartas</a> <a class="code hl_variable" href="class_menu.html#adb038db1de1ad1fc74c8338c6e69f738">DB</a>;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_function" href="class_menu.html#ad466dd83355124a6ed958430450bfe94">Menu</a>();</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_function" href="class_menu.html#a831387f51358cfb88cd018e1777bc980">~Menu</a>();</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_menu.html#a80058f91120b70bbe7466acdaf6e7a83">   22</a></span>    <a class="code hl_class" href="class_nyilvantartas.html">Nyilvantartas</a> <a class="code hl_function" href="class_menu.html#a80058f91120b70bbe7466acdaf6e7a83">getNyilvantartas</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> DB;}</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_menu.html#a80058f91120b70bbe7466acdaf6e7a83">   22</a></span>    <a class="code hl_class" href="class_nyilvantartas.html">Nyilvantartas</a> <a class="code hl_function" href="class_menu.html#a80058f91120b70bbe7466acdaf6e7a83">getNyilvantartas</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_menu.html#adb038db1de1ad1fc74c8338c6e69f738">DB</a>;}</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#ad7106b22912d94b8fc50e4dbd8291fb8">printAll</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
@@ -97,76 +118,74 @@ $(function() {
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a16d89092ef2464d51932e29adadf0939">printFoci</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a131e748e8f24d3dd7cdda924db76b414">printOne</a>(<a class="code hl_struct" href="struct_kezi_lista_elem.html">KeziListaElem</a> *) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a131e748e8f24d3dd7cdda924db76b414">printOne</a>(<a class="code hl_struct" href="struct_kosar_lista_elem.html">KosarListaElem</a> *) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a131e748e8f24d3dd7cdda924db76b414">printOne</a>(<a class="code hl_struct" href="struct_foci_lista_elem.html">FociListaElem</a> *) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_menu.html#aeade250ba2c9aefaca95036ee0339992">maxStdRowLen</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_menu.html#aeade250ba2c9aefaca95036ee0339992">maxStdRowLen</a>(Tipus) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_menu.html#ac183ce914dd13e202c2d0f822d2a8a02">getStdRowLen</a>(<a class="code hl_struct" href="struct_kezi_lista_elem.html">KeziListaElem</a> *) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a3b2e80da44059f552e13e61b3693c3ee">printOne</a>(<a class="code hl_struct" href="struct_lista.html">Lista</a> *, <a class="code hl_enumeration" href="csapat_8h.html#acc8869282127c9c2dc3d8c41d882c879">Tipus</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_menu.html#aeade250ba2c9aefaca95036ee0339992">maxStdRowLen</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_menu.html#aeade250ba2c9aefaca95036ee0339992">maxStdRowLen</a>(<a class="code hl_enumeration" href="csapat_8h.html#acc8869282127c9c2dc3d8c41d882c879">Tipus</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_menu.html#aa8adcc5dd7c7c05b77b22b9e26e93a54">getStdRowLen</a>(<a class="code hl_struct" href="struct_lista.html">Lista</a> *) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a662ae5d3c5843b02680877573f654abc">foMenu</a>();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c">keziMenu</a>();</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_menu.html#ac183ce914dd13e202c2d0f822d2a8a02">getStdRowLen</a>(<a class="code hl_struct" href="struct_kosar_lista_elem.html">KosarListaElem</a> *) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_menu.html#ac183ce914dd13e202c2d0f822d2a8a02">getStdRowLen</a>(<a class="code hl_struct" href="struct_foci_lista_elem.html">FociListaElem</a> *) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a662ae5d3c5843b02680877573f654abc">foMenu</a>();</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c">keziMenu</a>();</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5">kosarMenu</a>();</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee">fociMenu</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5">kosarMenu</a>();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee">fociMenu</a>();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02">keresKeziMenu</a>();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a39be72db102923be41b2516836714018">keresKosarMenu</a>();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a81a694a66ab7541066719373533ea60c">keresFociMenu</a>();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a0bc3d0f4c522dacccc94373081004cbe">editKeziMenu</a>(<a class="code hl_struct" href="struct_lista.html">Lista</a> *);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a5c2afd84dcaca022fdb98bac2d88cd44">editKosarMenu</a>(<a class="code hl_struct" href="struct_lista.html">Lista</a>*);</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02">keresKeziMenu</a>();</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a39be72db102923be41b2516836714018">keresKosarMenu</a>();</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a81a694a66ab7541066719373533ea60c">keresFociMenu</a>();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a1cd6ffee4b264c854024f6c6fc91868a">editFociMenu</a>(<a class="code hl_struct" href="struct_lista.html">Lista</a> *);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8">ujMenu</a>(<a class="code hl_enumeration" href="csapat_8h.html#acc8869282127c9c2dc3d8c41d882c879">Tipus</a>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>};</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a62f3e21d81bed61fd29f9910bc86b1d2">editKeziMenu</a>(<a class="code hl_struct" href="struct_kezi_lista_elem.html">KeziListaElem</a> *);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#a54e5d7069a346abf5471f0b321055d6f">editKosarMenu</a>(<a class="code hl_struct" href="struct_kosar_lista_elem.html">KosarListaElem</a>*);</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#aa92add4d48ff869624f7ccc4813f0348">editFociMenu</a>(<a class="code hl_struct" href="struct_foci_lista_elem.html">FociListaElem</a> *);</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8">ujMenu</a>(Tipus);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>};</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_menu_html"><div class="ttname"><a href="class_menu.html">Menu</a></div><div class="ttdoc">A futó programot irányító menürendszer objektuma.</div><div class="ttdef"><b>Definition:</b> <a href="menu_8h_source.html#l00008">menu.h:8</a></div></div>
-<div class="ttc" id="aclass_menu_html_a131e748e8f24d3dd7cdda924db76b414"><div class="ttname"><a href="class_menu.html#a131e748e8f24d3dd7cdda924db76b414">Menu::printOne</a></div><div class="ttdeci">void printOne(KeziListaElem *) const</div><div class="ttdoc">Egy listaelemet ír ki megformázva.</div><div class="ttdef"><b>Definition:</b> <a href="menu_8cpp_source.html#l00200">menu.cpp:200</a></div></div>
-<div class="ttc" id="aclass_menu_html_a16d89092ef2464d51932e29adadf0939"><div class="ttname"><a href="class_menu.html#a16d89092ef2464d51932e29adadf0939">Menu::printFoci</a></div><div class="ttdeci">void printFoci() const</div><div class="ttdoc">Kilistázza megformázva a Focilabda (Foci) csapatokat.</div><div class="ttdef"><b>Definition:</b> <a href="menu_8cpp_source.html#l00184">menu.cpp:184</a></div></div>
-<div class="ttc" id="aclass_menu_html_a2cee56dc1ea87abdf3a12c509f28ce02"><div class="ttname"><a href="class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02">Menu::keresKeziMenu</a></div><div class="ttdeci">void keresKeziMenu()</div><div class="ttdoc">Egy kézilabda csapat keresési menüje.</div><div class="ttdef"><b>Definition:</b> <a href="menu_8cpp_source.html#l00344">menu.cpp:344</a></div></div>
-<div class="ttc" id="aclass_menu_html_a39be72db102923be41b2516836714018"><div class="ttname"><a href="class_menu.html#a39be72db102923be41b2516836714018">Menu::keresKosarMenu</a></div><div class="ttdeci">void keresKosarMenu()</div><div class="ttdoc">Egy kosárlabda csapat keresési menüje.</div><div class="ttdef"><b>Definition:</b> <a href="menu_8cpp_source.html#l00400">menu.cpp:400</a></div></div>
-<div class="ttc" id="aclass_menu_html_a54e5d7069a346abf5471f0b321055d6f"><div class="ttname"><a href="class_menu.html#a54e5d7069a346abf5471f0b321055d6f">Menu::editKosarMenu</a></div><div class="ttdeci">void editKosarMenu(KosarListaElem *)</div><div class="ttdoc">A láncolt lista egy elemét módosító almenü.</div><div class="ttdef"><b>Definition:</b> <a href="menu_8cpp_source.html#l00576">menu.cpp:576</a></div></div>
-<div class="ttc" id="aclass_menu_html_a58feb89fe22c1a088dd8a2bf441968d5"><div class="ttname"><a href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5">Menu::kosarMenu</a></div><div class="ttdeci">void kosarMenu()</div><div class="ttdoc">A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni.</div><div class="ttdef"><b>Definition:</b> <a href="menu_8cpp_source.html#l00272">menu.cpp:272</a></div></div>
-<div class="ttc" id="aclass_menu_html_a62f3e21d81bed61fd29f9910bc86b1d2"><div class="ttname"><a href="class_menu.html#a62f3e21d81bed61fd29f9910bc86b1d2">Menu::editKeziMenu</a></div><div class="ttdeci">void editKeziMenu(KeziListaElem *)</div><div class="ttdoc">A láncolt lista egy elemét módosító almenü.</div><div class="ttdef"><b>Definition:</b> <a href="menu_8cpp_source.html#l00512">menu.cpp:512</a></div></div>
-<div class="ttc" id="aclass_menu_html_a662ae5d3c5843b02680877573f654abc"><div class="ttname"><a href="class_menu.html#a662ae5d3c5843b02680877573f654abc">Menu::foMenu</a></div><div class="ttdeci">void foMenu()</div><div class="ttdoc">Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class.</div><div class="ttdef"><b>Definition:</b> <a href="menu_8cpp_source.html#l00751">menu.cpp:751</a></div></div>
-<div class="ttc" id="aclass_menu_html_a674cec9b7998d60fbab21939f109d7ee"><div class="ttname"><a href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee">Menu::fociMenu</a></div><div class="ttdeci">void fociMenu()</div><div class="ttdoc">A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni.</div><div class="ttdef"><b>Definition:</b> <a href="menu_8cpp_source.html#l00308">menu.cpp:308</a></div></div>
-<div class="ttc" id="aclass_menu_html_a68b97bb64c0023bbfa40121de9d11b0c"><div class="ttname"><a href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c">Menu::keziMenu</a></div><div class="ttdeci">void keziMenu()</div><div class="ttdoc">A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni.</div><div class="ttdef"><b>Definition:</b> <a href="menu_8cpp_source.html#l00236">menu.cpp:236</a></div></div>
-<div class="ttc" id="aclass_menu_html_a80058f91120b70bbe7466acdaf6e7a83"><div class="ttname"><a href="class_menu.html#a80058f91120b70bbe7466acdaf6e7a83">Menu::getNyilvantartas</a></div><div class="ttdeci">Nyilvantartas getNyilvantartas() const</div><div class="ttdoc">Getter. Visszaadja az egész nyilvántartás osztályt (Debug célokra főképp, mivel nincs értelme a class...</div><div class="ttdef"><b>Definition:</b> <a href="menu_8h_source.html#l00022">menu.h:22</a></div></div>
-<div class="ttc" id="aclass_menu_html_a81a694a66ab7541066719373533ea60c"><div class="ttname"><a href="class_menu.html#a81a694a66ab7541066719373533ea60c">Menu::keresFociMenu</a></div><div class="ttdeci">void keresFociMenu()</div><div class="ttdoc">Egy focilabda csapat keresési menüje.</div><div class="ttdef"><b>Definition:</b> <a href="menu_8cpp_source.html#l00456">menu.cpp:456</a></div></div>
-<div class="ttc" id="aclass_menu_html_a831387f51358cfb88cd018e1777bc980"><div class="ttname"><a href="class_menu.html#a831387f51358cfb88cd018e1777bc980">Menu::~Menu</a></div><div class="ttdeci">~Menu()</div><div class="ttdoc">Destruktor, lementi a nyilvántartás adatait fileokba.</div><div class="ttdef"><b>Definition:</b> <a href="menu_8cpp_source.html#l00021">menu.cpp:21</a></div></div>
-<div class="ttc" id="aclass_menu_html_aa1f6c80eb45a32e53a3477672b02bca3"><div class="ttname"><a href="class_menu.html#aa1f6c80eb45a32e53a3477672b02bca3">Menu::printKezi</a></div><div class="ttdeci">void printKezi() const</div><div class="ttdoc">Kilistázza megformázva a Kézilabda (Kezi) csapatokat.</div><div class="ttdef"><b>Definition:</b> <a href="menu_8cpp_source.html#l00152">menu.cpp:152</a></div></div>
-<div class="ttc" id="aclass_menu_html_aa92add4d48ff869624f7ccc4813f0348"><div class="ttname"><a href="class_menu.html#aa92add4d48ff869624f7ccc4813f0348">Menu::editFociMenu</a></div><div class="ttdeci">void editFociMenu(FociListaElem *)</div><div class="ttdoc">A láncolt lista egy elemét módosító almenü.</div><div class="ttdef"><b>Definition:</b> <a href="menu_8cpp_source.html#l00640">menu.cpp:640</a></div></div>
-<div class="ttc" id="aclass_menu_html_ab16c7117e7b5c0cc079f1565b4083cc1"><div class="ttname"><a href="class_menu.html#ab16c7117e7b5c0cc079f1565b4083cc1">Menu::printKosar</a></div><div class="ttdeci">void printKosar() const</div><div class="ttdoc">Kilistázza megformázva a Kárlabda (Kosar) csapatokat.</div><div class="ttdef"><b>Definition:</b> <a href="menu_8cpp_source.html#l00168">menu.cpp:168</a></div></div>
-<div class="ttc" id="aclass_menu_html_ac183ce914dd13e202c2d0f822d2a8a02"><div class="ttname"><a href="class_menu.html#ac183ce914dd13e202c2d0f822d2a8a02">Menu::getStdRowLen</a></div><div class="ttdeci">int getStdRowLen(KeziListaElem *) const</div><div class="ttdoc">Egy adott listaelem sorának hosszát adja vissza. Design felhasználási céllal.</div><div class="ttdef"><b>Definition:</b> <a href="menu_8cpp_source.html#l00076">menu.cpp:76</a></div></div>
-<div class="ttc" id="aclass_menu_html_ad1d2c072c002e2711d1fdbb282858ef8"><div class="ttname"><a href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8">Menu::ujMenu</a></div><div class="ttdeci">void ujMenu(Tipus)</div><div class="ttdoc">Egy új tipus típusú csapat lérehozására létező almenü.</div><div class="ttdef"><b>Definition:</b> <a href="menu_8cpp_source.html#l00704">menu.cpp:704</a></div></div>
-<div class="ttc" id="aclass_menu_html_ad466dd83355124a6ed958430450bfe94"><div class="ttname"><a href="class_menu.html#ad466dd83355124a6ed958430450bfe94">Menu::Menu</a></div><div class="ttdeci">Menu()</div><div class="ttdoc">Default konstruktor, betölti a nyilvántartás adatait fileból.</div><div class="ttdef"><b>Definition:</b> <a href="menu_8cpp_source.html#l00016">menu.cpp:16</a></div></div>
-<div class="ttc" id="aclass_menu_html_ad7106b22912d94b8fc50e4dbd8291fb8"><div class="ttname"><a href="class_menu.html#ad7106b22912d94b8fc50e4dbd8291fb8">Menu::printAll</a></div><div class="ttdeci">void printAll() const</div><div class="ttdoc">Kilistázza megformázva az összes adatot.</div><div class="ttdef"><b>Definition:</b> <a href="menu_8cpp_source.html#l00100">menu.cpp:100</a></div></div>
-<div class="ttc" id="aclass_menu_html_aeade250ba2c9aefaca95036ee0339992"><div class="ttname"><a href="class_menu.html#aeade250ba2c9aefaca95036ee0339992">Menu::maxStdRowLen</a></div><div class="ttdeci">int maxStdRowLen() const</div><div class="ttdoc">Kiszámolja a leghoszabb sor hosszát a nyilvántartásban. Erre a TAB-ok és a kinézet miatt van szügség.</div><div class="ttdef"><b>Definition:</b> <a href="menu_8cpp_source.html#l00026">menu.cpp:26</a></div></div>
-<div class="ttc" id="aclass_nyilvantartas_html"><div class="ttname"><a href="class_nyilvantartas.html">Nyilvantartas</a></div><div class="ttdoc">A nyilvántartás osztály. Ez tárolja a csapatokat (Kosar, Foci, Kezi) láncolt listákban.</div><div class="ttdef"><b>Definition:</b> <a href="nyilvantartas_8h_source.html#l00040">nyilvantartas.h:40</a></div></div>
-<div class="ttc" id="astruct_foci_lista_elem_html"><div class="ttname"><a href="struct_foci_lista_elem.html">FociListaElem</a></div><div class="ttdoc">A Foci osztály láncolt listázásához szolgáló struktúra. Ez egy darab listaelem.</div><div class="ttdef"><b>Definition:</b> <a href="nyilvantartas_8h_source.html#l00029">nyilvantartas.h:29</a></div></div>
-<div class="ttc" id="astruct_kezi_lista_elem_html"><div class="ttname"><a href="struct_kezi_lista_elem.html">KeziListaElem</a></div><div class="ttdoc">A Kezi osztály láncolt listázásához szolgáló struktúra. Ez egy darab listaelem.</div><div class="ttdef"><b>Definition:</b> <a href="nyilvantartas_8h_source.html#l00011">nyilvantartas.h:11</a></div></div>
-<div class="ttc" id="astruct_kosar_lista_elem_html"><div class="ttname"><a href="struct_kosar_lista_elem.html">KosarListaElem</a></div><div class="ttdoc">A Kosar osztály láncolt listázásához szolgáló struktúra. Ez egy darab listaelem.</div><div class="ttdef"><b>Definition:</b> <a href="nyilvantartas_8h_source.html#l00020">nyilvantartas.h:20</a></div></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_menu_html"><div class="ttname"><a href="class_menu.html">Menu</a></div><div class="ttdoc">A futó programot irányító menürendszer objektuma.</div><div class="ttdef"><b>Definition:</b> menu.h:8</div></div>
+<div class="ttc" id="aclass_menu_html_a0bc3d0f4c522dacccc94373081004cbe"><div class="ttname"><a href="class_menu.html#a0bc3d0f4c522dacccc94373081004cbe">Menu::editKeziMenu</a></div><div class="ttdeci">void editKeziMenu(Lista *)</div><div class="ttdoc">A láncolt lista egy elemét módosító almenü.</div><div class="ttdef"><b>Definition:</b> menu.cpp:552</div></div>
+<div class="ttc" id="aclass_menu_html_a16d89092ef2464d51932e29adadf0939"><div class="ttname"><a href="class_menu.html#a16d89092ef2464d51932e29adadf0939">Menu::printFoci</a></div><div class="ttdeci">void printFoci() const</div><div class="ttdoc">Kilistázza megformázva a Focilabda (Foci) csapatokat.</div><div class="ttdef"><b>Definition:</b> menu.cpp:210</div></div>
+<div class="ttc" id="aclass_menu_html_a1cd6ffee4b264c854024f6c6fc91868a"><div class="ttname"><a href="class_menu.html#a1cd6ffee4b264c854024f6c6fc91868a">Menu::editFociMenu</a></div><div class="ttdeci">void editFociMenu(Lista *)</div><div class="ttdoc">A láncolt lista egy elemét módosító almenü.</div><div class="ttdef"><b>Definition:</b> menu.cpp:682</div></div>
+<div class="ttc" id="aclass_menu_html_a2cee56dc1ea87abdf3a12c509f28ce02"><div class="ttname"><a href="class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02">Menu::keresKeziMenu</a></div><div class="ttdeci">void keresKeziMenu()</div><div class="ttdoc">Egy kézilabda csapat keresési menüje.</div><div class="ttdef"><b>Definition:</b> menu.cpp:369</div></div>
+<div class="ttc" id="aclass_menu_html_a39be72db102923be41b2516836714018"><div class="ttname"><a href="class_menu.html#a39be72db102923be41b2516836714018">Menu::keresKosarMenu</a></div><div class="ttdeci">void keresKosarMenu()</div><div class="ttdoc">Egy kosárlabda csapat keresési menüje.</div><div class="ttdef"><b>Definition:</b> menu.cpp:430</div></div>
+<div class="ttc" id="aclass_menu_html_a3b2e80da44059f552e13e61b3693c3ee"><div class="ttname"><a href="class_menu.html#a3b2e80da44059f552e13e61b3693c3ee">Menu::printOne</a></div><div class="ttdeci">void printOne(Lista *, Tipus) const</div><div class="ttdoc">Egy listaelemet ír ki megformázva.</div><div class="ttdef"><b>Definition:</b> menu.cpp:228</div></div>
+<div class="ttc" id="aclass_menu_html_a58feb89fe22c1a088dd8a2bf441968d5"><div class="ttname"><a href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5">Menu::kosarMenu</a></div><div class="ttdeci">void kosarMenu()</div><div class="ttdoc">A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni.</div><div class="ttdef"><b>Definition:</b> menu.cpp:297</div></div>
+<div class="ttc" id="aclass_menu_html_a5c2afd84dcaca022fdb98bac2d88cd44"><div class="ttname"><a href="class_menu.html#a5c2afd84dcaca022fdb98bac2d88cd44">Menu::editKosarMenu</a></div><div class="ttdeci">void editKosarMenu(Lista *)</div><div class="ttdoc">A láncolt lista egy elemét módosító almenü.</div><div class="ttdef"><b>Definition:</b> menu.cpp:617</div></div>
+<div class="ttc" id="aclass_menu_html_a662ae5d3c5843b02680877573f654abc"><div class="ttname"><a href="class_menu.html#a662ae5d3c5843b02680877573f654abc">Menu::foMenu</a></div><div class="ttdeci">void foMenu()</div><div class="ttdoc">Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class.</div><div class="ttdef"><b>Definition:</b> menu.cpp:794</div></div>
+<div class="ttc" id="aclass_menu_html_a674cec9b7998d60fbab21939f109d7ee"><div class="ttname"><a href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee">Menu::fociMenu</a></div><div class="ttdeci">void fociMenu()</div><div class="ttdoc">A focicsapatokkal foglalkozó almenü. Innen lehet foci sprecifikus dolgokat csinálni.</div><div class="ttdef"><b>Definition:</b> menu.cpp:333</div></div>
+<div class="ttc" id="aclass_menu_html_a68b97bb64c0023bbfa40121de9d11b0c"><div class="ttname"><a href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c">Menu::keziMenu</a></div><div class="ttdeci">void keziMenu()</div><div class="ttdoc">A kézilabda csapatokkal foglalkozó almenü. Innen lehet kézi sprecifikus dolgokat csinálni.</div><div class="ttdef"><b>Definition:</b> menu.cpp:261</div></div>
+<div class="ttc" id="aclass_menu_html_a80058f91120b70bbe7466acdaf6e7a83"><div class="ttname"><a href="class_menu.html#a80058f91120b70bbe7466acdaf6e7a83">Menu::getNyilvantartas</a></div><div class="ttdeci">Nyilvantartas getNyilvantartas() const</div><div class="ttdoc">Getter. Visszaadja az egész nyilvántartás osztályt (Debug célokra főképp, mivel nincs értelme a class...</div><div class="ttdef"><b>Definition:</b> menu.h:22</div></div>
+<div class="ttc" id="aclass_menu_html_a81a694a66ab7541066719373533ea60c"><div class="ttname"><a href="class_menu.html#a81a694a66ab7541066719373533ea60c">Menu::keresFociMenu</a></div><div class="ttdeci">void keresFociMenu()</div><div class="ttdoc">Egy focilabda csapat keresési menüje.</div><div class="ttdef"><b>Definition:</b> menu.cpp:491</div></div>
+<div class="ttc" id="aclass_menu_html_a831387f51358cfb88cd018e1777bc980"><div class="ttname"><a href="class_menu.html#a831387f51358cfb88cd018e1777bc980">Menu::~Menu</a></div><div class="ttdeci">~Menu()</div><div class="ttdoc">Destruktor, lementi a nyilvántartás adatait fileokba.</div><div class="ttdef"><b>Definition:</b> menu.cpp:21</div></div>
+<div class="ttc" id="aclass_menu_html_aa1f6c80eb45a32e53a3477672b02bca3"><div class="ttname"><a href="class_menu.html#aa1f6c80eb45a32e53a3477672b02bca3">Menu::printKezi</a></div><div class="ttdeci">void printKezi() const</div><div class="ttdoc">Kilistázza megformázva a Kézilabda (Kezi) csapatokat.</div><div class="ttdef"><b>Definition:</b> menu.cpp:174</div></div>
+<div class="ttc" id="aclass_menu_html_aa8adcc5dd7c7c05b77b22b9e26e93a54"><div class="ttname"><a href="class_menu.html#aa8adcc5dd7c7c05b77b22b9e26e93a54">Menu::getStdRowLen</a></div><div class="ttdeci">int getStdRowLen(Lista *) const</div><div class="ttdoc">Egy adott listaelem sorának hosszát adja vissza. Design felhasználási céllal.</div><div class="ttdef"><b>Definition:</b> menu.cpp:88</div></div>
+<div class="ttc" id="aclass_menu_html_ab16c7117e7b5c0cc079f1565b4083cc1"><div class="ttname"><a href="class_menu.html#ab16c7117e7b5c0cc079f1565b4083cc1">Menu::printKosar</a></div><div class="ttdeci">void printKosar() const</div><div class="ttdoc">Kilistázza megformázva a Kárlabda (Kosar) csapatokat.</div><div class="ttdef"><b>Definition:</b> menu.cpp:192</div></div>
+<div class="ttc" id="aclass_menu_html_ad1d2c072c002e2711d1fdbb282858ef8"><div class="ttname"><a href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8">Menu::ujMenu</a></div><div class="ttdeci">void ujMenu(Tipus)</div><div class="ttdoc">Egy új tipus típusú csapat lérehozására létező almenü.</div><div class="ttdef"><b>Definition:</b> menu.cpp:747</div></div>
+<div class="ttc" id="aclass_menu_html_ad466dd83355124a6ed958430450bfe94"><div class="ttname"><a href="class_menu.html#ad466dd83355124a6ed958430450bfe94">Menu::Menu</a></div><div class="ttdeci">Menu()</div><div class="ttdoc">Default konstruktor, betölti a nyilvántartás adatait fileból.</div><div class="ttdef"><b>Definition:</b> menu.cpp:16</div></div>
+<div class="ttc" id="aclass_menu_html_ad7106b22912d94b8fc50e4dbd8291fb8"><div class="ttname"><a href="class_menu.html#ad7106b22912d94b8fc50e4dbd8291fb8">Menu::printAll</a></div><div class="ttdeci">void printAll() const</div><div class="ttdoc">Kilistázza megformázva az összes adatot.</div><div class="ttdef"><b>Definition:</b> menu.cpp:114</div></div>
+<div class="ttc" id="aclass_menu_html_adb038db1de1ad1fc74c8338c6e69f738"><div class="ttname"><a href="class_menu.html#adb038db1de1ad1fc74c8338c6e69f738">Menu::DB</a></div><div class="ttdeci">Nyilvantartas DB</div><div class="ttdoc">A nyilvántartás adatbázis.</div><div class="ttdef"><b>Definition:</b> menu.h:11</div></div>
+<div class="ttc" id="aclass_menu_html_aeade250ba2c9aefaca95036ee0339992"><div class="ttname"><a href="class_menu.html#aeade250ba2c9aefaca95036ee0339992">Menu::maxStdRowLen</a></div><div class="ttdeci">int maxStdRowLen() const</div><div class="ttdoc">Kiszámolja a leghoszabb sor hosszát a nyilvántartásban. Erre a TAB-ok és a kinézet miatt van szügség.</div><div class="ttdef"><b>Definition:</b> menu.cpp:26</div></div>
+<div class="ttc" id="aclass_nyilvantartas_html"><div class="ttname"><a href="class_nyilvantartas.html">Nyilvantartas</a></div><div class="ttdoc">A nyilvántartás osztály. Ez tárolja a csapatokat (Kosar, Foci, Kezi) láncolt listákban.</div><div class="ttdef"><b>Definition:</b> nyilvantartas.h:19</div></div>
+<div class="ttc" id="acsapat_8h_html_acc8869282127c9c2dc3d8c41d882c879"><div class="ttname"><a href="csapat_8h.html#acc8869282127c9c2dc3d8c41d882c879">Tipus</a></div><div class="ttdeci">Tipus</div><div class="ttdoc">A csapatok típusait tartalmazó enum.</div><div class="ttdef"><b>Definition:</b> csapat.h:7</div></div>
+<div class="ttc" id="amemtrace_8h_html"><div class="ttname"><a href="memtrace_8h.html">memtrace.h</a></div></div>
+<div class="ttc" id="anyilvantartas_8h_html"><div class="ttname"><a href="nyilvantartas_8h.html">nyilvantartas.h</a></div></div>
+<div class="ttc" id="astruct_lista_html"><div class="ttname"><a href="struct_lista.html">Lista</a></div><div class="ttdoc">Láncolt listaelem.</div><div class="ttdef"><b>Definition:</b> nyilvantartas.h:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="menu_8h.html">menu.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
 </body>
 </html>

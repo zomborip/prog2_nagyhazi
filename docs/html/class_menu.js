@@ -1,0 +1,26 @@
+var class_menu =
+[
+    [ "Menu", "class_menu.html#ad466dd83355124a6ed958430450bfe94", null ],
+    [ "~Menu", "class_menu.html#a831387f51358cfb88cd018e1777bc980", null ],
+    [ "editFociMenu", "class_menu.html#a1cd6ffee4b264c854024f6c6fc91868a", null ],
+    [ "editKeziMenu", "class_menu.html#a0bc3d0f4c522dacccc94373081004cbe", null ],
+    [ "editKosarMenu", "class_menu.html#a5c2afd84dcaca022fdb98bac2d88cd44", null ],
+    [ "fociMenu", "class_menu.html#a674cec9b7998d60fbab21939f109d7ee", null ],
+    [ "foMenu", "class_menu.html#a662ae5d3c5843b02680877573f654abc", null ],
+    [ "getNyilvantartas", "class_menu.html#a80058f91120b70bbe7466acdaf6e7a83", null ],
+    [ "getStdRowLen", "class_menu.html#aa8adcc5dd7c7c05b77b22b9e26e93a54", null ],
+    [ "keresFociMenu", "class_menu.html#a81a694a66ab7541066719373533ea60c", null ],
+    [ "keresKeziMenu", "class_menu.html#a2cee56dc1ea87abdf3a12c509f28ce02", null ],
+    [ "keresKosarMenu", "class_menu.html#a39be72db102923be41b2516836714018", null ],
+    [ "keziMenu", "class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c", null ],
+    [ "kosarMenu", "class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5", null ],
+    [ "maxStdRowLen", "class_menu.html#aeade250ba2c9aefaca95036ee0339992", null ],
+    [ "maxStdRowLen", "class_menu.html#a04662f6feb7d7fe5216e6ffbc13edb4b", null ],
+    [ "printAll", "class_menu.html#ad7106b22912d94b8fc50e4dbd8291fb8", null ],
+    [ "printFoci", "class_menu.html#a16d89092ef2464d51932e29adadf0939", null ],
+    [ "printKezi", "class_menu.html#aa1f6c80eb45a32e53a3477672b02bca3", null ],
+    [ "printKosar", "class_menu.html#ab16c7117e7b5c0cc079f1565b4083cc1", null ],
+    [ "printOne", "class_menu.html#a3b2e80da44059f552e13e61b3693c3ee", null ],
+    [ "ujMenu", "class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8", null ],
+    [ "DB", "class_menu.html#adb038db1de1ad1fc74c8338c6e69f738", null ]
+];

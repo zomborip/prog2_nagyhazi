@@ -1,5 +1,7 @@
 <map id="Menu::printKosar" name="Menu::printKosar">
-<area shape="rect" id="node1" title="Kilistázza megformázva a Kárlabda (Kosar) csapatokat." alt="" coords="332,5,453,31"/>
-<area shape="rect" id="node2" href="$class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="157,5,284,31"/>
-<area shape="rect" id="node3" href="$class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="5,5,109,31"/>
+<area shape="rect" id="node1" title="Kilistázza megformázva a Kárlabda (Kosar) csapatokat." alt="" coords="569,5,691,31"/>
+<area shape="rect" id="node2" href="$class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5" title="A kosárlabda csapatokkal foglalkozó almenü. Innen lehet kosár sprecifikus dolgokat csinálni." alt="" coords="395,5,521,31"/>
+<area shape="rect" id="node3" href="$class_menu.html#a662ae5d3c5843b02680877573f654abc" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="243,5,347,31"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a61c946b4a6992a77af01bd8fa7e4c986" title=" " alt="" coords="104,5,195,31"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,31"/>
 </map>

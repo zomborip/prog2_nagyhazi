@@ -1,8 +1,8 @@
 <map id="Nyilvantartas::addFoci" name="Nyilvantartas::addFoci">
 <area shape="rect" id="node1" title="Beleláncol a listába a paramétereknek megfelelő Focilabda csapatot." alt="" coords="5,80,156,105"/>
-<area shape="rect" id="node2" href="$class_foci.html#a0c70d3a8339645645c1332a877805f16" title="Egy darab új edzőt ad hozzá a csapathoz. Növeli az edzoDB countert eggyel." alt="" coords="220,5,327,31"/>
+<area shape="rect" id="node2" href="$class_csapat.html#aeba636b5132ac77411a93e95cd0503ae" title="Focicsapatokra vonatkozó függvénypointer." alt="" coords="212,5,335,31"/>
 <area shape="rect" id="node3" href="$class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="204,55,343,80"/>
 <area shape="rect" id="node4" href="$class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="218,104,329,129"/>
-<area shape="rect" id="node6" href="$class_nyilvantartas.html#af05bda7d2042e5d655e570b3a8b142d0" title="Létrehoz egy új kosárlabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="204,153,343,179"/>
+<area shape="rect" id="node6" href="$class_nyilvantartas.html#a293fc5789cd5ecbd57c94033cdbd4d7d" title="Létrehoz egy új láncolt lista elemet, beláncolja a listába, majd." alt="" coords="216,153,331,179"/>
 <area shape="rect" id="node5" href="$class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="391,104,500,129"/>
 </map>

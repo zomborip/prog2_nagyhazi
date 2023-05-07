@@ -1,0 +1,11 @@
+<map id="Menu::printOne" name="Menu::printOne">
+<area shape="rect" id="node1" title="Egy listaelemet ír ki megformázva." alt="" coords="5,175,116,200"/>
+<area shape="rect" id="node2" href="$class_csapat.html#aa749d01e32c0d615df172e7c8b27cf7d" title="Focicsapatokra vonatkozó függvénypointer." alt="" coords="359,5,524,31"/>
+<area shape="rect" id="node3" href="$class_csapat.html#ac88ac916828fec75fc1d84286e88be03" title="Visszaadja a csapat létszámát." alt="" coords="372,55,511,80"/>
+<area shape="rect" id="node4" href="$class_csapat.html#a4a9d5a571b4fb0936b33e5d61274f7a8" title="Visszaadja a csapat nevét." alt="" coords="386,203,497,228"/>
+<area shape="rect" id="node5" href="$class_csapat.html#a8cc16ae5e9f3a263b3eb0ed3000dff85" title="Kosárcsapatra vonatkozó függvénypointer." alt="" coords="362,252,521,277"/>
+<area shape="rect" id="node6" href="$class_menu.html#aa8adcc5dd7c7c05b77b22b9e26e93a54" title="Egy adott listaelem sorának hosszát adja vissza. Design felhasználási céllal." alt="" coords="164,149,311,175"/>
+<area shape="rect" id="node7" href="$class_csapat.html#a0e252a6da8bfa87c54bf1f00cace545e" title="Kézicsapatra vonatkozó függvénypointer." alt="" coords="365,301,518,327"/>
+<area shape="rect" id="node8" href="$class_csapat.html#a1e724883ce504521eb068a1031074a9c" title="Viszaadja a csapat típusát a Tipus enum segítségével." alt="" coords="381,153,501,179"/>
+<area shape="rect" id="node9" href="$class_nyilvantartas.html#a9604b1a0d7f81045cc47b51747f8424d" title="Kiszamolja egy szám legnagyobb helyiértékét (tehát, milyen hosszú a szám). Statikus függvény." alt="" coords="374,104,509,129"/>
+</map>

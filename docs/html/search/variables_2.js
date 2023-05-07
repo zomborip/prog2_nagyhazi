@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['letszam_0',['letszam',['../class_csapat.html#a5637beff531a0c3f69691894b18f0037',1,'Csapat']]]
+  ['db_0',['DB',['../class_menu.html#adb038db1de1ad1fc74c8338c6e69f738',1,'Menu']]]
 ];

@@ -12,8 +12,6 @@ Kosar::Kosar(const char* p = "", const int n = 0) :
   setTipus(KOSAR);
 }
 
-void Kosar::addPompom() {pompomDB++;}
-
 void Kosar::addPompom(const int n) {pompomDB = n;}
 
 const int Kosar::getPomPomDb() const {return pompomDB;}

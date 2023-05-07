@@ -1,8 +1,8 @@
 <map id="Nyilvantartas::addKezi" name="Nyilvantartas::addKezi">
 <area shape="rect" id="node1" title="Beleláncol a listába a paramétereknek megfelelő Kézilabda csapatot." alt="" coords="5,80,156,105"/>
-<area shape="rect" id="node2" href="$class_kezi.html#ad46f6b62ded92e9321d57634d00af62d" title="A megadott számmal növeli a tamogatas változót." alt="" coords="204,5,345,31"/>
-<area shape="rect" id="node3" href="$class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="205,55,344,80"/>
-<area shape="rect" id="node4" href="$class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="219,104,330,129"/>
-<area shape="rect" id="node6" href="$class_nyilvantartas.html#a66fe61d7c04ecf59b40a374efef4e09b" title="Létrehoz egy új kézilabda láncolt lista elemet, beláncolja a listába, majd." alt="" coords="205,153,345,179"/>
-<area shape="rect" id="node5" href="$class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="393,104,503,129"/>
+<area shape="rect" id="node2" href="$class_csapat.html#af79780d2d9114e5f5a095375a8222377" title="Kézicsapatra vonatkozó függvénypointer." alt="" coords="204,5,360,31"/>
+<area shape="rect" id="node3" href="$class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73" title="A csapat létszámát átállító, beállító függvény." alt="" coords="213,55,351,80"/>
+<area shape="rect" id="node4" href="$class_csapat.html#a762b432fc2883db8580b0f53b3d91093" title="A csapat nevét átállító, beállító függvény." alt="" coords="227,104,337,129"/>
+<area shape="rect" id="node6" href="$class_nyilvantartas.html#a293fc5789cd5ecbd57c94033cdbd4d7d" title="Létrehoz egy új láncolt lista elemet, beláncolja a listába, majd." alt="" coords="225,153,339,179"/>
+<area shape="rect" id="node5" href="$class_csapat.html#a19c3c27beb42a940fa423af0aff66342" title="Segédfunkció, amely kitörli, felszabadítja a nevet, ha az nem üres." alt="" coords="408,104,517,129"/>
 </map>

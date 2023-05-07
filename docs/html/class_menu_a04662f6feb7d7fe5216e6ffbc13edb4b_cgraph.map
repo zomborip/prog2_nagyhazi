@@ -1,7 +1,5 @@
 <map id="Menu::maxStdRowLen" name="Menu::maxStdRowLen">
-<area shape="rect" id="node1" title="Kiszámolja, hogy a nyílvántartás típus szerinti láncolt listájában mennyi a leghoszabb sor...." alt="" coords="5,80,159,105"/>
-<area shape="rect" id="node2" href="$class_nyilvantartas.html#aeeb7ed431f80b9ffbd90bdd24794bddc" title="Visszaadja a Focilabda csapatok láncolt listáját." alt="" coords="211,5,386,31"/>
-<area shape="rect" id="node3" href="$class_nyilvantartas.html#ad6b8de317a7fb06ef561284645db2567" title="Visszaadja a Kézilabda csapatok láncolt listáját." alt="" coords="211,55,387,80"/>
-<area shape="rect" id="node4" href="$class_nyilvantartas.html#ac5d09b83892e100ac2068ad9967bc06f" title="Visszaadja a Kosárlabda csapatok láncolt listáját." alt="" coords="207,104,391,129"/>
-<area shape="rect" id="node5" href="$class_nyilvantartas.html#a9604b1a0d7f81045cc47b51747f8424d" title="Kiszamolja egy szám legnagyobb helyiértékét (tehát, milyen hosszú a szám). Statikus függvény." alt="" coords="231,153,366,179"/>
+<area shape="rect" id="node1" title="Kiszámolja, hogy a nyílvántartás típus szerinti láncolt listájában mennyi a leghoszabb sor...." alt="" coords="5,31,159,56"/>
+<area shape="rect" id="node2" href="$class_nyilvantartas.html#afee3bf2152317a8a59d5a5b2c4585dfc" title="Visszaadja a csapatok láncolt listáját." alt="" coords="207,5,357,31"/>
+<area shape="rect" id="node3" href="$class_nyilvantartas.html#a9604b1a0d7f81045cc47b51747f8424d" title="Kiszamolja egy szám legnagyobb helyiértékét (tehát, milyen hosszú a szám). Statikus függvény." alt="" coords="215,55,349,80"/>
 </map>

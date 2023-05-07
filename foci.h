@@ -20,9 +20,6 @@ class Foci : public Csapat {
     /// @param letszam a csapat beállítandó létszáma.
     Foci(const char *, const int);
 
-    /// @brief Egy darab új edzőt ad hozzá a csapathoz. Növeli az edzoDB countert eggyel.
-    void addEdzo();
-
     /// @brief Sok darab új edzot ad hozzá a csapathoz. Növeli az edzoDB countert a megfelelő számmal.
     /// @param edzok_szama ennyivel növeli az edzoDB countert.
     void addEdzo(const int);

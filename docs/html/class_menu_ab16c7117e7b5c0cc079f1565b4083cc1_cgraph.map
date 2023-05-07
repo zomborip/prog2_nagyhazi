@@ -1,12 +1,13 @@
 <map id="Menu::printKosar" name="Menu::printKosar">
-<area shape="rect" id="node1" title="Kilistázza megformázva a Kárlabda (Kosar) csapatokat." alt="" coords="5,177,127,203"/>
-<area shape="rect" id="node2" href="$class_nyilvantartas.html#ac5d09b83892e100ac2068ad9967bc06f" title="Visszaadja a Kosárlabda csapatok láncolt listáját." alt="" coords="376,203,560,228"/>
-<area shape="rect" id="node3" href="$class_menu.html#ac183ce914dd13e202c2d0f822d2a8a02" title="Egy adott listaelem sorának hosszát adja vissza. Design felhasználási céllal." alt="" coords="178,104,325,129"/>
-<area shape="rect" id="node8" href="$class_menu.html#aeade250ba2c9aefaca95036ee0339992" title="Kiszámolja a leghoszabb sor hosszát a nyilvántartásban. Erre a TAB&#45;ok és a kinézet miatt van szügség." alt="" coords="175,228,328,253"/>
-<area shape="rect" id="node4" href="$class_csapat.html#ac88ac916828fec75fc1d84286e88be03" title="Visszaadja a csapat létszámát." alt="" coords="399,104,537,129"/>
-<area shape="rect" id="node5" href="$class_csapat.html#a4a9d5a571b4fb0936b33e5d61274f7a8" title="Visszaadja a csapat nevét." alt="" coords="413,5,523,31"/>
-<area shape="rect" id="node6" href="$class_kezi.html#a613f5e5f275485d0a4fab918e567aae0" title="Visszaadja a támogatások számát." alt="" coords="399,55,537,80"/>
-<area shape="rect" id="node7" href="$class_nyilvantartas.html#a9604b1a0d7f81045cc47b51747f8424d" title="Kiszamolja egy szám legnagyobb helyiértékét (tehát, milyen hosszú a szám). Statikus függvény." alt="" coords="401,153,535,179"/>
-<area shape="rect" id="node9" href="$class_nyilvantartas.html#aeeb7ed431f80b9ffbd90bdd24794bddc" title="Visszaadja a Focilabda csapatok láncolt listáját." alt="" coords="381,301,555,327"/>
-<area shape="rect" id="node10" href="$class_nyilvantartas.html#ad6b8de317a7fb06ef561284645db2567" title="Visszaadja a Kézilabda csapatok láncolt listáját." alt="" coords="380,252,556,277"/>
+<area shape="rect" id="node1" title="Kilistázza megformázva a Kárlabda (Kosar) csapatokat." alt="" coords="5,56,127,81"/>
+<area shape="rect" id="node2" href="$class_nyilvantartas.html#afee3bf2152317a8a59d5a5b2c4585dfc" title="Visszaadja a csapatok láncolt listáját." alt="" coords="383,5,534,31"/>
+<area shape="rect" id="node3" href="$class_menu.html#aa8adcc5dd7c7c05b77b22b9e26e93a54" title="Egy adott listaelem sorának hosszát adja vissza. Design felhasználási céllal." alt="" coords="178,177,325,203"/>
+<area shape="rect" id="node11" href="$class_menu.html#aeade250ba2c9aefaca95036ee0339992" title="Kiszámolja a leghoszabb sor hosszát a nyilvántartásban. Erre a TAB&#45;ok és a kinézet miatt van szügség." alt="" coords="175,56,328,81"/>
+<area shape="rect" id="node4" href="$class_csapat.html#aa749d01e32c0d615df172e7c8b27cf7d" title="Focicsapatokra vonatkozó függvénypointer." alt="" coords="376,104,541,129"/>
+<area shape="rect" id="node5" href="$class_csapat.html#ac88ac916828fec75fc1d84286e88be03" title="Visszaadja a csapat létszámát." alt="" coords="389,153,528,179"/>
+<area shape="rect" id="node6" href="$class_csapat.html#a4a9d5a571b4fb0936b33e5d61274f7a8" title="Visszaadja a csapat nevét." alt="" coords="403,203,514,228"/>
+<area shape="rect" id="node7" href="$class_csapat.html#a8cc16ae5e9f3a263b3eb0ed3000dff85" title="Kosárcsapatra vonatkozó függvénypointer." alt="" coords="379,252,538,277"/>
+<area shape="rect" id="node8" href="$class_csapat.html#a0e252a6da8bfa87c54bf1f00cace545e" title="Kézicsapatra vonatkozó függvénypointer." alt="" coords="382,301,535,327"/>
+<area shape="rect" id="node9" href="$class_csapat.html#a1e724883ce504521eb068a1031074a9c" title="Viszaadja a csapat típusát a Tipus enum segítségével." alt="" coords="399,351,519,376"/>
+<area shape="rect" id="node10" href="$class_nyilvantartas.html#a9604b1a0d7f81045cc47b51747f8424d" title="Kiszamolja egy szám legnagyobb helyiértékét (tehát, milyen hosszú a szám). Statikus függvény." alt="" coords="391,55,526,80"/>
 </map>

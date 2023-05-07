@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nyilvantartas_0',['Nyilvantartas',['../class_nyilvantartas.html',1,'']]]
+  ['menu_0',['Menu',['../class_menu.html',1,'']]]
 ];

@@ -1,0 +1,25 @@
+var class_csapat =
+[
+    [ "Csapat", "class_csapat.html#a8058315921508d902303dbb7d75524eb", null ],
+    [ "Csapat", "class_csapat.html#a0d0dd9483d8621d30c900de9e077f0a1", null ],
+    [ "Csapat", "class_csapat.html#af485e0afadc5d8f92cb0dd928c5b43db", null ],
+    [ "Csapat", "class_csapat.html#a487d6e534c946e227ac9471d5da0c0ac", null ],
+    [ "~Csapat", "class_csapat.html#a6be4fae05ff3c8efccabe8ee37e386c5", null ],
+    [ "addEdzo", "class_csapat.html#aeba636b5132ac77411a93e95cd0503ae", null ],
+    [ "addPompom", "class_csapat.html#a63814f0361836f43d029917086a7dc13", null ],
+    [ "addTamogatas", "class_csapat.html#af79780d2d9114e5f5a095375a8222377", null ],
+    [ "delNev", "class_csapat.html#a19c3c27beb42a940fa423af0aff66342", null ],
+    [ "getEdzokszama", "class_csapat.html#aa749d01e32c0d615df172e7c8b27cf7d", null ],
+    [ "getLetszam", "class_csapat.html#ac88ac916828fec75fc1d84286e88be03", null ],
+    [ "getNev", "class_csapat.html#a4a9d5a571b4fb0936b33e5d61274f7a8", null ],
+    [ "getPomPomDb", "class_csapat.html#a8cc16ae5e9f3a263b3eb0ed3000dff85", null ],
+    [ "getTamogatas", "class_csapat.html#a0e252a6da8bfa87c54bf1f00cace545e", null ],
+    [ "getTipus", "class_csapat.html#a1e724883ce504521eb068a1031074a9c", null ],
+    [ "operator==", "class_csapat.html#a6bc12786412ac18a41eac71258a56e07", null ],
+    [ "setLetszam", "class_csapat.html#a40b1862c6ed3d7c9eec5343ad74bcf73", null ],
+    [ "setNev", "class_csapat.html#a762b432fc2883db8580b0f53b3d91093", null ],
+    [ "setTipus", "class_csapat.html#afcff7ec2eef4c1f450d6c7b8b9a5b707", null ],
+    [ "letszam", "class_csapat.html#a5637beff531a0c3f69691894b18f0037", null ],
+    [ "nev", "class_csapat.html#a6185e84380b5deabfc49e66cab8c84ff", null ],
+    [ "tipus", "class_csapat.html#a56a33d08732061e7104c8bd54308c3ba", null ]
+];

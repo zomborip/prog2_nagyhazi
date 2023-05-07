@@ -11,7 +11,6 @@ Makefile_WIN.cmd
 ```
 
 - Linux, unix alatt:
-
 ```
 make
 ```
@@ -27,3 +26,12 @@ A feladathoz tartozó specifikáció a [spec/Spec.pdf](https://github.com/zombor
 ## Állapot:
 
 Kész. A feladat a Laborvezető elbírálására vár, utólagos javítások azután valószínűek.
+
+## Changelog:
+
+* Heterogén kollekció inplementálása (_2023.05.01_)
+  * A Class-okban
+  * A Nyilvántartás API-ban
+  * A Menüben
+  * Dokumentációban, Specifikációban
+

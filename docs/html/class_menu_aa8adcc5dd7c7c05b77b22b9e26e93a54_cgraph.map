@@ -1,0 +1,10 @@
+<map id="Menu::getStdRowLen" name="Menu::getStdRowLen">
+<area shape="rect" id="node1" title="Egy adott listaelem sorának hosszát adja vissza. Design felhasználási céllal." alt="" coords="5,153,152,179"/>
+<area shape="rect" id="node2" href="$class_csapat.html#aa749d01e32c0d615df172e7c8b27cf7d" title="Focicsapatokra vonatkozó függvénypointer." alt="" coords="200,5,365,31"/>
+<area shape="rect" id="node3" href="$class_csapat.html#ac88ac916828fec75fc1d84286e88be03" title="Visszaadja a csapat létszámát." alt="" coords="213,55,352,80"/>
+<area shape="rect" id="node4" href="$class_csapat.html#a4a9d5a571b4fb0936b33e5d61274f7a8" title="Visszaadja a csapat nevét." alt="" coords="227,104,338,129"/>
+<area shape="rect" id="node5" href="$class_csapat.html#a8cc16ae5e9f3a263b3eb0ed3000dff85" title="Kosárcsapatra vonatkozó függvénypointer." alt="" coords="203,153,362,179"/>
+<area shape="rect" id="node6" href="$class_csapat.html#a0e252a6da8bfa87c54bf1f00cace545e" title="Kézicsapatra vonatkozó függvénypointer." alt="" coords="206,203,359,228"/>
+<area shape="rect" id="node7" href="$class_csapat.html#a1e724883ce504521eb068a1031074a9c" title="Viszaadja a csapat típusát a Tipus enum segítségével." alt="" coords="223,252,343,277"/>
+<area shape="rect" id="node8" href="$class_nyilvantartas.html#a9604b1a0d7f81045cc47b51747f8424d" title="Kiszamolja egy szám legnagyobb helyiértékét (tehát, milyen hosszú a szám). Statikus függvény." alt="" coords="215,301,350,327"/>
+</map>

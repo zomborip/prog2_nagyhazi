@@ -85,6 +85,23 @@ class Csapat {
     /// @brief Virtuális destruktor (mert öröklődik majd a class).
     virtual ~Csapat();
 
+    /// @brief Kosárcsapatra vonatkozó függvénypointer.
+    virtual void addPompom(const int) {};
+
+    /// @brief Kosárcsapatra vonatkozó függvénypointer. 
+    virtual const int getPomPomDb() const {return -1;}
+
+    /// @brief Kézicsapatra vonatkozó függvénypointer. 
+    virtual void addTamogatas(const int) {}
+
+    /// @brief Kézicsapatra vonatkozó függvénypointer. 
+    virtual const int getTamogatas() const {return -1;}
+
+    /// @brief Focicsapatokra vonatkozó függvénypointer.
+    virtual void addEdzo(const int) {}
+
+    /// @brief Focicsapatokra vonatkozó függvénypointer.
+    virtual const int getEdzokszama() const {return -1;}
 };
 
 #endif

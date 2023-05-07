@@ -20,11 +20,8 @@ class Kosar : public Csapat {
     /// @param letszam az új létszám.
     Kosar(const char*, const int);
 
-    /// @brief Egy darab pompomlányt ad hozzá a csapathoz.
-    void addPompom();
-
     /// @brief Az adatoknak megfelelő mennyiségű pompomlányt ad a csapathoz.
-    /// @param darabSzam ennyi pompomlányt ad a csapathoz.
+    /// @param darabSzam ennyi pompomlány lesz a csapatban a csapathoz.
     void addPompom(const int);
 
     /// @brief Visszaadja a pompomlányok számát.

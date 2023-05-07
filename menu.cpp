@@ -1,12 +1,12 @@
 #include <iostream>
 #include <cstring>
 #include <cmath>
+#include "nyilvantartas.h"
+#include "menu.h"
 #include "csapat.h"
 #include "kezi.h"
 #include "kosar.h"
 #include "foci.h"
-#include "nyilvantartas.h"
-#include "menu.h"
 #include "memtrace.h"
 
 using std::cout;
@@ -26,22 +26,28 @@ Menu::~Menu(){
 int Menu::maxStdRowLen() const {
   // A leghoszabb sorszám kiszámolása (teljessen folosleges es lassitja a programot, de szep lesz):
   int maxrow = 0;
-  for (KeziListaElem* i = DB.getKeziLista(); i != nullptr; i = i->kovi ) {
-    int currRow = strlen(i->adat.getNev()) + Nyilvantartas::intlen(i->adat.getLetszam())
-      + Nyilvantartas::intlen(i->adat.getTamogatas()) + 4 + 4;
-    if (currRow > maxrow) { maxrow = currRow;}
+  for (Lista* i = DB.getLista(); i != nullptr; i = i->kovi ) {
+    if (i->adat->getTipus() == KEZI) {
+      int currRow = strlen(i->adat->getNev()) + Nyilvantartas::intlen(i->adat->getLetszam())
+        + Nyilvantartas::intlen(i->adat->getTamogatas()) + 4 + 4;
+      if (currRow > maxrow) { maxrow = currRow;}
+    }
   }
 
-  for (KosarListaElem* i = DB.getKosarLista(); i != nullptr; i = i->kovi ) {
-    int currRow = strlen(i->adat.getNev()) + Nyilvantartas::intlen(i->adat.getLetszam())
-      + Nyilvantartas::intlen(i->adat.getPomPomDb()) + 4 + 4;
-    if (currRow > maxrow) { maxrow = currRow;}
+  for (Lista* i = DB.getLista(); i != nullptr; i = i->kovi ) {
+    if (i->adat->getTipus() == KOSAR) {
+      int currRow = strlen(i->adat->getNev()) + Nyilvantartas::intlen(i->adat->getLetszam())
+        + Nyilvantartas::intlen(i->adat->getPomPomDb()) + 4 + 4;
+      if (currRow > maxrow) { maxrow = currRow;}
+    }
   }
 
-  for (FociListaElem* i = DB.getFociLista(); i != nullptr; i = i->kovi ) {
-    int currRow = strlen(i->adat.getNev()) + Nyilvantartas::intlen(i->adat.getLetszam())
-      + Nyilvantartas::intlen(i->adat.getEdzokszama()) + 4 + 4;
-    if (currRow > maxrow) { maxrow = currRow;}
+  for (Lista* i = DB.getLista(); i != nullptr; i = i->kovi ) {
+    if (i->adat->getTipus() == FOCI) {
+      int currRow = strlen(i->adat->getNev()) + Nyilvantartas::intlen(i->adat->getLetszam())
+        + Nyilvantartas::intlen(i->adat->getEdzokszama()) + 4 + 4;
+      if (currRow > maxrow) { maxrow = currRow;}
+    }
   }
   return maxrow;
 }
@@ -49,100 +55,116 @@ int Menu::maxStdRowLen() const {
 int Menu::maxStdRowLen(Tipus t) const {
   // A leghoszabb sorszám kiszámolása (teljessen folosleges es lassitja a programot, de szep lesz):
   int maxrow = 0;
-  if (t == KEZI) {
-    for (KeziListaElem* i = DB.getKeziLista(); i != nullptr; i = i->kovi ) {
-      int currRow = strlen(i->adat.getNev()) + Nyilvantartas::intlen(i->adat.getLetszam())
-        + Nyilvantartas::intlen(i->adat.getTamogatas()) + 4 + 4;
-      if (currRow > maxrow) { maxrow = currRow;}
+  if (t == KEZI)
+    for (Lista* i = DB.getLista(); i != nullptr; i = i->kovi ) {
+      if (i->adat->getTipus() == t) {
+        int currRow = strlen(i->adat->getNev()) + Nyilvantartas::intlen(i->adat->getLetszam())
+          + Nyilvantartas::intlen(i->adat->getTamogatas()) + 4 + 4;
+        if (currRow > maxrow) { maxrow = currRow;}
+      }
     }
-  }
-  if (t == KOSAR){
-    for (KosarListaElem* i = DB.getKosarLista(); i != nullptr; i = i->kovi ) {
-      int currRow = strlen(i->adat.getNev()) + Nyilvantartas::intlen(i->adat.getLetszam())
-        + Nyilvantartas::intlen(i->adat.getPomPomDb()) + 4 + 4;
-      if (currRow > maxrow) { maxrow = currRow;}
+
+  if (t == KOSAR)
+    for (Lista* i = DB.getLista(); i != nullptr; i = i->kovi ) {
+      if (i->adat->getTipus() == t) {
+        int currRow = strlen(i->adat->getNev()) + Nyilvantartas::intlen(i->adat->getLetszam())
+          + Nyilvantartas::intlen(i->adat->getPomPomDb()) + 4 + 4;
+        if (currRow > maxrow) { maxrow = currRow;}
+      }
     }
-  }
-  if (t == FOCI) {
-    for (FociListaElem* i = DB.getFociLista(); i != nullptr; i = i->kovi ) {
-      int currRow = strlen(i->adat.getNev()) + Nyilvantartas::intlen(i->adat.getLetszam())
-        + Nyilvantartas::intlen(i->adat.getEdzokszama()) + 4 + 4;
-      if (currRow > maxrow) { maxrow = currRow;}
+
+  if (t == FOCI)
+    for (Lista* i = DB.getLista(); i != nullptr; i = i->kovi ) {
+      if (i->adat->getTipus() == t) {
+        int currRow = strlen(i->adat->getNev()) + Nyilvantartas::intlen(i->adat->getLetszam())
+          + Nyilvantartas::intlen(i->adat->getEdzokszama()) + 4 + 4;
+        if (currRow > maxrow) { maxrow = currRow;}
+      }
     }
-  }
+  
   return maxrow;
 }
 
-int Menu::getStdRowLen(KeziListaElem *l) const {
+int Menu::getStdRowLen(Lista *l) const {
   int n = 0;
-  n += strlen(l->adat.getNev());
-  n += Nyilvantartas::intlen(l->adat.getLetszam());
-  n += Nyilvantartas::intlen(l->adat.getTamogatas());
-  return n;
-}
+  n += strlen(l->adat->getNev());
+  n += Nyilvantartas::intlen(l->adat->getLetszam());
 
-int Menu::getStdRowLen(KosarListaElem *l) const {
-  int n = 0;
-  n += strlen(l->adat.getNev());
-  n += Nyilvantartas::intlen(l->adat.getLetszam());
-  n += Nyilvantartas::intlen(l->adat.getPomPomDb());
-  return n;
-}
+  switch (l->adat->getTipus())
+  {
+  case NINCS:
+    break;
+  
+  case KEZI:
+    n += Nyilvantartas::intlen(l->adat->getTamogatas());
+    break;
 
-int Menu::getStdRowLen(FociListaElem *l) const {
-  int n = 0;
-  n += strlen(l->adat.getNev());
-  n += Nyilvantartas::intlen(l->adat.getLetszam());
-  n += Nyilvantartas::intlen(l->adat.getEdzokszama());
+  case KOSAR:
+    n += Nyilvantartas::intlen(l->adat->getPomPomDb());
+    break;
+
+  case FOCI:
+    n += Nyilvantartas::intlen(l->adat->getEdzokszama());
+    break;
+  }
+
   return n;
 }
 
 void Menu::printAll() const {
-  int maxrow = maxStdRowLen();
-  if (DB.getKeziLista() == nullptr) {
+  int maxrow = maxStdRowLen(KEZI);
+  if (DB.getLista() == nullptr) {
     cout << "\n\n[+] Ures a kezilabda csapatok listaja\n" << endl;
   } else {
     cout << "\n\n\n[+] Kezilabda Csapatok:" << endl << endl;
     cout << "Nev-Letszam-Tamogatas"<< endl;
     for (int i=0;i<maxrow;i++) {cout << "=";} cout << endl;
-    for (KeziListaElem* i = DB.getKeziLista(); i != nullptr; i = i->kovi) {
-      int t = abs(maxrow-6 - getStdRowLen(i));
-      //cout << "\t\t---" << t << "---" << maxrow << "---" << getStdRowLen(i) << endl;
-      cout << i->adat.getNev();
-      for (int j=0; j<t; j++) {cout << " " ;}
-      cout << i->adat.getLetszam() << "\t" << i->adat.getTamogatas() << endl;
+    for (Lista* i = DB.getLista(); i != nullptr; i = i->kovi) {
+      if (i->adat->getTipus() == KEZI) {
+        int t = abs(maxrow-6 - getStdRowLen(i));
+        //cout << "\t\t---" << t << "---" << maxrow << "---" << getStdRowLen(i) << endl;
+        cout << i->adat->getNev();
+        for (int j=0; j<t; j++) {cout << " " ;}
+        cout << i->adat->getLetszam() << "\t" << i->adat->getTamogatas() << endl;
+      }
     }
     for (int i=0;i<maxrow;i++) {cout << "=";} cout << endl;
   }
 
-  if (DB.getKosarLista() == nullptr) {
+  maxrow = maxStdRowLen(KOSAR);
+  if (DB.getLista() == nullptr) {
     cout << "\n\n[+] Ures a kosarlabda csapatok listaja\n" << endl;
   } else {
     cout << "\n\n\n[+] Kosarlabda Csapatok:" << endl << endl;
     cout << "Nev-Letszam-PomPomLanyok"<< endl;
     for (int i=0;i<maxrow;i++) {cout << "=";} cout << endl;
-    for (KosarListaElem* i = DB.getKosarLista(); i != nullptr; i = i->kovi) {
-      int t = abs(maxrow-6 - getStdRowLen(i));;
-      //cout << "\t\t---" << t << "---" << maxrow << "---" << getStdRowLen(i) << endl;
-      cout << i->adat.getNev();
-      for (int j=0; j<t; j++) {cout << " " ;}
-      cout << i->adat.getLetszam() << "\t" << i->adat.getPomPomDb() << endl;
+    for (Lista* i = DB.getLista(); i != nullptr; i = i->kovi) {
+      if (i->adat->getTipus() == KOSAR) {
+        int t = abs(maxrow-6 - getStdRowLen(i));;
+        //cout << "\t\t---" << t << "---" << maxrow << "---" << getStdRowLen(i) << endl;
+        cout << i->adat->getNev();
+        for (int j=0; j<t; j++) {cout << " " ;}
+        cout << i->adat->getLetszam() << "\t" << i->adat->getPomPomDb() << endl;
+      }
     }
     for (int i=0;i<maxrow;i++) {cout << "=";} cout << endl;
   }
 
-  if (DB.getFociLista() == nullptr) {
+  maxrow = maxStdRowLen(FOCI);
+  if (DB.getLista() == nullptr) {
     cout << "\n\n[+] Ures a focilabda csapatok listaja\n" << endl;
   } else {
     cout << "\n\n\n[+] Focilabda Csapatok:" << endl << endl;
     cout << "Nev-Letszam-Edzok"<< endl;
     for (int i=0;i<maxrow;i++) {cout << "=";} cout << endl;
-    for (FociListaElem* i = DB.getFociLista(); i != nullptr; i = i->kovi) {
-      int t = abs(maxrow-6 - getStdRowLen(i));;
-      //cout << "\t\t---" << t << "---" << maxrow << "---" << getStdRowLen(i) << endl;
-      cout << i->adat.getNev();
-      for (int j=0; j<t; j++) {cout << " " ;}
-      cout << i->adat.getLetszam() << "\t" << i->adat.getEdzokszama() << endl;
+    for (Lista* i = DB.getLista(); i != nullptr; i = i->kovi) {
+      if (i->adat->getTipus() == FOCI) {
+        int t = abs(maxrow-6 - getStdRowLen(i));;
+        //cout << "\t\t---" << t << "---" << maxrow << "---" << getStdRowLen(i) << endl;
+        cout << i->adat->getNev();
+        for (int j=0; j<t; j++) {cout << " " ;}
+        cout << i->adat->getLetszam() << "\t" << i->adat->getEdzokszama() << endl;
+      }
     }
 
     for (int i=0;i<maxrow;i++) {cout << "=";} cout << endl;
@@ -150,87 +172,90 @@ void Menu::printAll() const {
 }
 
 void Menu::printKezi() const {
-  if (DB.getKeziLista() == nullptr) { cout << "\n\n[+]Ures a kezilabda csapatok listaja\n\n" << endl; return; }
+  if (DB.getLista() == nullptr) { cout << "\n\n[+]Ures a kezilabda csapatok listaja\n\n" << endl; return; }
   int maxrow = maxStdRowLen(KEZI);
   cout << "\n\n\n\t[+] Kezilabda Csapatok:" << endl << endl;
   cout << "\tNev-Letszam-Tamogatas"<< endl;
   cout<<"\t"; for (int i=0;i<maxrow;i++) {cout << "=";} cout << endl;
-  for (KeziListaElem* i = DB.getKeziLista(); i != nullptr; i = i->kovi) {
-    int t = abs(maxrow-6 - getStdRowLen(i));
-    //cout << "\t\t---" << t << "---" << maxrow << "---" << getStdRowLen(i) << endl;
-    cout << "\t" << i->adat.getNev();
-    for (int j=0; j<t; j++) {cout << " " ;}
-    cout << i->adat.getLetszam() << "\t" << i->adat.getTamogatas() << endl;
+  for (Lista* i = DB.getLista(); i != nullptr; i = i->kovi) {
+    if (i->adat->getTipus() == KEZI) {
+        int t = abs(maxrow-6 - getStdRowLen(i));
+        //cout << "\t\t---" << t << "---" << maxrow << "---" << getStdRowLen(i) << endl;
+        cout << "\t" << i->adat->getNev();
+        for (int j=0; j<t; j++) {cout << " " ;}
+        cout << i->adat->getLetszam() << "\t" << i->adat->getTamogatas() << endl;
+    }
   }
   cout<<"\t"; for (int i=0;i<maxrow;i++) {cout << "=";} cout << endl;
 }
 
 void Menu::printKosar() const {
-  if (DB.getKosarLista() == nullptr) { cout << "\n\n[+]Ures a kosarlabda csapatok listaja\n\n" << endl; return; }
+  if (DB.getLista() == nullptr) { cout << "\n\n[+]Ures a kosarlabda csapatok listaja\n\n" << endl; return; }
   int maxrow = maxStdRowLen(KOSAR);
   cout << "\n\n\n\t[+] Kosarlabda Csapatok:" << endl << endl;
   cout << "\tNev-Letszam-PomPomLanyok"<< endl;
   cout<<"\t"; for (int i=0;i<maxrow;i++) {cout << "=";} cout << endl;
-  for (KosarListaElem* i = DB.getKosarLista(); i != nullptr; i = i->kovi) {
-    int t = abs(maxrow-6 - getStdRowLen(i));
-    //cout << "\t\t---" << t << "---" << maxrow << "---" << getStdRowLen(i) << endl;
-    cout << "\t" << i->adat.getNev();
-    for (int j=0; j<t; j++) {cout << " " ;}
-    cout << i->adat.getLetszam() << "\t" << i->adat.getPomPomDb() << endl;
+  for (Lista* i = DB.getLista(); i != nullptr; i = i->kovi) {
+    if (i->adat->getTipus() == KOSAR) {
+      int t = abs(maxrow-6 - getStdRowLen(i));
+      //cout << "\t\t---" << t << "---" << maxrow << "---" << getStdRowLen(i) << endl;
+      cout << "\t" << i->adat->getNev();
+      for (int j=0; j<t; j++) {cout << " " ;}
+      cout << i->adat->getLetszam() << "\t" << i->adat->getPomPomDb() << endl;
+    }
   }
   cout<<"\t"; for (int i=0;i<maxrow;i++) {cout << "=";} cout << endl;
 }
 
 void Menu::printFoci() const {
-  if (DB.getFociLista() == nullptr) { cout << "\n\n[+]Ures a focilabda csapatok listaja\n\n" << endl; return; }
+  if (DB.getLista() == nullptr) { cout << "\n\n[+]Ures a focilabda csapatok listaja\n\n" << endl; return; }
   int maxrow = maxStdRowLen(FOCI);
   cout << "\n\n\n\t[+] Focilabda Csapatok:" << endl << endl;
   cout << "\tNev-Letszam-EdzokSzama"<< endl;
   cout<<"\t"; for (int i=0;i<maxrow;i++) {cout << "=";} cout << endl;
-  for (FociListaElem* i = DB.getFociLista(); i != nullptr; i = i->kovi) {
-    int t = abs(maxrow-6 - getStdRowLen(i));
-    //cout << "\t\t---" << t << "---" << maxrow << "---" << getStdRowLen(i) << endl;
-    cout << "\t" << i->adat.getNev();
-    for (int j=0; j<t; j++) {cout << " " ;}
-    cout << i->adat.getLetszam() << "\t" << i->adat.getEdzokszama() << endl;
+  for (Lista* i = DB.getLista(); i != nullptr; i = i->kovi) {
+    if (i->adat->getTipus() == FOCI) {
+      int t = abs(maxrow-6 - getStdRowLen(i));
+      //cout << "\t\t---" << t << "---" << maxrow << "---" << getStdRowLen(i) << endl;
+      cout << "\t" << i->adat->getNev();
+      for (int j=0; j<t; j++) {cout << " " ;}
+      cout << i->adat->getLetszam() << "\t" << i->adat->getEdzokszama() << endl;
+    }
   }
   cout<<"\t"; for (int i=0;i<maxrow;i++) {cout << "=";} cout << endl;
 }
 
-void Menu::printOne(KeziListaElem *p) const {
+void Menu::printOne(Lista *p, Tipus t) const {
   if (p == nullptr) {return;}
-  int sorlen = getStdRowLen(p);
-  cout << endl << endl;
-  cout << "\t\t[+] KERESETT KEZI CSAPAT" << endl;
-  cout << "\t\tNev-Letszam-Tamogatas" << endl;
-  cout << "\t\t"; for (int i=0; i<sorlen+10;i++){cout << "=";} cout << endl;
-  cout << "\t\t" << p->adat.getNev() << "\t" << p->adat.getLetszam() << "\t" 
-       << p->adat.getTamogatas() << endl;
-  cout << "\t\t"; for (int i=0; i<sorlen+10;i++){cout << "=";} cout << endl << endl;
-}
-
-void Menu::printOne(KosarListaElem *p) const {
-  if (p == nullptr) {return;}
-  int sorlen = getStdRowLen(p);
-  cout << endl << endl;
-  cout << "\t\t[+] KERESETT KOSAR CSAPAT" << endl;
-  cout << "\t\tNev-Letszam-PomPomLanyok" << endl;
-  cout << "\t\t"; for (int i=0; i<sorlen+10;i++){cout << "=";} cout << endl;
-  cout << "\t\t" << p->adat.getNev() << "\t" << p->adat.getLetszam() << "\t" 
-       << p->adat.getPomPomDb() << endl;
-  cout << "\t\t"; for (int i=0; i<sorlen+10;i++){cout << "=";} cout << endl << endl;
-}
-
-void Menu::printOne(FociListaElem *p) const {
-  if (p == nullptr) {return;}
-  int sorlen = getStdRowLen(p);
-  cout << endl << endl;
-  cout << "\t\t[+] KERESETT FOCICSAPAT" << endl;
-  cout << "\t\tNev-Letszam-Edzok" << endl;
-  cout << "\t\t"; for (int i=0; i<sorlen+10;i++){cout << "=";} cout << endl;
-  cout << "\t\t" << p->adat.getNev() << "\t" << p->adat.getLetszam() << "\t" 
-       << p->adat.getEdzokszama() << endl;
-  cout << "\t\t"; for (int i=0; i<sorlen+10;i++){cout << "=";} cout << endl << endl;
+  if (t == KEZI) {
+    int sorlen = getStdRowLen(p);
+    cout << endl << endl;
+    cout << "\t\t[+] KERESETT KEZI CSAPAT" << endl;
+    cout << "\t\tNev-Letszam-Tamogatas" << endl;
+    cout << "\t\t"; for (int i=0; i<sorlen+10;i++){cout << "=";} cout << endl;
+    cout << "\t\t" << p->adat->getNev() << "\t" << p->adat->getLetszam() << "\t" 
+        << p->adat->getTamogatas() << endl;
+    cout << "\t\t"; for (int i=0; i<sorlen+10;i++){cout << "=";} cout << endl << endl;
+  }
+  else if (t == KOSAR) {
+    int sorlen = getStdRowLen(p);
+    cout << endl << endl;
+    cout << "\t\t[+] KERESETT KOSAR CSAPAT" << endl;
+    cout << "\t\tNev-Letszam-PomPomLanyok" << endl;
+    cout << "\t\t"; for (int i=0; i<sorlen+10;i++){cout << "=";} cout << endl;
+    cout << "\t\t" << p->adat->getNev() << "\t" << p->adat->getLetszam() << "\t" 
+        << p->adat->getPomPomDb() << endl;
+    cout << "\t\t"; for (int i=0; i<sorlen+10;i++){cout << "=";} cout << endl << endl;
+  } else if (t == FOCI) {
+    int sorlen = getStdRowLen(p);
+    cout << endl << endl;
+    cout << "\t\t[+] KERESETT FOCICSAPAT" << endl;
+    cout << "\t\tNev-Letszam-Edzok" << endl;
+    cout << "\t\t"; for (int i=0; i<sorlen+10;i++){cout << "=";} cout << endl;
+    cout << "\t\t" << p->adat->getNev() << "\t" << p->adat->getLetszam() << "\t" 
+        << p->adat->getEdzokszama() << endl;
+    cout << "\t\t"; for (int i=0; i<sorlen+10;i++){cout << "=";} cout << endl << endl;
+  }
 }
 
 void Menu::keziMenu() {
@@ -352,12 +377,17 @@ void Menu::keresKeziMenu(){
     cin.ignore(1, '\n');
   #endif
   cin.getline(buffer, 255);
-  KeziListaElem *result = DB.findKezi(buffer);
+  Lista *result = DB.find(buffer);
   if (result == nullptr) {
     cout << "[!] Nincs ilyen nevu csapat!" << endl;
     return;
-  } else {
-    printOne(result);
+  } 
+  else if (result->adat->getTipus() != KEZI) {
+    cout << "[!] Nincs ilyen nevu csapat!" << endl;
+    return;
+  }
+  else {
+    printOne(result, KEZI);
     int arg = -1;
     int d = 0;
     while (arg != 0) {
@@ -408,12 +438,17 @@ void Menu::keresKosarMenu(){
     cin.ignore(1, '\n');
   #endif 
   cin.getline(buffer, 255);
-  KosarListaElem *result = DB.findKosar(buffer);
+  Lista *result = DB.find(buffer);
   if (result == nullptr) {
     cout << "[!] Nincs ilyen nevu csapat!" << endl;
     return;
-  } else {
-    printOne(result);
+  } 
+  else if (result->adat->getTipus() != KOSAR) {
+    cout << "[!] Nincs ilyen nevu csapat!" << endl;
+    return;
+  }
+  else {
+    printOne(result, KOSAR);
     int arg = -1;
     int d = 0;
     while (arg != 0) {
@@ -464,12 +499,17 @@ void Menu::keresFociMenu(){
     cin.ignore(1, '\n');
   #endif
   cin.getline(buffer, 255);
-  FociListaElem *result = DB.findFoci(buffer);
+  Lista *result = DB.find(buffer);
   if (result == nullptr) {
     cout << "[!] Nincs ilyen nevu csapat!" << endl;
     return;
-  } else {
-    printOne(result);
+  } 
+  else if (result->adat->getTipus() != FOCI) {
+    cout << "[!] Nincs ilyen nevu csapat!" << endl;
+    return;
+  }
+  else {
+    printOne(result, FOCI);
     int arg = -1;
     int d = 0;
     while (arg != 0) {
@@ -509,8 +549,9 @@ void Menu::keresFociMenu(){
   }
 }
 
-void Menu::editKeziMenu(KeziListaElem *p) {
+void Menu::editKeziMenu(Lista *p) {
   if (p == nullptr) {return;}
+  if (p->adat->getTipus() != KEZI) {return;}
   cout << endl;
   cout << "\t\t\tMODOSITO MENU" << endl;
   cout << "\t\t\t============================================================================================" << endl;
@@ -536,7 +577,7 @@ void Menu::editKeziMenu(KeziListaElem *p) {
           cin.ignore(1, '\n');
         #endif
         cin.getline(buffer, 255);
-        p->adat.setNev(buffer);
+        p->adat->setNev(buffer);
         DB.save();
         cout << "\n[+]Mentes..." << endl;
         return;
@@ -546,7 +587,7 @@ void Menu::editKeziMenu(KeziListaElem *p) {
         cout << "\n\t\t\t[?] Uj Letszam: ";
         cin.sync();
         cin >> l;
-        p->adat.setLetszam(l);
+        p->adat->setLetszam(l);
         DB.save();
         cout << "\n[+]Mentes..." << endl;
         return;
@@ -556,7 +597,7 @@ void Menu::editKeziMenu(KeziListaElem *p) {
         cout << "\n\t\t\t[?] Tamogatas hozzaadasa: ";
         cin.sync();
         cin >> t;
-        p->adat.addTamogatas(t);
+        p->adat->addTamogatas(t);
         DB.save();
         cout << "\n[+]Mentes..." << endl;
         return;
@@ -573,8 +614,9 @@ void Menu::editKeziMenu(KeziListaElem *p) {
   }
 }
 
-void Menu::editKosarMenu(KosarListaElem *p) {
+void Menu::editKosarMenu(Lista *p) {
   if (p == nullptr) {return;}
+  if (p->adat->getTipus() != KOSAR) {return;}
   cout << endl;
   cout << "\t\t\tMODOSITO MENU" << endl;
   cout << "\t\t\t================================================================================================" << endl;
@@ -600,7 +642,7 @@ void Menu::editKosarMenu(KosarListaElem *p) {
           cin.ignore(1, '\n');
         #endif
         cin.getline(buffer, 255);
-        p->adat.setNev(buffer);
+        p->adat->setNev(buffer);
         DB.save();
         cout << "\n[+]Mentes..." << endl;
         return;
@@ -610,7 +652,7 @@ void Menu::editKosarMenu(KosarListaElem *p) {
         cout << "\n\t\t\t[?] Uj Letszam: ";
         cin.sync();
         cin >> l;
-        p->adat.setLetszam(l);
+        p->adat->setLetszam(l);
         DB.save();
         cout << "\n[+]Mentes..." << endl;
         return;
@@ -620,7 +662,7 @@ void Menu::editKosarMenu(KosarListaElem *p) {
         cout << "\n\t\t\t[?] PomPom lanyok hozzaadasa: ";
         cin.sync();
         cin >> o;
-        p->adat.addPompom(o);
+        p->adat->addPompom(o);
         DB.save();
         cout << "\n[+]Mentes..." << endl;
         return;
@@ -637,8 +679,9 @@ void Menu::editKosarMenu(KosarListaElem *p) {
   }
 }
 
-void Menu::editFociMenu(FociListaElem *p) {
+void Menu::editFociMenu(Lista *p) {
   if (p == nullptr) {return;}
+  if (p->adat->getTipus() != FOCI) {return;}
   cout << endl;
   cout << "\t\t\tMODOSITO MENU" << endl;
   cout << "\t\t\t========================================================================================" << endl;
@@ -664,7 +707,7 @@ void Menu::editFociMenu(FociListaElem *p) {
           cin.ignore(1, '\n');
         #endif
         cin.getline(buffer, 255);
-        p->adat.setNev(buffer);
+        p->adat->setNev(buffer);
         DB.save();
         cout << "\n[+]Mentes..." << endl;
         return;
@@ -674,7 +717,7 @@ void Menu::editFociMenu(FociListaElem *p) {
         cout << "\n\t\t\t[?] Uj Letszam: ";
         cin.sync();
         cin >> l;
-        p->adat.setLetszam(l);
+        p->adat->setLetszam(l);
         DB.save();
         cout << "\n[+]Mentes..." << endl;
         return;
@@ -684,7 +727,7 @@ void Menu::editFociMenu(FociListaElem *p) {
         cout << "\n\t\t\t[?] Edzok hozzaadasa: ";
         cin.sync();
         cin >> e;
-        p->adat.addEdzo(e);
+        p->adat->addEdzo(e);
         DB.save();
         cout << "\n[+]Mentes..." << endl;
         return;

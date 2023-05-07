@@ -35,15 +35,8 @@ class Menu {
 
     /// @brief Egy listaelemet ír ki megformázva.
     /// @param listaelem A lista láncszemére mutató pointer.
-    void printOne(KeziListaElem *) const;
-
-    /// @brief Egy listaelemet ír ki megformázva.
-    /// @param listaelem A lista láncszemére mutató pointer.
-    void printOne(KosarListaElem *) const;
-    
-    /// @brief Egy listaelemet ír ki megformázva.
-    /// @param listaelem A lista láncszemére mutató pointer.
-    void printOne(FociListaElem *) const;
+    /// @param t A típus, ami szerint kiírjuk a listaelemet
+    void printOne(Lista *, Tipus) const;
 
     /// @brief Kiszámolja a leghoszabb sor hosszát a nyilvántartásban. Erre a TAB-ok és a kinézet miatt van szügség.
     /// @return A leghoszabb sor hossza az adatbáisban.
@@ -57,17 +50,7 @@ class Menu {
     /// @brief Egy adott listaelem sorának hosszát adja vissza. Design felhasználási céllal.
     /// @param listaelem Ennek a sorhosszára vagyunk kíváncsiak.
     /// @return A listaelem sorának hossza.
-    int getStdRowLen(KeziListaElem *) const;
-
-    /// @brief Egy adott listaelem sorának hosszát adja vissza. Design felhasználási céllal.
-    /// @param listaelem Ennek a sorhosszára vagyunk kíváncsiak.
-    /// @return A listaelem sorának hossza.
-    int getStdRowLen(KosarListaElem *) const;
-
-    /// @brief Egy adott listaelem sorának hosszát adja vissza. Design felhasználási céllal.
-    /// @param listaelem Ennek a sorhosszára vagyunk kíváncsiak.
-    /// @return A listaelem sorának hossza.
-    int getStdRowLen(FociListaElem *) const;
+    int getStdRowLen(Lista *) const;
 
     /// @brief Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class
     /// @brief átveszi az irányítást, és automata menürendszerként üzemel.
@@ -93,15 +76,15 @@ class Menu {
 
     /// @brief A láncolt lista egy elemét módosító almenü.
     /// @param listaelem Ennek módosításában segít a menü.
-    void editKeziMenu(KeziListaElem *);
+    void editKeziMenu(Lista *);
 
     /// @brief A láncolt lista egy elemét módosító almenü.
     /// @param listaelem Ennek módosításában segít a menü.
-    void editKosarMenu(KosarListaElem*);
+    void editKosarMenu(Lista*);
 
     /// @brief A láncolt lista egy elemét módosító almenü.
     /// @param listaelem Ennek módosításában segít a menü.
-    void editFociMenu(FociListaElem *);
+    void editFociMenu(Lista *);
 
     /// @brief Egy új tipus típusú csapat lérehozására létező almenü.
     /// @param tipus Az új csapat típusa.

@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Nagyhazi: Class Members</title>
+<title>Nagyházi: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Nagyhazi
+   <div id="projectname">Nagyházi
    </div>
+   <div id="projectbrief">Sportegyesület</div>
   </td>
  </tr>
  </tbody>
@@ -47,6 +52,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('functions.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -69,41 +90,43 @@ $(function() {
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
+<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_a" name="index_a"></a>- a -</h3><ul>
-<li>adat&#160;:&#160;<a class="el" href="struct_foci_lista_elem.html#a015b8cf9acca86a87b8d29ff5bd9b58a">FociListaElem</a>, <a class="el" href="struct_kezi_lista_elem.html#aadd21d204f7000fc1b81cf54aff6d59d">KeziListaElem</a>, <a class="el" href="struct_kosar_lista_elem.html#acf17b2d9864210753ec827648694b3c9">KosarListaElem</a></li>
+<li>adat&#160;:&#160;<a class="el" href="struct_lista.html#accc072eee22ff4e73f8203166914b438">Lista</a></li>
 <li>add()&#160;:&#160;<a class="el" href="class_nyilvantartas.html#a2b6c6b283ad4a460939f538373b3a81e">Nyilvantartas</a></li>
-<li>addEdzo()&#160;:&#160;<a class="el" href="class_foci.html#a0c70d3a8339645645c1332a877805f16">Foci</a></li>
+<li>addEdzo()&#160;:&#160;<a class="el" href="class_csapat.html#aeba636b5132ac77411a93e95cd0503ae">Csapat</a>, <a class="el" href="class_foci.html#a6e4ec27d5eed8b7b09940ee03c4c758d">Foci</a></li>
 <li>addFoci()&#160;:&#160;<a class="el" href="class_nyilvantartas.html#a85746723b3b5f24b54e8b2c3348dd30a">Nyilvantartas</a></li>
 <li>addKezi()&#160;:&#160;<a class="el" href="class_nyilvantartas.html#a64c7d359d2fc06bd3ada15154c5d5fbd">Nyilvantartas</a></li>
 <li>addKosar()&#160;:&#160;<a class="el" href="class_nyilvantartas.html#a622c043ff96e55237efc029bd295984c">Nyilvantartas</a></li>
-<li>addPompom()&#160;:&#160;<a class="el" href="class_kosar.html#a6187c448bd5bfb9382ced21545e8086c">Kosar</a></li>
-<li>addTamogatas()&#160;:&#160;<a class="el" href="class_kezi.html#ad46f6b62ded92e9321d57634d00af62d">Kezi</a></li>
+<li>addPompom()&#160;:&#160;<a class="el" href="class_csapat.html#a63814f0361836f43d029917086a7dc13">Csapat</a>, <a class="el" href="class_kosar.html#a69dec4bc285a82f36823f009ca71cce8">Kosar</a></li>
+<li>addTamogatas()&#160;:&#160;<a class="el" href="class_csapat.html#af79780d2d9114e5f5a095375a8222377">Csapat</a>, <a class="el" href="class_kezi.html#ad46f6b62ded92e9321d57634d00af62d">Kezi</a></li>
 </ul>
 
 
 <h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
 <li>Csapat()&#160;:&#160;<a class="el" href="class_csapat.html#a8058315921508d902303dbb7d75524eb">Csapat</a></li>
+<li>csapatok&#160;:&#160;<a class="el" href="class_nyilvantartas.html#a425878bc514b08709e4d7276cf898a45">Nyilvantartas</a></li>
 </ul>
 
 
 <h3><a id="index_d" name="index_d"></a>- d -</h3><ul>
+<li>DB&#160;:&#160;<a class="el" href="class_menu.html#adb038db1de1ad1fc74c8338c6e69f738">Menu</a></li>
+<li>delAll()&#160;:&#160;<a class="el" href="class_nyilvantartas.html#abe6dcc49f43b156f94f80a7a4441b825">Nyilvantartas</a></li>
 <li>delNev()&#160;:&#160;<a class="el" href="class_csapat.html#a19c3c27beb42a940fa423af0aff66342">Csapat</a></li>
 </ul>
 
 
 <h3><a id="index_e" name="index_e"></a>- e -</h3><ul>
-<li>editFociMenu()&#160;:&#160;<a class="el" href="class_menu.html#aa92add4d48ff869624f7ccc4813f0348">Menu</a></li>
-<li>editKeziMenu()&#160;:&#160;<a class="el" href="class_menu.html#a62f3e21d81bed61fd29f9910bc86b1d2">Menu</a></li>
-<li>editKosarMenu()&#160;:&#160;<a class="el" href="class_menu.html#a54e5d7069a346abf5471f0b321055d6f">Menu</a></li>
+<li>editFociMenu()&#160;:&#160;<a class="el" href="class_menu.html#a1cd6ffee4b264c854024f6c6fc91868a">Menu</a></li>
+<li>editKeziMenu()&#160;:&#160;<a class="el" href="class_menu.html#a0bc3d0f4c522dacccc94373081004cbe">Menu</a></li>
+<li>editKosarMenu()&#160;:&#160;<a class="el" href="class_menu.html#a5c2afd84dcaca022fdb98bac2d88cd44">Menu</a></li>
+<li>edzoDB&#160;:&#160;<a class="el" href="class_foci.html#a0fb2f6fb6fb72b3318acf89c736316e8">Foci</a></li>
 </ul>
 
 
 <h3><a id="index_f" name="index_f"></a>- f -</h3><ul>
-<li>findFoci()&#160;:&#160;<a class="el" href="class_nyilvantartas.html#a0d3e5cfab71a0e9e94acdee6ce79dfac">Nyilvantartas</a></li>
-<li>findKezi()&#160;:&#160;<a class="el" href="class_nyilvantartas.html#ad88f93a5f0267032ad23e3549db2bf65">Nyilvantartas</a></li>
-<li>findKosar()&#160;:&#160;<a class="el" href="class_nyilvantartas.html#ad8304e4987c64bb6b6f07b94a5feb663">Nyilvantartas</a></li>
+<li>find()&#160;:&#160;<a class="el" href="class_nyilvantartas.html#ace26b7e278dc17a3d20c402c2de82a7e">Nyilvantartas</a></li>
 <li>Foci()&#160;:&#160;<a class="el" href="class_foci.html#a7d6305ed33b71ef62629b1091a2d3ef4">Foci</a></li>
 <li>fociMenu()&#160;:&#160;<a class="el" href="class_menu.html#a674cec9b7998d60fbab21939f109d7ee">Menu</a></li>
 <li>foMenu()&#160;:&#160;<a class="el" href="class_menu.html#a662ae5d3c5843b02680877573f654abc">Menu</a></li>
@@ -111,16 +134,14 @@ $(function() {
 
 
 <h3><a id="index_g" name="index_g"></a>- g -</h3><ul>
-<li>getEdzokszama()&#160;:&#160;<a class="el" href="class_foci.html#ab2724992b2519f73efc36343a39abb8f">Foci</a></li>
-<li>getFociLista()&#160;:&#160;<a class="el" href="class_nyilvantartas.html#aeeb7ed431f80b9ffbd90bdd24794bddc">Nyilvantartas</a></li>
-<li>getKeziLista()&#160;:&#160;<a class="el" href="class_nyilvantartas.html#ad6b8de317a7fb06ef561284645db2567">Nyilvantartas</a></li>
-<li>getKosarLista()&#160;:&#160;<a class="el" href="class_nyilvantartas.html#ac5d09b83892e100ac2068ad9967bc06f">Nyilvantartas</a></li>
+<li>getEdzokszama()&#160;:&#160;<a class="el" href="class_csapat.html#aa749d01e32c0d615df172e7c8b27cf7d">Csapat</a>, <a class="el" href="class_foci.html#ab2724992b2519f73efc36343a39abb8f">Foci</a></li>
 <li>getLetszam()&#160;:&#160;<a class="el" href="class_csapat.html#ac88ac916828fec75fc1d84286e88be03">Csapat</a></li>
+<li>getLista()&#160;:&#160;<a class="el" href="class_nyilvantartas.html#afee3bf2152317a8a59d5a5b2c4585dfc">Nyilvantartas</a></li>
 <li>getNev()&#160;:&#160;<a class="el" href="class_csapat.html#a4a9d5a571b4fb0936b33e5d61274f7a8">Csapat</a></li>
 <li>getNyilvantartas()&#160;:&#160;<a class="el" href="class_menu.html#a80058f91120b70bbe7466acdaf6e7a83">Menu</a></li>
-<li>getPomPomDb()&#160;:&#160;<a class="el" href="class_kosar.html#a0c97fd782df414da011c87c3d799a657">Kosar</a></li>
-<li>getStdRowLen()&#160;:&#160;<a class="el" href="class_menu.html#ac183ce914dd13e202c2d0f822d2a8a02">Menu</a></li>
-<li>getTamogatas()&#160;:&#160;<a class="el" href="class_kezi.html#a613f5e5f275485d0a4fab918e567aae0">Kezi</a></li>
+<li>getPomPomDb()&#160;:&#160;<a class="el" href="class_csapat.html#a8cc16ae5e9f3a263b3eb0ed3000dff85">Csapat</a>, <a class="el" href="class_kosar.html#a0c97fd782df414da011c87c3d799a657">Kosar</a></li>
+<li>getStdRowLen()&#160;:&#160;<a class="el" href="class_menu.html#aa8adcc5dd7c7c05b77b22b9e26e93a54">Menu</a></li>
+<li>getTamogatas()&#160;:&#160;<a class="el" href="class_csapat.html#a0e252a6da8bfa87c54bf1f00cace545e">Csapat</a>, <a class="el" href="class_kezi.html#a613f5e5f275485d0a4fab918e567aae0">Kezi</a></li>
 <li>getTipus()&#160;:&#160;<a class="el" href="class_csapat.html#a1e724883ce504521eb068a1031074a9c">Csapat</a></li>
 </ul>
 
@@ -138,7 +159,7 @@ $(function() {
 <li>keziMenu()&#160;:&#160;<a class="el" href="class_menu.html#a68b97bb64c0023bbfa40121de9d11b0c">Menu</a></li>
 <li>Kosar()&#160;:&#160;<a class="el" href="class_kosar.html#a67158889205385aee1a9131791991a56">Kosar</a></li>
 <li>kosarMenu()&#160;:&#160;<a class="el" href="class_menu.html#a58feb89fe22c1a088dd8a2bf441968d5">Menu</a></li>
-<li>kovi&#160;:&#160;<a class="el" href="struct_foci_lista_elem.html#abc4b29e68d79e52fb742fbb27a59ce3d">FociListaElem</a>, <a class="el" href="struct_kezi_lista_elem.html#af95a10c45d4cad90c18c7d9f94687934">KeziListaElem</a>, <a class="el" href="struct_kosar_lista_elem.html#a745bdbf73b46a2bb5d1d630454a972c4">KosarListaElem</a></li>
+<li>kovi&#160;:&#160;<a class="el" href="struct_lista.html#a46f5f8416dc26a360e787fb8e4b40e4d">Lista</a></li>
 </ul>
 
 
@@ -169,16 +190,17 @@ $(function() {
 
 
 <h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
+<li>pompomDB&#160;:&#160;<a class="el" href="class_kosar.html#a63fac5b828d119293d529b7638d96016">Kosar</a></li>
 <li>printAll()&#160;:&#160;<a class="el" href="class_menu.html#ad7106b22912d94b8fc50e4dbd8291fb8">Menu</a></li>
 <li>printFoci()&#160;:&#160;<a class="el" href="class_menu.html#a16d89092ef2464d51932e29adadf0939">Menu</a></li>
 <li>printKezi()&#160;:&#160;<a class="el" href="class_menu.html#aa1f6c80eb45a32e53a3477672b02bca3">Menu</a></li>
 <li>printKosar()&#160;:&#160;<a class="el" href="class_menu.html#ab16c7117e7b5c0cc079f1565b4083cc1">Menu</a></li>
-<li>printOne()&#160;:&#160;<a class="el" href="class_menu.html#a131e748e8f24d3dd7cdda924db76b414">Menu</a></li>
+<li>printOne()&#160;:&#160;<a class="el" href="class_menu.html#a3b2e80da44059f552e13e61b3693c3ee">Menu</a></li>
 </ul>
 
 
 <h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
-<li>rm()&#160;:&#160;<a class="el" href="class_nyilvantartas.html#aa6afbf48b834dd04efbd123b605c70c6">Nyilvantartas</a></li>
+<li>rm()&#160;:&#160;<a class="el" href="class_nyilvantartas.html#a225b6a03837caa58618b22b1394db7d2">Nyilvantartas</a></li>
 </ul>
 
 
@@ -196,14 +218,13 @@ $(function() {
 
 
 <h3><a id="index_t" name="index_t"></a>- t -</h3><ul>
+<li>tamogatas&#160;:&#160;<a class="el" href="class_kezi.html#ac8883975730799caa3dfb2b403f0f5c8">Kezi</a></li>
 <li>tipus&#160;:&#160;<a class="el" href="class_csapat.html#a56a33d08732061e7104c8bd54308c3ba">Csapat</a></li>
 </ul>
 
 
 <h3><a id="index_u" name="index_u"></a>- u -</h3><ul>
-<li>ujFoci()&#160;:&#160;<a class="el" href="class_nyilvantartas.html#af05bda7d2042e5d655e570b3a8b142d0">Nyilvantartas</a></li>
-<li>ujKezi()&#160;:&#160;<a class="el" href="class_nyilvantartas.html#a66fe61d7c04ecf59b40a374efef4e09b">Nyilvantartas</a></li>
-<li>ujKosar()&#160;:&#160;<a class="el" href="class_nyilvantartas.html#ab192a1947f4d0ded57bdc40778ee56a2">Nyilvantartas</a></li>
+<li>uj()&#160;:&#160;<a class="el" href="class_nyilvantartas.html#a293fc5789cd5ecbd57c94033cdbd4d7d">Nyilvantartas</a></li>
 <li>ujMenu()&#160;:&#160;<a class="el" href="class_menu.html#ad1d2c072c002e2711d1fdbb282858ef8">Menu</a></li>
 </ul>
 
@@ -214,9 +235,12 @@ $(function() {
 <li>~Nyilvantartas()&#160;:&#160;<a class="el" href="class_nyilvantartas.html#ac8a89a7ed8a45d58b53b9c71bff74b76">Nyilvantartas</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
 </body>
 </html>

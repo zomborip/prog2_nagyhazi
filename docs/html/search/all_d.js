@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['rm_0',['rm',['../class_nyilvantartas.html#aa6afbf48b834dd04efbd123b605c70c6',1,'Nyilvantartas::rm(KeziListaElem *&amp;)'],['../class_nyilvantartas.html#a15e6dda9bc8c77ec55446be2b84054df',1,'Nyilvantartas::rm(KosarListaElem *&amp;)'],['../class_nyilvantartas.html#a8b1ad27788acf3dac77268dbd03ca919',1,'Nyilvantartas::rm(FociListaElem *&amp;)']]]
+  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['rm_1',['rm',['../class_nyilvantartas.html#a225b6a03837caa58618b22b1394db7d2',1,'Nyilvantartas']]]
 ];

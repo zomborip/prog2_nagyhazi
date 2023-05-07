@@ -1,0 +1,4 @@
+<map id="Lista" name="Lista">
+<area shape="rect" id="node1" title="Láncolt listaelem." alt="" coords="111,439,162,516"/>
+<area shape="rect" id="node2" href="$class_csapat.html" title="A csapatok szülőobjektuma. Ez írja je a csapatok közös viselkedését, tulajdonságait." alt="" coords="5,5,268,376"/>
+</map>

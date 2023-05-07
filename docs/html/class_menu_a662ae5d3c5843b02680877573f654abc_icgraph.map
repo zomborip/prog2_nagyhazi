@@ -1,0 +1,5 @@
+<map id="Menu::foMenu" name="Menu::foMenu">
+<area shape="rect" id="node1" title="Főmenü. Innen indul minden. Ez tujajdonképpen az entrypoint, ahonnan a class." alt="" coords="243,5,347,31"/>
+<area shape="rect" id="node2" href="$main_8cpp.html#a61c946b4a6992a77af01bd8fa7e4c986" title=" " alt="" coords="104,5,195,31"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,31"/>
+</map>

@@ -1,11 +1,11 @@
 #include <cstring>
 #include <cmath>
 #include <fstream>
+#include "nyilvantartas.h"
 #include "csapat.h"
 #include "kezi.h"
 #include "kosar.h"
 #include "foci.h"
-#include "nyilvantartas.h"
 #include "memtrace.h"
 
 using std::fstream;
@@ -14,72 +14,82 @@ using std::getline;
 
 
 Nyilvantartas::~Nyilvantartas(){
-  delKezi();
-  delKosar();
-  delFoci();
+ delAll();
 }
 
-KeziListaElem *Nyilvantartas::ujKezi() {
+Lista *Nyilvantartas::uj(Tipus t) {
   // ha üres a lista
-  if (keziCS == nullptr) {
-    keziCS = new KeziListaElem[1];
-    keziCS->kovi = nullptr;
-    return keziCS;
+  if (csapatok == nullptr) {
+    switch (t)
+    {
+    case NINCS:
+      return nullptr;
+      break;
+    
+    case FOCI:
+      csapatok = new Lista;
+      csapatok->adat = new Foci;
+      break;
+
+    case KOSAR:
+      csapatok = new Lista;
+      csapatok->adat = new Kosar;
+      break;
+    
+    case KEZI:
+      csapatok = new Lista;
+      csapatok->adat = new Kezi;
+      break;
+    }
+    csapatok->kovi = nullptr;
+    return csapatok;
   } /*egyébként ha nem üres a lista*/ else {
-    KeziListaElem *i; for (i=keziCS;i->kovi!=nullptr;i=i->kovi){}
-    i->kovi = new KeziListaElem[1];
+    Lista *i; for (i=csapatok;i->kovi!=nullptr;i=i->kovi){}
+    i->kovi = new Lista;
+
+    switch (t)
+    {
+    case NINCS:
+      return nullptr;
+      break;
+    
+    case FOCI:
+      i->kovi->adat = new Foci;
+      break;
+
+    case KOSAR:
+      i->kovi->adat = new Kosar;
+      break;
+    
+    case KEZI:
+      i->kovi->adat = new Kezi;
+      break;
+    }
+
     i->kovi->kovi = nullptr;
     return i->kovi;
   }
 }
 
 void Nyilvantartas::addKezi(const char* csnev, const int letszam, const int tamogatas){
-  KeziListaElem *editable = ujKezi();
-  editable->adat.setNev(csnev);
-  editable->adat.setLetszam(letszam);
-  editable->adat.addTamogatas(tamogatas);
-}
-
-KosarListaElem *Nyilvantartas::ujKosar() {
-  // ha üres a lista
-  if (kosarCS == nullptr) {
-    kosarCS = new KosarListaElem[1];
-    kosarCS->kovi = nullptr;
-    return kosarCS;
-  } /*egyébként ha nem üres a lista*/ else {
-    KosarListaElem *i; for (i=kosarCS;i->kovi!=nullptr;i=i->kovi){}
-    i->kovi = new KosarListaElem[1];
-    i->kovi->kovi = nullptr;
-    return i->kovi;
-  }
+  Lista *editable = uj(KEZI);
+  editable->adat->setNev(csnev);
+  editable->adat->setLetszam(letszam);
+  editable->adat->addTamogatas(tamogatas);
 }
 
 void Nyilvantartas::addKosar(const char* csnev, const int letszam, const int pompomn){
-  KosarListaElem *editable = ujKosar();
-  editable->adat.setNev(csnev);
-  editable->adat.setLetszam(letszam);
-  editable->adat.addPompom(pompomn);
-}
-
-FociListaElem *Nyilvantartas::ujFoci() {
-  // ha üres a lista
-  if (fociCS == nullptr) {
-    fociCS = new FociListaElem[1];
-    fociCS->kovi = nullptr;
-    return fociCS;
-  } /*egyébként ha nem üres a lista*/ else {
-    FociListaElem *i; for (i=fociCS;i->kovi!=nullptr;i=i->kovi){}
-    i->kovi = new FociListaElem[1];
-    i->kovi->kovi = nullptr;
-    return i->kovi;
-  }
+  Lista *editable = uj(KOSAR);
+  editable->adat->setNev(csnev);
+  editable->adat->setLetszam(letszam);
+  editable->adat->addPompom(pompomn);
 }
 
 void Nyilvantartas::addFoci(const char* csnev, const int letszam, const int edzok){
-  FociListaElem *editable = ujFoci();
-  editable->adat.setNev(csnev);
-  editable->adat.setLetszam(letszam);
-  editable->adat.addEdzo(edzok);
+  Lista *editable = uj(FOCI);
+  editable->adat->setNev(csnev);
+  editable->adat->setLetszam(letszam);
+  editable->adat->addEdzo(edzok);
 }
 
 void Nyilvantartas::add(const Tipus T, const char* csnev, const int letszam, const int vari){
@@ -88,11 +98,11 @@ void Nyilvantartas::add(const Tipus T, const char* csnev, const int letszam, con
   else if (T == FOCI)  { addFoci(csnev, letszam, vari); }
 }
 
-KeziListaElem   *Nyilvantartas::findKezi(const char *csapatnev) const {
-  if (keziCS != nullptr) {
-    KeziListaElem *i;
-    for (i=keziCS; i != nullptr; i = i->kovi){
-      if (i->adat == csapatnev) {
+Lista   *Nyilvantartas::find(const char *csapatnev) const {
+  if (csapatok != nullptr) {
+    Lista *i;
+    for (i=csapatok; i != nullptr; i = i->kovi){
+      if (*(i->adat) == csapatnev) {
         return i;
       }
     }
@@ -102,81 +112,25 @@ KeziListaElem   *Nyilvantartas::findKezi(const char *csapatnev) const {
   }
 }
 
-KosarListaElem  *Nyilvantartas::findKosar(const char *csapatnev) const {
-  if (kosarCS != nullptr) {
-    KosarListaElem *i;
-    for (i=kosarCS; i != nullptr; i = i->kovi){
-      if (i->adat == csapatnev) {
-        return i;
-      }
-    }
-    return nullptr;
-  } else {
-    return nullptr;
-  }
-}
-
-FociListaElem   *Nyilvantartas::findFoci(const char *csapatnev) const {
-  if (fociCS != nullptr) {
-    FociListaElem *i;
-    for (i=fociCS; i != nullptr; i = i->kovi){
-      if (i->adat == csapatnev) {
-        return i;
-      }
-    }
-    return nullptr;
-  } else {
-    return nullptr;
-  }
-}
-
-void Nyilvantartas::rm(KeziListaElem *& torlendo) {
+void Nyilvantartas::rm(Lista *& torlendo) {
   if (torlendo == nullptr) {return;}
   // ha az elejerol kell 
-  if (torlendo == keziCS) {
-    KeziListaElem *ujeleje = keziCS->kovi;
-    delete[] torlendo;
-    keziCS = ujeleje;
+  if (torlendo == csapatok) {
+    Lista *ujeleje = csapatok->kovi;
+    if (torlendo->adat != nullptr)
+      delete torlendo->adat;
+    delete torlendo;
+    csapatok = ujeleje;
   } else /* Ha a kozeperol v a vegerol torlunk */ {
-    KeziListaElem *i; for (i = keziCS; i->kovi != torlendo; i = i->kovi) {}
+    Lista *i; for (i = csapatok; i->kovi != torlendo; i = i->kovi) {}
     i->kovi = i->kovi->kovi;
-    delete[] torlendo;
+    if (torlendo->adat != nullptr)
+      delete torlendo->adat;
+    delete torlendo;
   }
 }
 
-void Nyilvantartas::rm(KosarListaElem *& torlendo) {
-  if (torlendo == nullptr) {return;}
-  // ha az elejerol kell 
-  if (torlendo == kosarCS) {
-    KosarListaElem *ujeleje = kosarCS->kovi;
-    delete[] torlendo;
-    kosarCS = ujeleje;
-  } else /* Ha a kozeperol v a vegerol torlunk */ {
-    KosarListaElem *i; for (i = kosarCS; i->kovi != torlendo; i = i->kovi) {}
-    i->kovi = i->kovi->kovi;
-    delete[] torlendo;
-  }
-}
-
-void Nyilvantartas::rm(FociListaElem *& torlendo) {
-  if (torlendo == nullptr) {return;}
-  // ha az elejerol kell 
-  if (torlendo == fociCS) {
-    FociListaElem *ujeleje = fociCS->kovi;
-    delete[] torlendo;
-    fociCS = ujeleje;
-  } else /* Ha a kozeperol v a vegerol torlunk */ {
-    FociListaElem *i; for (i = fociCS; i->kovi != torlendo; i = i->kovi) {}
-    i->kovi = i->kovi->kovi;
-    delete[] torlendo;
-  }
-}
-
-KeziListaElem   *Nyilvantartas::getKeziLista() const {return keziCS;}
-
-KosarListaElem  *Nyilvantartas::getKosarLista() const {return kosarCS;}
-
-FociListaElem   *Nyilvantartas::getFociLista() const {return fociCS;}
+Lista   *Nyilvantartas::getLista() const {return csapatok;}
 
 bool Nyilvantartas::loadKezi() {
   // File leírás:
@@ -361,9 +315,11 @@ void Nyilvantartas::saveKezi() const {
   fstream f;
   f.open("kezi.txt", ios::out);
   if (!f.is_open()) {return;}
-  for (KeziListaElem *i = keziCS; i != nullptr; i = i->kovi) {
-    f << i->adat.getNev() << "\t" << i->adat.getLetszam() << 
-    "\t" << i->adat.getTamogatas() << "\n";
+  for (Lista *i = csapatok; i != nullptr; i = i->kovi) {
+    if (i->adat->getTipus() == KEZI) {
+      f << i->adat->getNev() << "\t" << i->adat->getLetszam() << 
+      "\t" << i->adat->getTamogatas() << "\n";
+    }
   }
   f.close();
 }
@@ -372,9 +328,11 @@ void Nyilvantartas::saveKosar() const {
   fstream f;
   f.open("kosar.txt", ios::out);
   if (!f.is_open()) {return;}
-  for (KosarListaElem *i = kosarCS; i != nullptr; i = i->kovi) {
-    f << i->adat.getNev() << "\t" << i->adat.getLetszam() << 
-    "\t" << i->adat.getPomPomDb() << "\n";
+  for (Lista *i = csapatok; i != nullptr; i = i->kovi) {
+    if (i->adat->getTipus() == KOSAR) {  
+      f << i->adat->getNev() << "\t" << i->adat->getLetszam() << 
+      "\t" << i->adat->getPomPomDb() << "\n";
+    }
   }
   f.close();
 }
@@ -383,9 +341,11 @@ void Nyilvantartas::saveFoci() const {
   fstream f;
   f.open("foci.txt", ios::out);
   if (!f.is_open()) {return;}
-  for (FociListaElem *i = fociCS; i != nullptr; i = i->kovi) {
-    f << i->adat.getNev() << "\t" << i->adat.getLetszam() << 
-    "\t" << i->adat.getEdzokszama() << "\n";
+  for (Lista *i = csapatok; i != nullptr; i = i->kovi) {
+    if (i->adat->getTipus() == FOCI) {
+      f << i->adat->getNev() << "\t" << i->adat->getLetszam() << 
+      "\t" << i->adat->getEdzokszama() << "\n";
+    }
   }
   f.close();
 }
