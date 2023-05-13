@@ -1,3 +1,5 @@
+/// @file A Foci class fuggvenyeinek a deklaraciojat tartalmazo file.
+
 #ifndef FOCI_H
 #define FOCI_H
 

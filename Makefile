@@ -1,14 +1,19 @@
 #============================================================================
 # 	Makefile a Nagyházihoz (a féléves makefileokból lemásolva)
 #
-#		két opció:
-#			$ make VAGY make main
+#		három opció:
+#			$ make
 #				->ez a sima make all -t hívja meg memtrace használatával
+#					(a program normális lefordítása, használható program)
+#
+#			$ make cmd=-DG_TEST
+#				->ez a gtest_lite használatával fordítja le a programot
+#					(tesztesetek hívódnak meg, a program nem lesz használhatós) 
 #			
-#			$ make clean VAGY make del 
+#			$ make clean	(VAGY make del VAGY make clear)
 #				-> ez kitakarítja a .o és a nagyhazi.exe file-t a mappából
 #					hogy csak a forráskódok maradjanak (WIN alatt del, UNIX
-#					alatt clean működik jól.)
+#					alatt clean, clear működik jól.)
 #																			
 #=============================================================================
 
@@ -17,9 +22,10 @@ CXX = g++
 
 # MEMTRACE-hez:
 CXXFLAGS = -std=c++11 -g -Wall -Werror -pedantic -DMEMTRACE
+CXXFLAGS += $(cmd)
 
 # fileok
-OBJS = main.o memtrace.o csapat.o foci.o kosar.o kezi.o nyilvantartas.o menu.o
+OBJS = main.o main_test.o memtrace.o csapat.o foci.o kosar.o kezi.o nyilvantartas.o menu.o
 
 # program neve
 PROGNAME = nagyhazi
@@ -37,5 +43,9 @@ del:
 	del ${PROGNAME}.exe
 
 clean:
+	rm -f ${OBJS}
+	rm -f ${PROGNAME}
+
+clear:
 	rm -f ${OBJS}
 	rm -f ${PROGNAME}

@@ -1,3 +1,5 @@
+/// @file A Menu class fuggvenyeinek a deklaraciojat tartalmazo file.
+
 #ifndef NYILVANTARTAS_H
 #define NYILVANTARTAS_H
 

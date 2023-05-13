@@ -1,3 +1,5 @@
+/// @file A Csapat class fuggvenyeinek az implementaciojat tartalmazo file.
+
 #include <cstring>
 #include "csapat.h"
 #include "memtrace.h"

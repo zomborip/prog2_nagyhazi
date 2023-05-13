@@ -1,3 +1,5 @@
+/// @file A Kezi class fuggvenyeinek az implementaciojat tartalmazo file.
+
 #include "csapat.h"
 #include "kezi.h"
 #include "memtrace.h"

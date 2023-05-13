@@ -1,3 +1,5 @@
+/// @file A Kezi class fuggvenyeinek a deklaraciojat tartalmazo file.
+
 #ifndef KEZI_H
 #define KEZI_H
 

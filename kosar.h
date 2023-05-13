@@ -1,3 +1,5 @@
+/// @file A Kosar class fuggvenyeinek a deklaraciojat tartalmazo file.
+
 #ifndef KOSAR_H
 #define KOSAR_H
 

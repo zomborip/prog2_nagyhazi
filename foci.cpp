@@ -1,3 +1,5 @@
+/// @file A Foci class fuggvenyeinek az implementaciojat tartalmazo file.
+
 #include "csapat.h"
 #include "foci.h"
 #include "memtrace.h"

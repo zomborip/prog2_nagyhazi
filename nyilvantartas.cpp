@@ -1,3 +1,5 @@
+/// @file A Nyilvantartas class fuggvenyeinek az implementaciojat tartalmazo file... A teljes API implementacioja
+
 #include <cstring>
 #include <cmath>
 #include <fstream>

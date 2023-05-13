@@ -25,7 +25,7 @@ A feladathoz tartozó specifikáció a [spec/Spec.pdf](https://github.com/zombor
 
 ## Állapot:
 
-Kész. A feladat a Laborvezető elbírálására vár, utólagos javítások azután valószínűek.
+(FÉL)Kész. A feladat a Laborvezető elbírálására vár, utólagos javítások azután valószínűek. (todo!)
 
 ## Changelog:
 
@@ -34,4 +34,14 @@ Kész. A feladat a Laborvezető elbírálására vár, utólagos javítások azu
   * A Nyilvántartás API-ban
   * A Menüben
   * Dokumentációban, Specifikációban
+* G_TEST implementálása (_2023.05.11_)
+  * make cmd=-DG_TEST
+  * build option hozzáadása
+  * futtatható tesztek
 
+## TODO!:
+* Dokumentáció frissitése:
+  * G_TEST
+  * Updated build option (make cmd=-DG_TEST)
+* TÖBB TEST, hogy a Jporta ne szójon be a code coverage-ért
+  * Nagyon idegesítő >:C

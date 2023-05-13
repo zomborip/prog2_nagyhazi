@@ -1,3 +1,5 @@
+/// @file A Csapat class fuggvenyeinek a deklaraciojat tartalmazo file.
+
 #ifndef CSAPAT_H
 #define CSAPAT_H
 

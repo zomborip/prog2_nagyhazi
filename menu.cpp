@@ -1,3 +1,5 @@
+/// @file A Menu class fuggvenyeinek az implementaciojat tartalmazo file... A teljes menurendszer implementacioja
+
 #include <iostream>
 #include <cstring>
 #include <cmath>

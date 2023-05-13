@@ -1,3 +1,5 @@
+/// @file A Kosar class fuggvenyeinek az implementaciojat tartalmazo file.
+
 #include "csapat.h"
 #include "kosar.h"
 #include "memtrace.h"

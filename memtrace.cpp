@@ -488,6 +488,13 @@ void operator delete[](void * p) THROW_NOTHING {
 	memtrace::traced_delete(p,FDELETEARR);
 }
 
+void operator delete(void * p, size_t) THROW_NOTHING {
+	memtrace::traced_delete(p,FDELETE);
+}
+
+void operator delete[](void * p, size_t) THROW_NOTHING {
+	memtrace::traced_delete(p,FDELETEARR);
+}
 
 /* Visual C++ 2012 miatt kell, mert háklis, hogy nincs megfelelő delete, bár senki sem használja */
 void operator delete(void * p, int, const char *) THROW_NOTHING {
