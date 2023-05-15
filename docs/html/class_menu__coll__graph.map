@@ -1,6 +1,6 @@
 <map id="Menu" name="Menu">
-<area shape="rect" id="node1" title="A futó programot irányító menürendszer objektuma." alt="" coords="13,1115,261,1500"/>
-<area shape="rect" id="node2" href="$class_nyilvantartas.html" title="A nyilvántartás osztály. Ez tárolja a csapatokat (Kosar, Foci, Kezi) láncolt listákban." alt="" coords="22,579,251,1052"/>
-<area shape="rect" id="node3" href="$struct_lista.html" title="Láncolt listaelem." alt="" coords="111,439,162,516"/>
-<area shape="rect" id="node4" href="$class_csapat.html" title="A csapatok szülőobjektuma. Ez írja je a csapatok közös viselkedését, tulajdonságait." alt="" coords="5,5,268,376"/>
+<area shape="rect" id="node1" title="A futó programot irányító menürendszer objektuma." alt="" coords="5,1027,145,1412"/>
+<area shape="rect" id="node2" href="$class_nyilvantartas.html" title="A nyilvántartás osztály. Ez tárolja a csapatokat (Kosar, Foci, Kezi) láncolt listákban." alt="" coords="13,579,137,964"/>
+<area shape="rect" id="node3" href="$struct_lista.html" title="Láncolt listaelem." alt="" coords="50,439,101,516"/>
+<area shape="rect" id="node4" href="$class_csapat.html" title="A csapatok szülőobjektuma. Ez írja je a csapatok közös viselkedését, tulajdonságait." alt="" coords="7,5,143,376"/>
 </map>

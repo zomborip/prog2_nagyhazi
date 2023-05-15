@@ -2,12 +2,12 @@ var indexSectionsWithContent =
 {
   0: "acdefgiklmnoprstu~",
   1: "cfklmn",
-  2: "cfkmnr",
+  2: "cfkmn",
   3: "acdefgiklmnoprsu~",
   4: "acdeklnpt",
   5: "t",
   6: "fkn",
-  7: "n"
+  7: "t"
 };
 
 var indexSectionNames =
@@ -19,18 +19,18 @@ var indexSectionNames =
   4: "variables",
   5: "enums",
   6: "enumvalues",
-  7: "pages"
+  7: "defines"
 };
 
 var indexSectionLabels =
 {
-  0: "All",
-  1: "Classes",
-  2: "Files",
-  3: "Functions",
-  4: "Variables",
-  5: "Enumerations",
-  6: "Enumerator",
-  7: "Pages"
+  0: "Összes",
+  1: "Osztályok",
+  2: "Fájlok",
+  3: "Függvények",
+  4: "Változók",
+  5: "Enumerációk",
+  6: "Enumeráció-értékek",
+  7: "Makródefiníciók"
 };
 

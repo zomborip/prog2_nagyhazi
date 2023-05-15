@@ -1,12 +1,27 @@
-/// @file Main file. Itt van meghívva a main, innen kezdodik a fomenu
+/// @file Main file. Itt van meghívva a main(), innen kezdodik a fomenu
 
-// A JPORTA FELTOLTESHEZ KI KELL KOMMENTELNI A main_test.cpp-ben a #defile G_TEST -et
-// (HOGY A MENURENDSZER NE ZAVARJON BE)
-// AMUGY KI KELL KAPCSOLNI (ÉS A make cmd=-DG_TEST) BUILD OPTION-T HASZNALNI
-// VAGY A Makefile_WIN_test.cmd COMPILE SCRIPTET HA TESTELNI AKARJUK A PROGRAMOT.
-// ...
+// GitHub-on              : https://github.com/zomborip/prog2_nagyhazi
+// Leírás                 : README.md
+// Specifikáció           : spec/Spec.pdf
+// Dokumentáció (Doxygen) : docs/Docs.pds
+
+
+// Evvel meg lesz oldva az, hogy a JPortára feltöltött program alapból triggerelje a 
+// teszt eseteket. Olyan Mintha make cmd=-G_TEST opcióval fordítanánk. Csak a Jporta
+// 'tudni fogja', hogy ezt így kell.
+#ifdef CPORTA
+  #define G_TEST
+#endif
+
+// Ez az otthoni JPorta szimulációt oldja meg, mert valamiért nem fut le a gtest_lite 
+// Windows alatt, a CPORTA makró definiálásaával ...
+#ifdef JP
+  #ifndef G_TEST
+    #define G_TEST
+  #endif
+#endif
+
 // Evvel a preprocesszor setting-gel a main.cpp nem fut le, helyette a main_test.cpp
-
 #ifndef G_TEST
 
   #include <iostream>

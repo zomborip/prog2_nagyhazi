@@ -23,14 +23,13 @@
  @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"Main Page",url:"index.html"},
-{text:"Related Pages",url:"pages.html"},
-{text:"Classes",url:"annotated.html",children:[
-{text:"Class List",url:"annotated.html"},
-{text:"Class Index",url:"classes.html"},
-{text:"Class Hierarchy",url:"inherits.html"},
-{text:"Class Members",url:"functions.html",children:[
-{text:"All",url:"functions.html",children:[
+{text:"Főoldal",url:"index.html"},
+{text:"Osztályok",url:"annotated.html",children:[
+{text:"Osztálylista",url:"annotated.html"},
+{text:"Osztálymutató",url:"classes.html"},
+{text:"Osztályhierarchia",url:"inherits.html"},
+{text:"Osztálytagok",url:"functions.html",children:[
+{text:"Összes",url:"functions.html",children:[
 {text:"a",url:"functions.html#index_a"},
 {text:"c",url:"functions.html#index_c"},
 {text:"d",url:"functions.html#index_d"},
@@ -49,7 +48,7 @@ var menudata={children:[
 {text:"t",url:"functions.html#index_t"},
 {text:"u",url:"functions.html#index_u"},
 {text:"~",url:"functions.html#index__7E"}]},
-{text:"Functions",url:"functions_func.html",children:[
+{text:"Függvények",url:"functions_func.html",children:[
 {text:"a",url:"functions_func.html#index_a"},
 {text:"c",url:"functions_func.html#index_c"},
 {text:"d",url:"functions_func.html#index_d"},
@@ -67,11 +66,12 @@ var menudata={children:[
 {text:"s",url:"functions_func.html#index_s"},
 {text:"u",url:"functions_func.html#index_u"},
 {text:"~",url:"functions_func.html#index__7E"}]},
-{text:"Variables",url:"functions_vars.html"}]}]},
-{text:"Files",url:"files.html",children:[
-{text:"File List",url:"files.html"},
-{text:"File Members",url:"globals.html",children:[
-{text:"All",url:"globals.html"},
-{text:"Functions",url:"globals_func.html"},
-{text:"Enumerations",url:"globals_enum.html"},
-{text:"Enumerator",url:"globals_eval.html"}]}]}]}
+{text:"Változók",url:"functions_vars.html"}]}]},
+{text:"Fájlok",url:"files.html",children:[
+{text:"Fájllista",url:"files.html"},
+{text:"Fájlelemek",url:"globals.html",children:[
+{text:"Összes",url:"globals.html"},
+{text:"Függvények",url:"globals_func.html"},
+{text:"Enumerációk",url:"globals_enum.html"},
+{text:"Enumeráció-értékek",url:"globals_eval.html"},
+{text:"Makródefiníciók",url:"globals_defs.html"}]}]}]}

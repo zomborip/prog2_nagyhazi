@@ -9,11 +9,18 @@
 #			$ make cmd=-DG_TEST
 #				->ez a gtest_lite használatával fordítja le a programot
 #					(tesztesetek hívódnak meg, a program nem lesz használhatós) 
+#
+#			$ make cmd=-DJP
+#				->	ez az opcio a JPorta viselkedeset szimulalja 
+#					(mert a 'make cmd=-DCPORTA' nem fut le ...)
+#					ez a gtest_lite használatával fordítja le a programot
+#					(tesztesetek hívódnak meg, a program nem lesz használhatós) 
 #			
 #			$ make clean	(VAGY make del VAGY make clear)
 #				-> ez kitakarítja a .o és a nagyhazi.exe file-t a mappából
 #					hogy csak a forráskódok maradjanak (WIN alatt del, UNIX
 #					alatt clean, clear működik jól.)
+#
 #																			
 #=============================================================================
 

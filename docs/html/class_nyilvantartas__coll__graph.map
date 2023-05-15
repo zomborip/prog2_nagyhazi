@@ -1,5 +1,5 @@
 <map id="Nyilvantartas" name="Nyilvantartas">
-<area shape="rect" id="node1" title="A nyilvántartás osztály. Ez tárolja a csapatokat (Kosar, Foci, Kezi) láncolt listákban." alt="" coords="22,579,251,1052"/>
-<area shape="rect" id="node2" href="$struct_lista.html" title="Láncolt listaelem." alt="" coords="111,439,162,516"/>
-<area shape="rect" id="node3" href="$class_csapat.html" title="A csapatok szülőobjektuma. Ez írja je a csapatok közös viselkedését, tulajdonságait." alt="" coords="5,5,268,376"/>
+<area shape="rect" id="node1" title="A nyilvántartás osztály. Ez tárolja a csapatokat (Kosar, Foci, Kezi) láncolt listákban." alt="" coords="11,579,135,964"/>
+<area shape="rect" id="node2" href="$struct_lista.html" title="Láncolt listaelem." alt="" coords="48,439,99,516"/>
+<area shape="rect" id="node3" href="$class_csapat.html" title="A csapatok szülőobjektuma. Ez írja je a csapatok közös viselkedését, tulajdonságait." alt="" coords="5,5,141,376"/>
 </map>

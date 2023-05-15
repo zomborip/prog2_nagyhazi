@@ -1,4 +1,4 @@
 <map id="Kosar" name="Kosar">
-<area shape="rect" id="node1" title="A kosárlabda csapat objektumja, amely örökli a Csapat objektum tulajdonságait." alt="" coords="27,424,247,545"/>
-<area shape="rect" id="node2" href="$class_csapat.html" title="A csapatok szülőobjektuma. Ez írja je a csapatok közös viselkedését, tulajdonságait." alt="" coords="5,5,268,376"/>
+<area shape="rect" id="node1" title="A kosárlabda csapat objektumja, amely örökli a Csapat objektum tulajdonságait." alt="" coords="8,424,139,545"/>
+<area shape="rect" id="node2" href="$class_csapat.html" title="A csapatok szülőobjektuma. Ez írja je a csapatok közös viselkedését, tulajdonságait." alt="" coords="5,5,141,376"/>
 </map>
