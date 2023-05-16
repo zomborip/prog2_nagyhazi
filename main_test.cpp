@@ -3,7 +3,7 @@
 
 #ifndef TESZT_ESET
   // Hanyadig tesztet csinálja (összes = 99)
-  //ITT KELL BEÁLLTANI
+  //ITT KELL NÖVELNI
   #define TESZT_ESET 0
 #endif
 
@@ -49,6 +49,7 @@
   #include "foci.h"
   #include "kezi.h"
   #include "kosar.h"
+  #include "menu.h"
   #include "memtrace.h"
   #include "gtest_lite.h"
 
@@ -408,6 +409,94 @@
     } ENDM
     #endif
 
+    #ifdef CPORTA
+      #if TESZT_ESET >= 18
+      /// @brief [TEST ESET]
+      /// @brief Jportás menü ellenörzés...
+      TEST(MENU, JPorta_full){
+        // Két féle képpen teszteli a főmenüjét a programnak.
+        // Csak a kézi classt teszteli, de ez elég mert a többi 
+        // úgy is CTRL+C CTRL+V. A menürendszer használatát mutatja be 
+        // intuitívan...
+        Menu m;
+        
+        m.foMenu();
+        // JPporta bevitelre vár:
+        /*
+        1
+        2
+        1
+        2
+        nincsilyentutifix
+        3
+        Vidi
+        11
+        500000
+        3
+        Paks
+        22
+        222222
+        3
+        Tata
+        33
+        333333
+        3
+        Pecs
+        44
+        444444
+        1
+        2
+        Vidi
+        1
+        1
+        Videoton
+        2
+        Videoton
+        1
+        2
+        44
+        2
+        Videoton
+        1
+        3
+        10
+        1
+        2
+        Videoton
+        2
+        1
+        0
+        1
+        0
+        */
+
+        m.foMenu();
+        //JPorta bevitelre vár:
+        /*
+        1
+        2
+        1
+        2
+        Pecs
+        2
+        1
+        2
+        Tata
+        2
+        1
+        2
+        Paks
+        2
+        1
+        1
+        0
+        1
+        0
+        */
+
+      } ENDM
+      #endif
+    #endif
 
     GTEND(std::cerr);
     return 0;
