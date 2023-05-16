@@ -1,6 +1,5 @@
 /// @file Ez a test file. Csak a G_TEST definiálása után fut le. Teszt esetekért definiáljuk a makrót!
 
-
 #ifndef TESZT_ESET
   // Hanyadig tesztet csinálja (összes = 99)
   //ITT KELL NÖVELNI
@@ -493,6 +492,70 @@
         1
         0
         */
+        
+        //Ez még mindíg kevés a JPortának, kell még teszt...
+        // sajnos muszáj végigmenni a kosár, focis dolgokon is...
+        m.foMenu();
+        //JPorta bevitelre vár:
+        /*
+        3
+        1
+        3
+        Kovesd
+        22
+        10
+        2
+        Kovesd
+        1
+        2
+        33
+        2
+        Kovesd
+        1
+        3
+        44
+        2
+        Kovesd
+        1
+        1
+        Mezokovesd
+        2
+        Mezokovesd
+        2
+        1
+        1
+        0
+        4
+        1
+        3
+        FTC
+        11
+        2
+        2
+        FTC
+        1
+        2
+        22
+        2
+        FTC
+        1
+        3
+        9
+        2
+        FTC
+        1
+        1
+        Fradi
+        2
+        Fradi
+        2
+        1
+        1
+        0
+        1
+        0
+        */
+
 
       } ENDM
       #endif
