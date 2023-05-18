@@ -408,7 +408,20 @@
     } ENDM
     #endif
 
+    //jporta makró kompatibiltás
+    #ifndef CPORTA
+      #ifdef JP
+        #define CPORTA
+      #endif
+    #endif
+
     #ifdef CPORTA
+
+      // jporta kompatibilitás
+      #ifdef JP
+        #undef CPORTA
+      #endif
+
       #if TESZT_ESET >= 18
       /// @brief [TEST ESET]
       /// @brief Jportás menü ellenörzés...
