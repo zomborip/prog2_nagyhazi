@@ -417,9 +417,11 @@
         // Csak a kézi classt teszteli, de ez elég mert a többi 
         // úgy is CTRL+C CTRL+V. A menürendszer használatát mutatja be 
         // intuitívan...
-        Menu m;
         
-        m.foMenu();
+        //Menu m; //JPorta Coverage nem olvassa be a .h filet valamiért...
+        Menu *m = new Menu();
+        
+        m->foMenu();
         // JPporta bevitelre vár:
         /*
         1
@@ -469,7 +471,7 @@
         0
         */
 
-        m.foMenu();
+        m->foMenu();
         //JPorta bevitelre vár:
         /*
         1
@@ -495,7 +497,7 @@
         
         //Ez még mindíg kevés a JPortának, kell még teszt...
         // sajnos muszáj végigmenni a kosár, focis dolgokon is...
-        m.foMenu();
+        m->foMenu();
         //JPorta bevitelre vár:
         /*
         3
@@ -555,7 +557,7 @@
         1
         0
         */
-
+        delete m;
 
       } ENDM
       #endif
