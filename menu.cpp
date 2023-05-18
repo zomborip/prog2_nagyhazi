@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cstring>
 #include <cmath>
+#include <string>
 #include "nyilvantartas.h"
 #include "menu.h"
 #include "csapat.h"
@@ -14,6 +15,11 @@
 using std::cout;
 using std::cin;
 using std::endl;
+using std::string;
+using std::sscanf;
+using std::stoll;
+using std::stoi;
+using std::invalid_argument;
 
 Menu::Menu(){
   DB.load();
@@ -270,7 +276,9 @@ void Menu::keziMenu() {
     cout << "\t[!] Valasszon a listabol. Adja meg a menu szamat!" << endl;
     cout << "\t[?] Menu szama: ";
     cin.sync();
-    cin >> arg;
+    string beolv;
+    cin >> beolv;
+    if (beolv.length() == 1) { sscanf(beolv.c_str(), "%d", &arg); }
     switch (arg)
     {
     case 1:
@@ -306,7 +314,9 @@ void Menu::kosarMenu() {
     cout << "\t[!] Valasszon a listabol. Adja meg a menu szamat!" << endl;
     cout << "\t[?] Menu szama: ";
     cin.sync();
-    cin >> arg;
+    string beolv;
+    cin >> beolv;
+    if (beolv.length() == 1) { sscanf(beolv.c_str(), "%d", &arg); }
     switch (arg)
     {
     case 1:
@@ -342,7 +352,9 @@ void Menu::fociMenu() {
     cout << "\t[!] Valasszon a listabol. Adja meg a menu szamat!" << endl;
     cout << "\t[?] Menu szama: ";
     cin.sync();
-    cin >> arg;
+    string beolv;
+    cin >> beolv;
+    if (beolv.length() == 1) { sscanf(beolv.c_str(), "%d", &arg); }
     switch (arg)
     {
     case 1:
@@ -392,6 +404,7 @@ void Menu::keresKeziMenu(){
     printOne(result, KEZI);
     int arg = -1;
     int d = 0;
+    string beolv2;
     while (arg != 0) {
       cout << "\t\t[+] CSAPAT KEZELO MENU" << endl;
       cout << "\t\t==============================================================" << endl;
@@ -400,7 +413,9 @@ void Menu::keresKeziMenu(){
       cout << "\t\t[!] Valasszon a listabol. Adja meg a menu szamat!" << endl;
       cout << "\t\t[?] Menu szama: ";
       cin.sync();
-      cin >> arg;
+      string beolv;
+      cin >> beolv;
+      if (beolv.length() == 1) { sscanf(beolv.c_str(), "%d", &arg); }
       switch (arg) {
         case 1:
           editKeziMenu(result);
@@ -409,7 +424,8 @@ void Menu::keresKeziMenu(){
         case 2:
           cout << "\n\t\t[?] Biztosan torli a csapatot? [(1): Igen | (0): Nem]: ";
           cin.sync();
-          cin >> d;
+          cin >> beolv2;
+          if (beolv2.length() == 1) { sscanf(beolv2.c_str(), "%d", &d); }
           if (d == 1) { 
             DB.rm(result); 
             arg = 0; 
@@ -453,6 +469,7 @@ void Menu::keresKosarMenu(){
     printOne(result, KOSAR);
     int arg = -1;
     int d = 0;
+    string beolv2;
     while (arg != 0) {
       cout << "\t\t[+] CSAPAT KEZELO MENU" << endl;
       cout << "\t\t==============================================================" << endl;
@@ -461,7 +478,9 @@ void Menu::keresKosarMenu(){
       cout << "\t\t[!] Valasszon a listabol. Adja meg a menu szamat!" << endl;
       cout << "\t\t[?] Menu szama: ";
       cin.sync();
-      cin >> arg;
+      string beolv;
+      cin >> beolv;
+      if (beolv.length() == 1) { sscanf(beolv.c_str(), "%d", &arg); }
       switch (arg) {
         case 1:
           editKosarMenu(result);
@@ -470,7 +489,8 @@ void Menu::keresKosarMenu(){
         case 2:
           cout << "\n\t\t[?] Biztosan torli a csapatot? [(1): Igen | (0): Nem]: ";
           cin.sync();
-          cin >> d;
+          cin >> beolv2;
+          if (beolv2.length() == 1) { sscanf(beolv2.c_str(), "%d", &d); }
           if (d == 1) { 
             DB.rm(result); 
             arg = 0; 
@@ -514,6 +534,7 @@ void Menu::keresFociMenu(){
     printOne(result, FOCI);
     int arg = -1;
     int d = 0;
+    string beolv2;
     while (arg != 0) {
       cout << "\t\t[+] CSAPAT KEZELO MENU" << endl;
       cout << "\t\t==============================================================" << endl;
@@ -522,7 +543,9 @@ void Menu::keresFociMenu(){
       cout << "\t\t[!] Valasszon a listabol. Adja meg a menu szamat!" << endl;
       cout << "\t\t[?] Menu szama: ";
       cin.sync();
-      cin >> arg;
+      string beolv;
+      cin >> beolv;
+      if (beolv.length() == 1) { sscanf(beolv.c_str(), "%d", &arg); }
       switch (arg) {
         case 1:
           editFociMenu(result);
@@ -531,7 +554,8 @@ void Menu::keresFociMenu(){
         case 2:
           cout << "\n\t\t[?] Biztosan torli a csapatot? [(1): Igen | (0): Nem]: ";
           cin.sync();
-          cin >> d;
+          cin >> beolv2;
+          if (beolv2.length() == 1) { sscanf(beolv2.c_str(), "%d", &d); }
           if (d == 1) { 
             DB.rm(result); 
             arg = 0; 
@@ -566,8 +590,11 @@ void Menu::editKeziMenu(Lista *p) {
   char buffer[256] = "";
   long long int t = 0;
   cin.sync();
-  cin >> arg;
+  string beolv;
+  cin >> beolv;
+  if (beolv.length() == 1) { sscanf(beolv.c_str(), "%d", &arg); }
   while (arg != 0) {
+    beolv = "";
     switch (arg) {
       case 1:
         cout << "\n\t\t\t[?] Uj csapatnev: ";
@@ -588,7 +615,9 @@ void Menu::editKeziMenu(Lista *p) {
       case 2:
         cout << "\n\t\t\t[?] Uj Letszam: ";
         cin.sync();
-        cin >> l;
+        cin >> beolv;
+        l = 0;
+        sscanf(beolv.c_str(), "%d", &l); 
         p->adat->setLetszam(l);
         DB.save();
         cout << "\n[+]Mentes..." << endl;
@@ -598,7 +627,8 @@ void Menu::editKeziMenu(Lista *p) {
       case 3:
         cout << "\n\t\t\t[?] Tamogatas hozzaadasa: ";
         cin.sync();
-        cin >> t;
+        cin >> beolv;
+        try { t = stoll(beolv);  } catch (const invalid_argument&) { t = 0; }
         p->adat->addTamogatas(t);
         DB.save();
         cout << "\n[+]Mentes..." << endl;
@@ -631,8 +661,11 @@ void Menu::editKosarMenu(Lista *p) {
   char buffer[256] = "";
   int o = 0;
   cin.sync();
-  cin >> arg;
+  string beolv;
+  cin >> beolv;
+  if (beolv.length() == 1) { sscanf(beolv.c_str(), "%d", &arg); }
   while (arg != 0) {
+    beolv = "";
     switch (arg) {
       case 1:
         cout << "\n\t\t\t[?] Uj csapatnev: ";
@@ -653,7 +686,9 @@ void Menu::editKosarMenu(Lista *p) {
       case 2:
         cout << "\n\t\t\t[?] Uj Letszam: ";
         cin.sync();
-        cin >> l;
+        cin >> beolv;
+        l = 0;
+        sscanf(beolv.c_str(), "%d", &l);
         p->adat->setLetszam(l);
         DB.save();
         cout << "\n[+]Mentes..." << endl;
@@ -663,7 +698,9 @@ void Menu::editKosarMenu(Lista *p) {
       case 3:
         cout << "\n\t\t\t[?] PomPom lanyok hozzaadasa: ";
         cin.sync();
-        cin >> o;
+        cin >> beolv;
+        o = 0;
+        sscanf(beolv.c_str(), "%d", &o);
         p->adat->addPompom(o);
         DB.save();
         cout << "\n[+]Mentes..." << endl;
@@ -696,8 +733,11 @@ void Menu::editFociMenu(Lista *p) {
   char buffer[256] = "";
   int e = 0;
   cin.sync();
-  cin >> arg;
+  string beolv;
+  cin >> beolv;
+  if (beolv.length() == 1) { sscanf(beolv.c_str(), "%d", &arg); }
   while (arg != 0) {
+    beolv = "";
     switch (arg) {
       case 1:
         cout << "\n\t\t\t[?] Uj csapatnev: ";
@@ -718,7 +758,9 @@ void Menu::editFociMenu(Lista *p) {
       case 2:
         cout << "\n\t\t\t[?] Uj Letszam: ";
         cin.sync();
-        cin >> l;
+        cin >> beolv;
+        l = 0;
+        sscanf(beolv.c_str(), "%d", &l);
         p->adat->setLetszam(l);
         DB.save();
         cout << "\n[+]Mentes..." << endl;
@@ -728,7 +770,9 @@ void Menu::editFociMenu(Lista *p) {
       case 3:
         cout << "\n\t\t\t[?] Edzok hozzaadasa: ";
         cin.sync();
-        cin >> e;
+        cin >> beolv;
+        e = 0;
+        sscanf(beolv.c_str(), "%d", &e);
         p->adat->addEdzo(e);
         DB.save();
         cout << "\n[+]Mentes..." << endl;
@@ -749,8 +793,8 @@ void Menu::editFociMenu(Lista *p) {
 void Menu::ujMenu(Tipus T) {
   cout << endl;
   char nevbuffer[256];
-  int letszam;
-  long long int variszam;
+  int letszam = 0;
+  long long int variszam = 0;
   cout << "\n\t[?] Adja meg a csapat nevet: ";
   cin.sync();
   #ifdef __linux__
@@ -762,10 +806,16 @@ void Menu::ujMenu(Tipus T) {
   cin.getline(nevbuffer, 255);
   cout << "\t[?] Adja meg a csapat letszamat: ";
   cin.sync();
-  cin >> letszam;
+  string beolv;
+  cin >> beolv;
+  sscanf(beolv.c_str(), "%d", &letszam);
+  beolv = "";
   switch (T){
     case KEZI:
-      cout << "\t[?] Adja meg a csapat tamogatasat: "; cin >> variszam;
+      cout << "\t[?] Adja meg a csapat tamogatasat: "; 
+      cin >> beolv;
+      try { variszam = stoll(beolv);  } catch (const invalid_argument&) { variszam = 0; }
+      cout << variszam << beolv;
       cout << endl;
       DB.add(KEZI, nevbuffer, letszam, variszam);
       cout << "[+] Mentes...";
@@ -773,15 +823,18 @@ void Menu::ujMenu(Tipus T) {
       break;
 
     case KOSAR:
-      cout << "\t[?] Adja meg a csapat pompomlanyai szamat: "; cin >> variszam;
-      cout << endl;
+      cout << "\t[?] Adja meg a csapat pompomlanyai szamat: ";
+      cin >> beolv;
+      try { variszam = stoll(beolv);  } catch (const invalid_argument&) { variszam = 0; }
       DB.add(KOSAR, nevbuffer, letszam, variszam);
       cout << "[+] Mentes...";
       DB.save();
       break;
     
     case FOCI:
-      cout << "\t[?] Adja meg a csapat edzoinek szamat: "; cin >> variszam;
+      cout << "\t[?] Adja meg a csapat edzoinek szamat: ";
+      cin >> beolv;
+      try { variszam = stoll(beolv);  } catch (const invalid_argument&) { variszam = 0; }
       cout << endl;
       DB.add(FOCI, nevbuffer, letszam, variszam);
       cout << "[+] Mentes...";
@@ -805,7 +858,9 @@ void Menu::foMenu() {
     cout << "[!] Valasszon a listabol. Adja meg a menu szamat!" << endl;
     cout << "[?] Menu szama: ";
     cin.sync();
-    cin >> arg;
+    string beolv;
+    cin >> beolv;
+    if (beolv.length() == 1) { try { arg = stoi(beolv); } catch (const invalid_argument&) { arg = -1; } }
     switch (arg)
     {
     case 1:
